@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`CURSO` -> `Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`DISCIPLINA` -> `Projeto: Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`SEMESTRE`-> `Primeiro Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolveremos uma aplicação web front-end que irá ser responsável por conectar pessoas que querem doar pets com outras que estão interessadas em adotar o pet que a mesma disponibilizou para adoção, por meio de nossa aplicação.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Adenilson Nogueira Olivera
+* Diego Rafael Santos Silva
+* Ercules Mauricio De Siqueira Filho
+* Matheus Amaral Da Costa
+* Matheus Nunes Guimarães
+* Mayra Gabriella Vitoriana Machado
 
 ## Orientador
 
-* Nome completo do professor 1
+* Nathalia Assis Valentim
 
 ## Instruções de utilização
 
