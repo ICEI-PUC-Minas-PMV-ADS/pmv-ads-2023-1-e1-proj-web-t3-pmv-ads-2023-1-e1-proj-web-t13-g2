@@ -1,9 +1,9 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"></a></span>
+<span style="color:red">Metodologia<a href="2-Especificação do Projeto.md"></a></span>
 
-Metodologia
+
 
 A metodologia está estruturada na utilização de ferramentas no qual auxilia a equipe na manutenção de códigos e demais artefatos, para assim ter-se uma organização tanto no time quanto na execução de tarefas do projeto.  
 

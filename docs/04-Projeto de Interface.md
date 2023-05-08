@@ -1,35 +1,72 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+<span style="color:red">Projeto de Interface <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+A princípio, o Projeto tem como escopos principais a celeridade de processamento e a praticidade de acesso. Tais pontos são essenciais para tornar a experiência do usuário a mais positiva possível. Por último, também é uma meta a responsividade do site com o intuito de estabelecer o acesso em mais de um tipo de dispositivo eletroeletrônico. 
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+O Diagrama abaixo na Figura 2 demonstra o fluxo de interação do usuário pelas telas do sistema. Cada tela deste fluxo será apresentada na seção de wireframes que segue abaixo. Disponibilizamos o link do site para visualização: 
 
-## User Flow
+![Diagrama](img/diagrama.png)
 
-![Exemplo de UserFlow](img/userflow.jpg)
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
-
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+<a href="2-Especificação do Projeto.md"> </a>.
 
 ## Wireframes
+Tela – Home 
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+De acordo com o fluxo de telas do projeto apresentado anteriormente, as telas do sistema serão detalhadas nos itens subsequentes. As telas do sistema possuem uma estrutura comum, que é exemplificada na Figura 3. Essa estrutura consiste em três grandes blocos, que são descritos a seguir: 
+
+* Cabeçalho: localizado no topo da tela, contém elementos fixos de identidade, como o logo, e a navegação principal do site, representada pelo menu da aplicação. 
+
+* Conteúdo: área central da tela, onde o conteúdo específico é apresentado. 
+
+* Barra inferior(rodapé/footer): localizada na margem inferior da tela, apresenta elementos de navegação secundária, geralmente relacionados aos elementos presentes no bloco de conteúdo. 
+
+![home](img/home.png)
+
+Tela – Quero adotar 
+
+Nessa tela mostra os animais que tem a disposição para serem adotados, contendo fotos dos animais e suas descrições pode ser uma fonte valiosa de informações para as pessoas que estão interessadas em adotar. Além das imagens, a descrição de cada animal.Esses detalhes podem ajudar a entender melhor a vida desses animais, suas interações com outros seres vivos e como eles contribuem para o ecossistema como um todo que é exemplificada na Figura 4. Essa estrutura consiste em dois grandes blocos, que são descritos a seguir: 
+
+* Barra lateral: Aonde é possível filtra as características dos animais que a pessoa deseja adotar. 
+
+* Conteúdo: Aonde pode-se visualizar fotos dos animais e suas características, existindo uma barra de rolagem para facilitar a navegação do site.  
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+![queroadotar](img/queroadotar.png)
+
+Tela – Detalhes do Pet 
+
+Ao visualizar todos os animais a pessoa pode clicar para ver mais informações sobre o animal, que é exemplificada na Figura 5. Essa estrutura consiste em um pequeno bloco, que são descritos a seguir: 
+
+* Conteúdo: Nessa parte ao clicar na figura do animal aparecerá uma foto maior do
+ animal e e mais informações. 
+
+![pet](img/pet.png)
+
+Tela - Entrar / Login 
+
+ 
+
+Cada pessoa que desejar adotar um pet para adoção deve ter um cadastro no site, sendo assim deverá ter o seu login, que é exemplificada na Figura 5. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
+
+Conteúdo: Nessa Parte será necessário que o usuário o seu login, caso ele não tenha o login ele será direcionado para a página de cadastro.  
+
+![login](img/login.png)
+
+Tela - Faça o seu cadastro 
+
+Caso seja um novo usuário deve fazer o seu cadastro no site como é demostrado abaixo, que é exemplificada na Figura 6. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
+
+Conteúdo: Nessa Parte será necessário que o usuário crie o seu login, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
+![cadastro](img/cadastro.png)
+
+Tela – Cadastro do Pet 
+
+Caso seja deseje colocar a disposição um pet  deve fazer o seu cadastro no site como é demostrado abaixo, que é exemplificada na Figura 7. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
+
+Conteúdo: Nessa Parte será necessário que o seu login que para poder entrar em uma parte especifica para cadastro de pet e gestão de pessoas interessadas, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
+
+![cadastropet](img/cadastropet.png)
