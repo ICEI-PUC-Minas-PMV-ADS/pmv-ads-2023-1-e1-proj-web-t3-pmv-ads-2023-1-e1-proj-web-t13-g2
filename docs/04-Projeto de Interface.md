@@ -34,8 +34,11 @@ Nessa tela mostra os animais que tem a disposição para serem adotados, contend
 * Conteúdo: Aonde pode-se visualizar fotos dos animais e suas características, existindo uma barra de rolagem para facilitar a navegação do site.  
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+
  
 ![queroadotar](img/queroadotar.png)
+
+
 
 Tela – Detalhes do Pet 
 
@@ -44,7 +47,10 @@ Ao visualizar todos os animais a pessoa pode clicar para ver mais informações 
 * Conteúdo: Nessa parte ao clicar na figura do animal aparecerá uma foto maior do
  animal e e mais informações. 
 
+
 ![pet](img/pet.png)
+
+
 
 Tela - Entrar / Login 
 
@@ -54,7 +60,9 @@ Cada pessoa que desejar adotar um pet para adoção deve ter um cadastro no site
 
 Conteúdo: Nessa Parte será necessário que o usuário o seu login, caso ele não tenha o login ele será direcionado para a página de cadastro.  
 
+
 ![login](img/login.png)
+
 
 Tela - Faça o seu cadastro 
 
@@ -63,10 +71,13 @@ Caso seja um novo usuário deve fazer o seu cadastro no site como é demostrado 
 Conteúdo: Nessa Parte será necessário que o usuário crie o seu login, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
 ![cadastro](img/cadastro.png)
 
+
 Tela – Cadastro do Pet 
+
 
 Caso seja deseje colocar a disposição um pet  deve fazer o seu cadastro no site como é demostrado abaixo, que é exemplificada na Figura 7. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
 
 Conteúdo: Nessa Parte será necessário que o seu login que para poder entrar em uma parte especifica para cadastro de pet e gestão de pessoas interessadas, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
+
 
 ![cadastropet](img/cadastropet.png)

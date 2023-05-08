@@ -4,7 +4,7 @@
 
 Nesta seção, são descritos os aspetos técnicos da solução criada pela equipe, abrangendo os componentes integrantes e o ambiente de hospedagem utilizado. 
 
-![Diagrama de Componentes](img/arquitetura.png)
+![arquitetura](img/arquitetura.png)
  
 O diagrama de componentes ilustra os elementos que constituem a solução, conforme apresentado na Figura acima. A solução implementada inclui os seguintes módulos: 
 
