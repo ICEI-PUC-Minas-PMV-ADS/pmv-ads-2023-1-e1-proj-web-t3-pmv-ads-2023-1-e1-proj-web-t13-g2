@@ -58,7 +58,7 @@ Tela - Entrar / Login
 
 Cada pessoa que desejar adotar um pet para adoção deve ter um cadastro no site, sendo assim deverá ter o seu login, que é exemplificada na Figura 5. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
 
-Conteúdo: Nessa Parte será necessário que o usuário o seu login, caso ele não tenha o login ele será direcionado para a página de cadastro.  
+* Conteúdo: Nessa Parte será necessário que o usuário o seu login, caso ele não tenha o login ele será direcionado para a página de cadastro.  
 
 
 ![login](img/login.png)
@@ -68,7 +68,9 @@ Tela - Faça o seu cadastro
 
 Caso seja um novo usuário deve fazer o seu cadastro no site como é demostrado abaixo, que é exemplificada na Figura 6. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
 
-Conteúdo: Nessa Parte será necessário que o usuário crie o seu login, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
+* Conteúdo: Nessa Parte será necessário que o usuário crie o seu login, para poder ter acesso ao conteúdo detalhado da adoção do pet.
+
+
 ![cadastro](img/cadastro.png)
 
 
@@ -77,7 +79,7 @@ Tela – Cadastro do Pet
 
 Caso seja deseje colocar a disposição um pet  deve fazer o seu cadastro no site como é demostrado abaixo, que é exemplificada na Figura 7. Essa estrutura consiste em um grande bloco, que são descritos a seguir: 
 
-Conteúdo: Nessa Parte será necessário que o seu login que para poder entrar em uma parte especifica para cadastro de pet e gestão de pessoas interessadas, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
+* Conteúdo: Nessa Parte será necessário que o seu login que para poder entrar em uma parte especifica para cadastro de pet e gestão de pessoas interessadas, para poder ter acesso ao conteúdo detalhado da adoção do pet. 
 
 
 ![cadastropet](img/cadastropet.png)
