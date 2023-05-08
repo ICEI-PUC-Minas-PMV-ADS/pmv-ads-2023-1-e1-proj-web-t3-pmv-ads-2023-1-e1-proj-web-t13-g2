@@ -1,0 +1,10 @@
+.main1 {
+  margin-top: 106px;
+  /* padding-top: 10px; */
+}
+
+.imgPrincipal {
+  height: 700px;
+  width: 100%;
+  background-image: url('./img/imgPrincipal.png');
+}
