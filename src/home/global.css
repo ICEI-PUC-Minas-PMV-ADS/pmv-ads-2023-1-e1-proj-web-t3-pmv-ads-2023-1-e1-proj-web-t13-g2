@@ -21,11 +21,11 @@ main {
     justify-content: space-between;
     color: #17479E;
     font-weight: bold;
-    border-bottom: 3px solid #17479E;
+    border-bottom: 2px solid #0d2b6454;
     position: fixed;
     width: 100%;
     top: 0px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 #menuPrincipal>* {
