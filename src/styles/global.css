@@ -17,13 +17,14 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     color: #17479E;
     font-weight: bold;
-    border-bottom: 2px solid #0d2b6454;
+    border-bottom: 3px solid #17479E;
     position: fixed;
     width: 100%;
     top: 0px;
+    background-color: white;
 }
 
 #menuPrincipal > *{

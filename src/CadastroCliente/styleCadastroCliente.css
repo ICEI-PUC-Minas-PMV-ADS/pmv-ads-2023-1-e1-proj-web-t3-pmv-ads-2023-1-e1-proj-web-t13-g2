@@ -1,0 +1,11 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.teste{
+    color: white;
+    background-color: blue;
+}
