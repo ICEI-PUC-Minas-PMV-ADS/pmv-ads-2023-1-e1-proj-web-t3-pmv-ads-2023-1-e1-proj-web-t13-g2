@@ -29,6 +29,7 @@ body {
   width: 100px;
   height: 100px;
   margin: auto;
+
 }
 
 #navegacaoMenu {
@@ -186,7 +187,7 @@ body {
     }
     
     main {
-    height: 5vh;
+    height: 5.5vh;
     box-sizing: content-box;
     margin-top: 0; /* Alterado o valor da margem superior para 0 */
     }
@@ -202,9 +203,9 @@ body {
     @media screen and (max-width: 600px) {
     .logo,
     .social-icons img {
-    width: 20%;
-    max-width: 50%;
+    width: 50%;
     height: auto;
+    
     }
     }
     
