@@ -26,9 +26,11 @@ body {
 }
 
 #logoMenu a > img {
+  display: absolute;
   width: 100px;
   height: 100px;
   margin: auto;
+
 }
 
 #navegacaoMenu {
@@ -86,7 +88,7 @@ body {
 
 #logoFooter > a img {
   width: 100px;
-  height: 100px;
+  height: 100pxs;
   margin: auto;
 }
 
@@ -186,7 +188,7 @@ body {
     }
     
     main {
-    height: 5vh;
+    height: 9vh;
     box-sizing: content-box;
     margin-top: 0; /* Alterado o valor da margem superior para 0 */
     }
@@ -199,12 +201,12 @@ body {
     width: 10vw;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
     .logo,
     .social-icons img {
-    width: 20%;
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
+    
     }
     }
     
