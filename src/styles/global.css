@@ -1,9 +1,11 @@
 /* Configurações Globais */
 html,
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 main {
@@ -20,11 +22,13 @@ main {
     justify-content: space-between;
     color: #17479E;
     font-weight: bold;
-    border-bottom: 3px solid #17479E;
+    border-bottom: 2px solid #0d2b6454;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    overflow: hidden;
 }
 
 #menuPrincipal>* {
@@ -97,6 +101,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #logoFooter>a img {
@@ -122,4 +128,43 @@ main {
 #socialFooter>a img {
     width: 25px;
     height: 25px;
+}
+
+.mobileIcon{
+    display: none;
+}
+
+.mobileIcon > img{
+    width: 50px;
+    margin: auto;
+}
+
+.hiddenMenu{
+    display: none;
+}
+
+.visibleMenu{
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    background-color: #17479E;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+
+/*  TELAS  */
+
+
+@media(max-width:767px){
+    #navegacaoMenu > ul, #botoesMenu{
+        display: none;
+    }
+    
+    .mobileIcon{
+        display: block;
+    }
 }
