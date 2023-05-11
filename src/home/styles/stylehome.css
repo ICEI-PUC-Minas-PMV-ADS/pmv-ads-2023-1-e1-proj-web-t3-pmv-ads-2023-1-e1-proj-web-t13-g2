@@ -26,11 +26,10 @@ body {
 }
 
 #logoMenu a > img {
-  display: absolute;
-  width: 100px;
-  height: 100px;
+  display: block;
+  max-width: 60%;
+  height: auto;
   margin: auto;
-
 }
 
 #navegacaoMenu {
@@ -87,9 +86,11 @@ body {
 }
 
 #logoFooter > a img {
-  width: 100px;
-  height: 100pxs;
-  margin: auto;
+    display: block;
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+
 }
 
 #footerPrincipal > * {
@@ -105,8 +106,9 @@ body {
 }
 
 #socialFooter > a img {
-  width: 25px;
-  height: 25px;
+  display: block;
+  max-width: 20%;
+
 }
 
 .content {
@@ -188,11 +190,12 @@ body {
     }
     
     main {
-    height: 9vh;
-    box-sizing: content-box;
-    margin-top: 0; /* Alterado o valor da margem superior para 0 */
+      height: 12vh;
+
+      box-sizing: content-box;
+      width: 50%;
+      margin: 7 auto;
     }
-    
     body {
     font-size: 1vw;
     }
@@ -239,4 +242,115 @@ body {
         text-align: center;
       }
       
+    
+
+      @media screen and (max-width: 3000px) {
+        main {
+          height: 10vh;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 2000px) {
+        main {
+          height: 9.6vh;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 1800px) {
+        main {
+          height: 9vh;
+          width: 50%;
+        }
+        @media screen and (max-width: 1700px) {
+          main {
+            height: 8.5vh;
+            width: 50%;
+          }
+        }
+        @media screen and (max-width: 1600px) {
+          main {
+            height: 8vh;
+            width: 50%;
+          }
+      @media screen and (max-width: 1500px) {
+        main {
+          height: 7.5vh;
+          width: 50%;
+        }
+
+      } 
+      @media screen and (max-width: 1400px) {
+        main {
+          height: 7vh;
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 1300px) {
+        main {
+          height: 6.5vh;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        main {
+          height: 5.8vh;
+          width: 50%;
+        }
+      }
+      
+      @media screen and (max-width: 1100px) {
+        main {
+          height: 5.1vh;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        main {
+          height: 4.3vh;
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        main {
+          height: 3.5vh;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        main {
+          height: 3vh;
+          width: 50%;
+        }
+      }
+
+      
+      @media screen and (max-width: 700px) {
+        main {
+          height: 2.2vh;
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        main {
+          height: 1.4vh;
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        main {
+          height: 1vh;
+          width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 300px) {
+        main {
+          height: 1vh;
+          width: 50%;
+        }
+      }
       
