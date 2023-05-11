@@ -69,7 +69,7 @@
   position: absolute;
   text-align: justify;
   top: 20%;
-  /* Alterada a porcentagem para 10% /
+  Alterada a porcentagem para 10% /
     left: 40%;
     transform: translate(-30%, -50%);
     z-index: 2;
@@ -77,12 +77,12 @@
     padding: 20px 50px; / Adicionado o valor de pixels para o padding */
 }
 
-/* main {
-      height: 12vh;
+main {
+      height: 4vh;
 
       box-sizing: content-box;
-      width: 50%;
-      margin: 7 auto;
+      width: 100%;
+      margin: auto;
     }
     body {
     font-size: 1vw;
