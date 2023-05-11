@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptionLove</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <!--Fonte Roboto-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--#-->
+    
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="./pet.css">
+
+    <script>
+
+        function showMobileMenu(){
+            mobileMenu = document.getElementById("mobileMenu");
+            if (mobileMenu.classList.contains("hiddenMenu")) {
+                mobileMenu.classList.remove("hiddenMenu")
+                mobileMenu.classList.add("visibleMenu")
+            } else {
+                mobileMenu.classList.remove("visibleMenu")
+                mobileMenu.classList.add("hiddenMenu")
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="menuPrincipal">
+        <nav id="navegacaoMenu">
+            <div id="logoMenu">
+                <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+            </div>
+            <ul>
+                <li><a href="../home/home.html">Inicio</a></li>
+                <li><a href="#">Quero Doar</a></li>
+            </ul>
+        </nav>
+        <div id="botoesMenu">
+            <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
+            <p id="botaoLogin"><a href="#">Entrar</a></p>
+        </div>
+        <div class="mobileIcon" onclick="showMobileMenu()">
+            <img src="../images/mobile-icon.jpg" alt="Mobile Icon">
+        </div>
+    </div> <!-- Fechar a div #menuPrincipal -->
+    <div id="mobileMenu" class="hiddenMenu">
+        <p>Teste</p>
+        <div class="mobileIcon" onclick="showMobileMenu()">
+            <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px;">
+        </div>
+    </div>
+    <div id="petPageContainer">
+        <div id="petCard">
+            <div id="fotoPet">
+                <img src="./images/gato.png" alt="Foto do Pet">
+            </div>
+            <div id="infoPet">
+                <div>
+                    <h1>Gilmar</h1>
+                    <h4>4 anos</h4>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus mollis, turpis ac fringilla commodo, massa arcu efficitur augue, a maximus lorem quam sed velit. Vestibulum sed odio quis libero maximus luctus ac imperdiet tellus. Etiam porttitor sapien eu nulla blandit volutpat. Vivamus vel eros convallis, venenatis lorem non, pretium purus. In lobortis risus nec arcu vestibulum mattis.</p>
+                    <p>Raça Não Definida</p>
+                    <p>Macho</p>
+                </div>
+                <div id="adotarPet">
+                    <a href=""><p>Quero Adotar</p></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer id="footerPrincipal">
+        <div id="logoFooter">
+            <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+        </div>
+        <div id="infoFooter">
+            <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
+        </div>
+        <div id="socialFooter">
+            <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
+            <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
+            <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
+        </div>
+    </footer>
+</body>
+</html>
