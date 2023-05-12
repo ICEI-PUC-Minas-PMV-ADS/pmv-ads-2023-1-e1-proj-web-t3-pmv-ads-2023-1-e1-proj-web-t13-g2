@@ -2,6 +2,10 @@
   grid-area: conteudo;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .box-home p,
 .box-home h2 {
   margin: 0;
@@ -14,7 +18,7 @@
 @media (min-width: 700px) {
   .wrapper {
     font-size: 2em;
-    display: grid;
+    display: -moz-grid-group;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px 120px;
     grid-template-areas:
@@ -27,22 +31,16 @@
 
 .texto-principal {
   margin: 60px 10px 0;
-  text-align: justify;
   padding: 0 40px;
-  position: absolute;
-  top: 80%;
-  left: 40%;
-  transform: translate(-30%, -50%);
-  z-index: 2;
-  color: #fff;
+  top: 0%;
+  left: 0%;
 }
 
-
-
 .menu-container {
-  display: flex;
+  display: absolute;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .box-home {
@@ -60,22 +58,19 @@
 }
 
 .texto-principal {
-  position: absolute;
+  position: fixed;
   text-align: justify;
   top: 20%;
-  Alterada a porcentagem para 10% /
-    left: 40%;
-    transform: translate(-30%, -50%);
     z-index: 2;
     color: #fff;
-    padding: 0px 40px; / Adicionado o valor de pixels para o padding */
-}
+
+  }
+
 
 main {
   height: 100vh;
   box-sizing: border-box;
 }
-    }
     body {
     font-size: 1vw;
     } */
@@ -95,6 +90,7 @@ img {
 }
 
 .texto2 {
+  display: fle;
   color: #0b0b0b;
   margin-top: 40px;
   text-align: justify;
@@ -102,11 +98,11 @@ img {
 }
 
 .imagem-principal {
-  position: absolute;
+  position: relative;
 }
 
 .botao-imagem {
-  position: absolute;
+  position: fixed;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -122,116 +118,3 @@ img {
 h2 {
   text-align: center;
 }
-
-
-/* 
-      @media screen and (max-width: 3000px) {
-        main {
-          height: 10vh;
-          width: 50%;
-        }
-      }
-      @media screen and (max-width: 2000px) {
-        main {
-          height: 9.6vh;
-          width: 50%;
-        }
-      }
-      @media screen and (max-width: 1800px) {
-        main {
-          height: 9vh;
-          width: 50%;
-        }
-        @media screen and (max-width: 1700px) {
-          main {
-            height: 8.5vh;
-            width: 50%;
-          }
-        }
-        @media screen and (max-width: 1600px) {
-          main {
-            height: 8vh;
-            width: 50%;
-          }
-      @media screen and (max-width: 1500px) {
-        main {
-          height: 7.5vh;
-          width: 50%;
-        }
-
-      } 
-      @media screen and (max-width: 1400px) {
-        main {
-          height: 7vh;
-          width: 50%;
-        }
-      }
-
-      @media screen and (max-width: 1300px) {
-        main {
-          height: 6.5vh;
-          width: 50%;
-        }
-      }
-      @media screen and (max-width: 1200px) {
-        main {
-          height: 5.8vh;
-          width: 50%;
-        }
-      }
-      
-      @media screen and (max-width: 1100px) {
-        main {
-          height: 5.1vh;
-          width: 50%;
-        }
-      }
-      @media screen and (max-width: 1000px) {
-        main {
-          height: 4.3vh;
-          width: 50%;
-        }
-      }
-
-      @media screen and (max-width: 900px) {
-        main {
-          height: 3.5vh;
-          width: 50%;
-        }
-      }
-      @media screen and (max-width: 800px) {
-        main {
-          height: 3vh;
-          width: 50%;
-        }
-      }
-
-      
-      @media screen and (max-width: 700px) {
-        main {
-          height: 2.2vh;
-          width: 50%;
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        main {
-          height: 1.4vh;
-          width: 50%;
-        }
-      }
-
-      @media screen and (max-width: 500px) {
-        main {
-          height: 1vh;
-          width: 50%;
-        }
-      }
-
-      @media screen and (max-width: 300px) {
-        main {
-          height: 1vh;
-          width: 50%;
-        }
-      }
-       */
