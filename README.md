@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Adoption Love
 
 `CURSO` -> `Análise e Desenvolvimento de Sistemas`
 
@@ -7,6 +7,14 @@
 `SEMESTRE`-> `Primeiro Semestre`
 
 Desenvolveremos uma aplicação web front-end que irá ser responsável por conectar pessoas que querem doar pets com outras que estão interessadas em adotar o pet que a mesma disponibilizou para adoção, por meio de nossa aplicação.
+
+## Como rodar o projeto
+
+<ol>
+  <li>Baixe o código em sua máquina.</li>
+  <li>Acesse o arquivo <strong>home.html</strong> localizado em: <strong><a href="./src/home/home.html">src/home/home.html</a></strong></li>
+  <li>Baixe a extensão do vs code chamda live server ou semelhante para seu editor e execute-a com o arquivo home.html aberto no seu editor de código</li>
+</ol>
 
 ## Integrantes
 

@@ -16,16 +16,16 @@
   <div id="menuPrincipal">
     <nav id="navegacaoMenu">
       <div id="logoMenu">
-        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+        <a href="/src/home/home.html"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
       </div>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Quero Doar</a></li>
+        <li><a href="/src/home/home.html">Inicio</a></li>
+        <li><a href="/src/CadastroPet/cadastropet.html">Quero Doar</a></li>
       </ul>
     </nav>
     <div id="botoesMenu">
       <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
-      <p id="botaoLogin"><a href="#">Entrar</a></p>
+      <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
     </div>
   </div>
 
@@ -33,13 +33,16 @@
 
   <main class="mainAdotar">
 
-    <!-- <h1>Página de adoção de pets</h1> -->
-    <div class="imgPrincipal"></div>
+
+    <h1 class="titleMain">Adote seu petzinho agora mesmo!</h1>
+    <!-- <p>fazer uma breve description do process</p> -->
+    <!-- <div class="imgPrincipal"></div> -->
 
     <section class="petsToAdoption">
       <div class="filters">
         <div class="contentFilters">
           <div>
+            <h2>Filtros</h2>
             <h3>Animais</h3>
             <div class="option">
               <label class="switch">
@@ -154,7 +157,7 @@
             <h2 class="namePet">Adote o Gilmar</h2>
             <p>3 anos</p>
           </div>
-          <button class="moreDetails">
+          <button onclick="irParaPet()" class="moreDetails">
             Mais detalhes
           </button>
         </div>
@@ -165,7 +168,7 @@
             <h2 class="namePet">Adote o Lucas</h2>
             <p>4 anos</p>
           </div>
-          <button class="moreDetails">
+          <button onclick="irParaPet()" class="moreDetails">
             Mais detalhes
           </button>
         </div>
@@ -176,7 +179,7 @@
             <h2 class="namePet">Adote a Mari</h2>
             <p>1 ano</p>
           </div>
-          <button class="moreDetails">
+          <button onclick="irParaPet()" class="moreDetails">
             Mais detalhes
           </button>
         </div>
@@ -187,7 +190,7 @@
             <h2 class="namePet">Adote a Mari</h2>
             <p>1 ano</p>
           </div>
-          <button class="moreDetails">
+          <button onclick="irParaPet()" class="moreDetails">
             Mais detalhes
           </button>
         </div>
@@ -198,7 +201,7 @@
             <h2 class="namePet">Adote o Jack</h2>
             <p>2 anos</p>
           </div>
-          <button class="moreDetails">
+          <button onclick="irParaPet()" class="moreDetails">
             Mais detalhes
           </button>
         </div>
@@ -209,17 +212,30 @@
             <h2 class="namePet">Adote o Gilmar</h2>
             <p>3 anos</p>
           </div>
-          <button class="moreDetails">
+          <button onclick="irParaPet()" class="moreDetails">
             Mais detalhes
           </button>
         </div>
 
       </div>
     </section>
+    <footer id="footerPrincipal" class="footer">
+      <div id="logoFooter">
+        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+      </div>
+      <div id="infoFooter">
+        <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
+      </div>
+      <div id="socialFooter">
+        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
+        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
+        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
+      </div>
+    </footer>
   </main>
 
 
-  <footer id="footerPrincipal" class="footer">
+  <!-- <footer id="footerPrincipal" class="footer">
     <div id="logoFooter">
       <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
     </div>
@@ -231,7 +247,8 @@
       <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
       <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
     </div>
-  </footer>
+  </footer> -->
+  <script src="adotar.js"></script>
 </body>
 
 </html>
