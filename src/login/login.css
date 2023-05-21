@@ -55,54 +55,77 @@
     cursor: pointer;
     transition: 0.2s 0.1s ease-in;
 }
-main {
-    height: 100vh;
+#footerPrincipal {
+    background-color: #59535F;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#logoFooter>a img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+#footerPrincipal>* {
+    margin: auto;
+    margin-right: 4vh;
+    margin-left: 4vh;
     box-sizing: border-box;
-  }
-      
-      body {
-      font-size: 1vw;
-      } */
-  
-  img {
-    width: 10vw;
-  }
-  
-  /@media screen and (max-width: 768px) {
-  
-    .logo,
-    .social-icons img {
-      max-width: 100%;
-      height: auto;
-  
+}
+
+#socialFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1vh;
+}
+
+#socialFooter>a img {
+    width: 25px;
+    height: 25px;
+}
+
+.mobileIcon{
+    display: none;
+}
+
+.mobileIcon > img{
+    width: 50px;
+    margin: auto;
+}
+
+.hiddenMenu{
+    display: none;
+}
+
+.visibleMenu{
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    background-color: #17479E;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+
+
+/*  TELAS  */
+
+
+@media(max-width:767px){
+    #navegacaoMenu > ul, #botoesMenu{
+        display: none;
     }
-  }
-  
-  .texto2 {
-    color: #0b0b0b;
-    margin-top: 40px;
-    text-align: justify;
-    padding: 0 20px;
-  }
-  
-  .imagem-principal {
-    position: absolute;
-  }
-  
-  .botao-imagem {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #ffa500;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    z-index: 3;
-  }
-  
-  h2 {
-    text-align: center;
-  }
+    
+    .mobileIcon{
+        display: block;
+    }
+}
