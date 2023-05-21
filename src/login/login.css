@@ -117,15 +117,3 @@
 }
 
 
-/*  TELAS  */
-
-
-@media(max-width:767px){
-    #navegacaoMenu > ul, #botoesMenu{
-        display: none;
-    }
-    
-    .mobileIcon{
-        display: block;
-    }
-}
