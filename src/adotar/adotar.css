@@ -9,6 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footer {
@@ -31,11 +33,12 @@
 
 /* Filtros ----------------------------------------------------------------- */
 .filters {
-  height: 950px;
+  /* min-height: 950px; */
   width: 25%;
   background-color: #0097B2;
   /* padding: 50px; */
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .contentFilters {
