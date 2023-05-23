@@ -49,7 +49,6 @@
 }
 
 .imagem-principal {
-  
   width: 100%;
   position: absolute;
   top: 10%;
@@ -61,31 +60,26 @@
   position: fixed;
   text-align: justify;
   top: 20%;
-    z-index: 2;
-    color: #fff;
-
-  }
-
+  z-index: 2;
+  color: #fff;
+}
 
 main {
   height: 100vh;
   box-sizing: border-box;
 }
-    body {
-    font-size: 1vw;
-    } */
-
-img {
+body {
+  font-size: 1vw;
+}
+*/ img {
   width: 10vw;
 }
 
-/@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
   .logo,
   .social-icons img {
     max-width: 100%;
     height: auto;
-
   }
 }
 
