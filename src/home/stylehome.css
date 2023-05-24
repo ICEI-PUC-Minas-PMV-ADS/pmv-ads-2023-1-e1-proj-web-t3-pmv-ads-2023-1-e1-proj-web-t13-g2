@@ -1,8 +1,6 @@
 .box-home {
   height: 950px;
   width: 100%;
-  /* display: flex;
-  align-items: center; */
   background: url("./images/imagemprincipal.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +21,6 @@
   outline: none;
   border: 2px solid orange;
   color: orange;
-  /* text-decoration: none; */
   background-color: white;
   padding: 1rem 5rem;
   border-radius: 10px;
