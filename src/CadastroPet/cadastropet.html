@@ -8,9 +8,14 @@
         <title>AdoptionLove</title>
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <meta name="description" content="">
+
+        <!-- Style -->
         <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/global.css">
         <link rel="stylesheet" href="./stylecadastropet.css">
+
+        <!-- Script -->
+        <script src="./scriptCadastroPet.js" defer></script>
     </head>
     <body>
         <header id="menuPrincipal">
@@ -30,16 +35,16 @@
         </header>
 
         <main class="content">
-            <div>
+            <div id="form">
                 <h1>Cadastre seu pet para adoção</h1>
-                <input type="text" placeholder="Nome do Pet"></input>
-                <input type="text" placeholder="Link da foto do Pet">
-                <div id="containerIdadeSexo">
-                    <input type="number" placeholder="Idade do Pet"></input>
-                    <input type="text" placeholder="Sexo do Pet">
+                <input id="petName" type="text" placeholder="Nome do Pet"></input>
+                <input type="text" placeholder="Link da foto do Pet"></input>
+                <div id="ageSex">
+                    <input id="petAge" type="number" placeholder="Idade do Pet"></input>
+                    <input type="text" placeholder="Sexo do Pet"></input>
                 </div>
-                <textarea rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
-                <button>CADASTRAR PET</button>
+                <textarea id="petDescription" rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
+                <button id="register" type="submit">CADASTRAR PET</button>
             </div>
             <img src="./img/dog_and_cat.png" alt="Foto Demonstrativa">
         </main>
