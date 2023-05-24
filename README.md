@@ -18,16 +18,15 @@ Desenvolveremos uma aplicação web front-end que irá ser responsável por cone
 
 ## Integrantes
 
-* Adenilson Nogueira Olivera
-* Diego Rafael Santos Silva
-* Ercules Mauricio De Siqueira Filho
-* Matheus Amaral Da Costa
-* Matheus Nunes Guimarães
-* Mayra Gabriella Vitoriana Machado
+- Adenilson Nogueira Olivera
+- Diego Rafael Santos Silva
+- Ercules Mauricio De Siqueira Filho
+- Matheus Nunes Guimarães
+- Mayra Gabriella Vitoriana Machado
 
 ## Orientador
 
-* Nathalia Assis Valentim
+- Nathalia Assis Valentim
 
 ## Instruções de utilização
 
@@ -51,12 +50,12 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+- Insira o endereço eletrônico público de acesso ao conteúdo publicado.
 
 # Armazenamento do Código-Fonte
 
-* <a href="src/README.md">Código Fonte</a>
+- <a href="src/README.md">Código Fonte</a>
 
 # Armazenamento da Apresentação
 
-* <a href="presentation/README.md">Apresentação da solução</a>
+- <a href="presentation/README.md">Apresentação da solução</a>
