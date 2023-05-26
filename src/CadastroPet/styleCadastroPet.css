@@ -15,7 +15,7 @@
     border-radius: 1vmin;
 }
 
-.content > div{
+.content > #form{
     padding: 2vh 2vw;
     display: flex;
     flex-direction: column;
@@ -24,12 +24,12 @@
     box-sizing: border-box;
 }
 
-.content h1{
+#form > h1{
     font-size: 5vmin;
     font-family: 'Nunito', sans-serif;
 }
 
-.content input{
+#form input{
     height: 3vh;
     width: 100%;
     border: none;
@@ -37,26 +37,10 @@
     text-indent: 1vmin;
     font-size: 2vmin;
     outline: none;
+    padding: 0;
 }
 
-.content button{
-    height: 7vh;
-    width: 100%;
-    color: white;
-    background-color: #3A70D1;
-    border: none;
-    border-radius: 1vmin;
-    font-size: 3vmin;
-    text-decoration: none;
-}
-
-.content button:hover{
-    background-color: orange;
-    cursor: pointer;
-    transition: 0.2s 0.1s ease-in;
-}
-
-.content textarea{
+#form > textarea{
     width: 100%;
     border: 1px solid gray;
     font-size: 2vmin;
@@ -68,16 +52,33 @@
     resize: none;
 }
 
-#containerIdadeSexo{
+#form > button{
+    height: 7vh;
+    width: 100%;
+    color: white;
+    background-color: #3A70D1;
+    border: none;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    text-decoration: none;
+}
+
+#form > button:hover{
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.2s 0.1s ease-in;
+}
+
+#ageSex{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#containerIdadeSexo > input{
+#ageSex > input{
     width: 45%;
 }
 
-.content input[type="file"]{
+/* .content input[type="file"]{
     
-}
+} */

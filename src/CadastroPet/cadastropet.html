@@ -1,53 +1,57 @@
 <!-- Ercules -->
 <!DOCTYPE html>
 <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AdoptionLove</title>
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <meta name="description" content="">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdoptionLove</title>
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-    <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="./stylecadastropet.css">
-</head>
+        <!-- Style -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="./stylecadastropet.css">
 
-<body>
-    <header id="menuPrincipal">
-        <nav id="navegacaoMenu">
-            <div id="logoMenu">
-                <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+        <!-- Script -->
+        <script src="./scriptCadastroPet.js" defer></script>
+    </head>
+    <body>
+        <header id="menuPrincipal">
+            <nav id="navegacaoMenu">
+                <div id="logoMenu">
+                    <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+                </div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Quero Doar</a></li>
+                </ul>
+            </nav>
+            <div id="botoesMenu">
+                <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
+                <p id="botaoLogin"><a href="#">Entrar</a></p>
             </div>
-            <ul>
-                <li><a href="/src/home/home.html">Inicio</a></li>
-                <li><a href="/src/CadastroPet/cadastropet.html">Quero Doar</a></li>
-            </ul>
-        </nav>
-        <div id="botoesMenu">
-            <p id="botaoAdotar"><a href="/src/adotar/adotar.html">Quero adotar</a></p>
-            <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
-        </div>
-    </header>
+        </header>
 
-    <main class="content">
-        <div>
-            <h1>Cadastre seu pet para adoção</h1>
-            <input type="text" placeholder="Nome do Pet"></input>
-            <input type="text" placeholder="Link da foto do Pet">
-            <div id="containerIdadeSexo">
-                <input type="number" placeholder="Idade do Pet"></input>
-                <input type="text" placeholder="Sexo do Pet">
+        <main class="content">
+            <div id="form">
+                <h1>Cadastre seu pet para adoção</h1>
+                <input id="petName" type="text" placeholder="Nome do Pet"></input>
+                <input type="text" placeholder="Link da foto do Pet"></input>
+                <div id="ageSex">
+                    <input id="petAge" type="number" placeholder="Idade do Pet"></input>
+                    <input type="text" placeholder="Sexo do Pet"></input>
+                </div>
+                <textarea id="petDescription" rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
+                <button id="register" type="submit">CADASTRAR PET</button>
             </div>
-            <textarea rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
-            <button>CADASTRAR PET</button>
-        </div>
-        <img src="./img/dog_and_cat.png" alt="Foto Demonstrativa">
-    </main>
+            <img src="./img/dog_and_cat.png" alt="Foto Demonstrativa">
+        </main>
+        
+        <footer id="footerPrincipal">
+            <div id="logoFooter">
 
-    <footer id="footerPrincipal">
-        <div id="logoFooter">
             <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
         </div>
         <div id="infoFooter">
