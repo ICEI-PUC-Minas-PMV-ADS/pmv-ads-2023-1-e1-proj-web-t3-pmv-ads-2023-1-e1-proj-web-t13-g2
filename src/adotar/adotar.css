@@ -3,8 +3,18 @@
   /* padding-top: 10px; */
 }
 
+.titleMain {
+  padding-top: 20px;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .footer {
-  margin-top: 90vh;
+  /* margin-top: 90vh; */
   padding-top: 50px;
 }
 
@@ -23,11 +33,12 @@
 
 /* Filtros ----------------------------------------------------------------- */
 .filters {
-  height: 950px;
-  width: 400px;
+  /* min-height: 950px; */
+  width: 25%;
   background-color: #0097B2;
   /* padding: 50px; */
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .contentFilters {
@@ -116,7 +127,7 @@ input:checked+.slider:before {
 /* pets ------------------------------------------------------------------- */
 .pets {
   /* height: 700px; */
-  width: calc(100% - 450px);
+  width: calc(70%);
   /* background-color: rgb(49, 83, 48); */
   display: flex;
   flex-wrap: wrap;
