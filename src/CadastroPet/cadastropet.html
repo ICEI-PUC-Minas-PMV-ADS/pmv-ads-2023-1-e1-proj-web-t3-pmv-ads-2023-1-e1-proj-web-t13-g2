@@ -42,7 +42,7 @@
                     <div class="error"></div>
                 </div>
                 <div class="input-control">
-                    <input id="petPhoto" name="petPhoto" type="file" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
+                    <input id="petPhoto" name="petPhoto" type="text" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
                     <div class="error"></div>
                 </div>
                 <div id="ageSex">
@@ -51,7 +51,12 @@
                         <div class="error"></div>
                     </div>
                     <div class="input-control">
-                        <input id="petSex" name="petSex" type="text" placeholder="Sexo do Pet"></input>
+                        <div id="petSex">
+                            <input id="petSexM" name="petSex" type="radio" value="M" />
+                            <label for="petSexM">Masculino</label>
+                            <input id="petSexF" name="petSex" type="radio" value="F" />
+                            <label for="petSexF">Feminino</label>
+                        </div>
                         <div class="error"></div>
                     </div>
                 </div>

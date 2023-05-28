@@ -17,7 +17,7 @@ form.addEventListener('submit', (event) => {
     petDescriptionValidation()
 
     if(listError.length === 0){
-        //form.submit()
+        form.submit()
     }
 })
 
@@ -59,11 +59,11 @@ function petAgeValidation(){
 }
 
 function petSexValidation(){
-    if(petSex.value === ""){
+    let sexM = petSex.querySelector("#petSexM")
+    let sexF = petSex.querySelector("#petSexF")
+    
+    if(sexM.checked !== true && sexF.checked !== true){
         petSex.showErrorMessage("Preencha o sexo do Pet")
-    }
-    else if(petSex.value !== "Masculino" && petSex.value !== "Feminino"){
-        petSex.showErrorMessage("Preencha com um sexo valido")
     }
     else{
         petSex.clearErrorMessage()
