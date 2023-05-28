@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Adoption Love
 
 `CURSO` -> `Análise e Desenvolvimento de Sistemas`
 
@@ -8,18 +8,25 @@
 
 Desenvolveremos uma aplicação web front-end que irá ser responsável por conectar pessoas que querem doar pets com outras que estão interessadas em adotar o pet que a mesma disponibilizou para adoção, por meio de nossa aplicação.
 
+## Como rodar o projeto
+
+<ol>
+  <li>Baixe o código em sua máquina.</li>
+  <li>Acesse o arquivo <strong>home.html</strong> localizado em: <strong><a href="./src/home/home.html">src/home/home.html</a></strong></li>
+  <li>Baixe a extensão do vs code chamda live server ou semelhante para seu editor e execute-a com o arquivo home.html aberto no seu editor de código</li>
+</ol>
+
 ## Integrantes
 
-* Adenilson Nogueira Olivera
-* Diego Rafael Santos Silva
-* Ercules Mauricio De Siqueira Filho
-* Matheus Amaral Da Costa
-* Matheus Nunes Guimarães
-* Mayra Gabriella Vitoriana Machado
+- Adenilson Nogueira Olivera
+- Diego Rafael Santos Silva
+- Ercules Mauricio De Siqueira Filho
+- Matheus Nunes Guimarães
+- Mayra Gabriella Vitoriana Machado
 
 ## Orientador
 
-* Nathalia Assis Valentim
+- Nathalia Assis Valentim
 
 ## Instruções de utilização
 
@@ -43,12 +50,12 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+- Insira o endereço eletrônico público de acesso ao conteúdo publicado.
 
 # Armazenamento do Código-Fonte
 
-* <a href="src/README.md">Código Fonte</a>
+- <a href="src/README.md">Código Fonte</a>
 
 # Armazenamento da Apresentação
 
-* <a href="presentation/README.md">Apresentação da solução</a>
+- <a href="presentation/README.md">Apresentação da solução</a>
