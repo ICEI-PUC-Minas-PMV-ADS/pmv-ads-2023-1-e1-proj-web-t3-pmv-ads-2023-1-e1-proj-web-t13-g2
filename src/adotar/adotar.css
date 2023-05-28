@@ -1,3 +1,7 @@
+.remove {
+  display: none;
+}
+
 .mainAdotar {
   margin-top: 106px;
   /* padding-top: 10px; */
@@ -21,7 +25,7 @@
 .imgPrincipal {
   height: 700px;
   width: 100%;
-  background-image: url('./img/imgPrincipal.png');
+  background-image: url("./img/imgPrincipal.png");
 }
 
 .petsToAdoption {
@@ -34,16 +38,15 @@
 /* Filtros ----------------------------------------------------------------- */
 .filters {
   /* min-height: 950px; */
-  width: 25%;
-  background-color: #0097B2;
+  width: 20%;
+  background-color: #0097b2;
   /* padding: 50px; */
   border-radius: 10px;
   margin-bottom: 30px;
 }
 
 .contentFilters {
-  padding: 50px;
-
+  padding: 4rem;
 }
 
 .option {
@@ -76,8 +79,8 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -88,22 +91,21 @@
   left: 2px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   /* background-color: #2196F3; */
-  background-color: #F9A870;
+  background-color: #f9a870;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   /* box-shadow: 0 0 1px #2196F3; */
-  box-shadow: 0 0 1px #F9A870;
+  box-shadow: 0 0 1px #f9a870;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(13px);
   -ms-transform: translateX(13px);
   transform: translateX(13px);
@@ -118,21 +120,14 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-
-
-
-
-
-
 /* pets ------------------------------------------------------------------- */
 .pets {
   /* height: 700px; */
-  width: calc(70%);
+  width: calc(75%);
   /* background-color: rgb(49, 83, 48); */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .pet {
@@ -155,13 +150,13 @@ input:checked+.slider:before {
 }
 
 .namePet {
-  color: #17479E;
+  color: #17479e;
 }
 
 .moreDetails {
   width: 100%;
   border-radius: 10px;
-  background-color: #F9A870;
+  background-color: #f9a870;
   border: none;
   color: white;
   height: 50px;
