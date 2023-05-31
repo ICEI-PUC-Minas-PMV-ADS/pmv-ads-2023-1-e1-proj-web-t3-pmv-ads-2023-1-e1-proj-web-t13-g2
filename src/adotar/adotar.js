@@ -78,9 +78,9 @@ let pets = [
     tipo: "cat",
   },
   {
-    id: "05",
-    name: "Gilmar",
-    img: "/src/adotar/img/petGilmar.png",
+    id: "08",
+    name: "Joaquim",
+    img: "/src/adotar/img/petJoaquim.jpg",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 3,
@@ -113,11 +113,13 @@ function irParaPet(id) {
 
 // console.log(petsDom);
 
-function filterBirds() {
-  const petsNoTypeBirds = pets.filter((pet) => pet.tipo != "bird");
+function toogle(propiedade, contentPropiedade) {
+  const petsFiltered = pets.filter(
+    (pet) => pet[propiedade] != contentPropiedade
+  );
 
   let p = [];
-  for (pet of petsNoTypeBirds) {
+  for (pet of petsFiltered) {
     if (typeof pet.id === "string") {
       p.push(document.getElementById(pet.id));
     }
@@ -126,7 +128,7 @@ function filterBirds() {
   let pClassesCss = [];
   p.map((pet) => {
     if (!!pet) {
-      let pClassesCss = [...pet.classList];
+      pClassesCss = [...pet.classList];
       if (pClassesCss.includes("remove") && !!pet) {
         pet.classList.remove("remove");
         return;
@@ -136,9 +138,17 @@ function filterBirds() {
   });
 }
 
-function filterDogs() {}
+function filterBirds() {
+  toogle("tipo", "bird");
+}
 
-function filterCats() {}
+function filterDogs() {
+  toogle("tipo", "dog");
+}
+
+function filterCats() {
+  toogle("tipo", "cat");
+}
 
 function filterFemale() {}
 
