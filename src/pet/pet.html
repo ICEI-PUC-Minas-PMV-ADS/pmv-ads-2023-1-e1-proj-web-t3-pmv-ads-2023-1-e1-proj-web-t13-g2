@@ -127,5 +127,34 @@
       </div>
     </footer>
     <script src="./pet.js"></script>
+    <script>
+      function showMobileMenu() {
+        mobileMenu = document.getElementById("mobileMenu");
+        if (mobileMenu.classList.contains("hiddenMenu")) {
+          mobileMenu.classList.remove("hiddenMenu");
+          mobileMenu.classList.add("visibleMenu");
+        } else {
+          mobileMenu.classList.remove("visibleMenu");
+          mobileMenu.classList.add("hiddenMenu");
+        }
+      }
+
+      const img = localStorage.getItem("imagem");
+      const nome = localStorage.getItem("nome");
+      const idade = localStorage.getItem("idade");
+
+      const petImg = document.getElementsByClassName("petImg");
+      petImg[0].src = img;
+
+      const nomePet = document.getElementById("nomePet");
+      nomePet.textContent = nome;
+
+      const idadePet = document.getElementById("idadePet");
+      idadePet.textContent = idade;
+
+      function voceAdotou() {
+        window.confirm("Parabéns você adotou o pet!");
+      }
+    </script>
   </body>
 </html>

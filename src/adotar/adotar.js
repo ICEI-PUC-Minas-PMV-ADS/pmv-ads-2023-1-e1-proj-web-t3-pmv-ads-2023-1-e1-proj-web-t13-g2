@@ -90,7 +90,7 @@ let pets = [
   },
 ];
 
-function irParaPet(id) {
+function irParaPet2(idimg, nome, idade) {
   if (typeof id === "string") {
     console.log(id);
     const pet = pets.filter((pet) => pet.id === id);
@@ -99,7 +99,10 @@ function irParaPet(id) {
     localStorage.setItem("pet", JSON.stringify(pet[0]));
   }
 
-  window.location.href = "/src/pet/pet.html";
+  window.location.href = "../pet/pet.html";
+  localStorage.setItem("imagem", img);
+  localStorage.setItem("nome", nome);
+  localStorage.setItem("idade", `${idade} anos`);
 }
 
 // let petsDom = {

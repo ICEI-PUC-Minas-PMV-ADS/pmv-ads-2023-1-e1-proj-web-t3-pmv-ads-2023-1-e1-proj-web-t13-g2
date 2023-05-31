@@ -29,7 +29,11 @@
     font-family: 'Nunito', sans-serif;
 }
 
-#form input{
+#form > .input-control{
+    width: 100%;
+}
+
+.input-control > input{
     height: 3vh;
     width: 100%;
     border: none;
@@ -40,7 +44,7 @@
     padding: 0;
 }
 
-#form > textarea{
+.input-control > textarea{
     width: 100%;
     border: 1px solid gray;
     font-size: 2vmin;
@@ -79,6 +83,18 @@
     width: 45%;
 }
 
-/* .content input[type="file"]{
-    
-} */
+/* Validation error */
+
+.input-control > .invalid{
+    border-color: red;
+}
+
+.input-control > .invalid::placeholder{
+    color: red;
+}
+
+.input-control > .error{
+    height: 1.4vmin;
+    font-size: 1.4vmin;
+    color: red;
+}
