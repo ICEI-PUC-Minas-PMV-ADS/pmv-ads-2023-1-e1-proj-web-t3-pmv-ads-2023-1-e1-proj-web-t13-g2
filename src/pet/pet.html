@@ -126,7 +126,7 @@
         <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
       </div>
     </footer>
-    <script src="./pet.js"></script>
+
     <script>
       function showMobileMenu() {
         mobileMenu = document.getElementById("mobileMenu");
@@ -139,22 +139,23 @@
         }
       }
 
-      const img = localStorage.getItem("imagem");
-      const nome = localStorage.getItem("nome");
-      const idade = localStorage.getItem("idade");
+      // const img = localStorage.getItem("imagem");
+      // const nome = localStorage.getItem("nome");
+      // const idade = localStorage.getItem("idade");
 
-      const petImg = document.getElementsByClassName("petImg");
-      petImg[0].src = img;
+      // const petImg = document.getElementsByClassName("petImg");
+      // petImg[0].src = img;
 
-      const nomePet = document.getElementById("nomePet");
-      nomePet.textContent = nome;
+      // const nomePet = document.getElementById("nomePet");
+      // nomePet.textContent = nome;
 
-      const idadePet = document.getElementById("idadePet");
-      idadePet.textContent = idade;
+      // const idadePet = document.getElementById("idadePet");
+      // idadePet.textContent = idade;
 
       function voceAdotou() {
         window.confirm("Parabéns você adotou o pet!");
       }
     </script>
+    <script src="./pet.js"></script>
   </body>
 </html>

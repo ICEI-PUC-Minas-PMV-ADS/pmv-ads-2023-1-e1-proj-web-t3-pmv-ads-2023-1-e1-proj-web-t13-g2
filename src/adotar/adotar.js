@@ -1,96 +1,17 @@
-let pets = [
-  {
-    id: "01",
-    name: "Gilmar",
-    img: "/src/adotar/img/petGilmar.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 3,
-    adotado: false,
-    sexo: "male",
-    tipo: "cat",
-  },
-  {
-    id: "02",
-    name: "Lucas",
-    img: "/src/adotar/img/petLucas.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 6,
-    adotado: false,
-    sexo: "male",
-    tipo: "dog",
-  },
+{
+  pets.map((pet) => {
+    let petElement = document.getElementById(pet.id);
+    console.log(petElement);
+    let imgPet = petElement.children[0];
+    imgPet.src = pet.img;
+    let namePet = petElement.children[1].children[0];
+    namePet.textContent = "Adote o(a) " + pet.name;
+    let agePet = petElement.children[1].children[1];
+    agePet.textContent = pet.idade + " anos";
+  });
+}
 
-  {
-    id: "03",
-    name: "Mari",
-    img: "/src/adotar/img/petMari.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 1,
-    adotado: false,
-    sexo: "male",
-    tipo: "cat",
-  },
-  {
-    id: "04",
-    name: "Gilmar",
-    img: "/src/adotar/img/petGilmar.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 3,
-    adotado: false,
-    sexo: "male",
-    tipo: "cat",
-  },
-  {
-    id: "06",
-    name: "Jack",
-    img: "/src/adotar/img/petJack.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 2,
-    adotado: false,
-    sexo: "male",
-    tipo: "dog",
-  },
-  {
-    id: "07",
-    name: "Gilmar",
-    img: "/src/adotar/img/petGilmar.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 3,
-    adotado: false,
-    sexo: "male",
-    tipo: "cat",
-  },
-  {
-    id: "08",
-    name: "Gilmar",
-    img: "/src/adotar/img/petGilmar.png",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 3,
-    adotado: false,
-    sexo: "male",
-    tipo: "cat",
-  },
-  {
-    id: "08",
-    name: "Joaquim",
-    img: "/src/adotar/img/petJoaquim.jpg",
-    description:
-      "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
-    idade: 3,
-    adotado: false,
-    sexo: "male",
-    tipo: "bird",
-  },
-];
-
-function irParaPet2(idimg, nome, idade) {
+function irParaPet(id) {
   if (typeof id === "string") {
     console.log(id);
     const pet = pets.filter((pet) => pet.id === id);
@@ -100,21 +21,7 @@ function irParaPet2(idimg, nome, idade) {
   }
 
   window.location.href = "../pet/pet.html";
-  localStorage.setItem("imagem", img);
-  localStorage.setItem("nome", nome);
-  localStorage.setItem("idade", `${idade} anos`);
 }
-
-// let petsDom = {
-//   p1: document.getElementById("01"),
-//   p2: document.getElementById("02"),
-//   p3: document.getElementById("03"),
-//   p4: document.getElementById("04"),
-//   p5: document.getElementById("05"),
-//   p6: document.getElementById("06"),
-// };
-
-// console.log(petsDom);
 
 function toogle(propiedade, contentPropiedade) {
   const petsFiltered = pets.filter(
