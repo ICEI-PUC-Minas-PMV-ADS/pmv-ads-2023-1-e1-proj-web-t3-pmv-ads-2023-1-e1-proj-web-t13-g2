@@ -10,32 +10,23 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="./stylecadastrocliente.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header id="menuPrincipal">
-        <nav id="navegacaoMenu">
-            <div id="logoMenu">
-                <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-            </div>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quero Doar</a></li>
-            </ul>
-        </nav>
-        <div id="botoesMenu">
-            <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
-            <p id="botaoLogin"><a href="#">Entrar</a></p>
-        </div>
+        <!-- Código do cabeçalho -->
     </header>
 
     <main class="content">
         <div>
             <h1>Faça seu cadastro</h1>
             <input type="text" id="nome" placeholder="Nome">
+            <div id="erroNome"></div>
             <input type="email" id="email" placeholder="E-mail">
+            <div id="erroEmail"></div>
             <input type="password" id="senha" placeholder="Senha">
+            <div id="erroSenha"></div>
             <input type="password" id="confirmarSenha" placeholder="Confirme a senha">
+            <div id="erroConfirmarSenha"></div>
             <button onclick="validarFormulario()">CADASTRO</button>
         </div>
         <img src="./img/love-bestfriends.jpg" alt="Foto Demonstrativa">
@@ -54,6 +45,7 @@
             <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
