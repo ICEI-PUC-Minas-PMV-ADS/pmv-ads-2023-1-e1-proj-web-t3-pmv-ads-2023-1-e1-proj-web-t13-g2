@@ -29,7 +29,7 @@ let pets = [
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 1,
     adotado: false,
-    sexo: "male",
+    sexo: "female",
     tipo: "cat",
   },
   {
@@ -40,7 +40,7 @@ let pets = [
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 1,
     adotado: false,
-    sexo: "male",
+    sexo: "female",
     tipo: "dog",
   },
 
@@ -75,7 +75,7 @@ let pets = [
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 3,
     adotado: false,
-    sexo: "male",
+    sexo: "female",
     tipo: "dog",
   },
   {

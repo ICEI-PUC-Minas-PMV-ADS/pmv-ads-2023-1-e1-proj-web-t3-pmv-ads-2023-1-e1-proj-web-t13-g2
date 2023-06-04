@@ -41,10 +41,10 @@
 
       <section class="petsToAdoption">
         <div class="filters">
+          <h2>Filtros <input type="checkbox" name="filters" id="filters" onchange="showFilters()"></h2>
           <div class="contentFilters">
             <div>
               <!-- <input type="checkbox" name="" id="" /> -->
-              <h2>Filtros</h2>
               <h3>Animais</h3>
               <div class="option">
                 <!-- <label class="switch"> -->
@@ -99,7 +99,7 @@
               </div>
               <div class="option">
                 <!-- <label class="switch"> -->
-                  <input type="checkbox" onchange="filterMinus5Years()" />
+                  <input id="checkbox" type="checkbox" onchange="filterMinus5Years()" />
                   <!-- <span class="slider round"></span> -->
                 </label>
                 <p>Até 5 anos</p>

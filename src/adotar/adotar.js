@@ -24,9 +24,7 @@ function irParaPet(id) {
 }
 
 function toogle(propiedade, contentPropiedade) {
-  const petsFiltered = pets.filter(
-    (pet) => pet[propiedade] != contentPropiedade
-  );
+  let petsFiltered = pets.filter((pet) => pet[propiedade] != contentPropiedade);
 
   let p = [];
   for (pet of petsFiltered) {
@@ -46,6 +44,43 @@ function toogle(propiedade, contentPropiedade) {
       pet.classList.add("remove");
     }
   });
+  petsFiltered = "";
+}
+
+function chekboxIdade(propiedade, logicaIdade, idade) {
+  let petsFiltered = "";
+  switch (logicaIdade) {
+    case "maior": {
+      petsFiltered = pets.filter((pet) => !(pet[propiedade] > idade));
+      break;
+    }
+    case "menorOuIgual": {
+      petsFiltered = pets.filter((pet) => !(pet[propiedade] <= idade));
+      break;
+    }
+    default:
+      return;
+  }
+
+  let p = [];
+  for (pet of petsFiltered) {
+    if (typeof pet.id === "string") {
+      p.push(document.getElementById(pet.id));
+    }
+  }
+  console.log(p);
+  let pClassesCss = [];
+  p.map((pet) => {
+    if (!!pet) {
+      pClassesCss = [...pet.classList];
+      if (pClassesCss.includes("remove") && !!pet) {
+        pet.classList.remove("remove");
+        return;
+      }
+      pet.classList.add("remove");
+    }
+  });
+  petsFiltered = "";
 }
 
 function filterBirds() {
@@ -60,10 +95,39 @@ function filterCats() {
   toogle("tipo", "cat");
 }
 
-function filterFemale() {}
+function filterFemale() {
+  toogle("sexo", "female");
+}
 
-function filterMale() {}
+function filterMale() {
+  toogle("sexo", "male");
+}
 
-function filterMore5Years() {}
+function filterMore5Years() {
+  chekboxIdade("idade", "maior", 5);
+}
 
-function filterMinus5Years() {}
+function filterMinus5Years() {
+  chekboxIdade("idade", "menorOuIgual", 3);
+}
+
+function filterMinus2Years() {
+  chekboxIdade("idade", "menorOuIgual", 2);
+}
+
+const showFilters = () => {
+  let filters = document.getElementsByClassName("filters")[0];
+  let contentFilters = document.getElementsByClassName("contentFilters")[0];
+
+  console.log(filters);
+
+  let classOfFilters = [...filters.classList];
+
+  if (!!classOfFilters.includes("removeFilters")) {
+    filters.classList.remove("removeFilters");
+    contentFilters.classList.remove("remove");
+  } else {
+    filters.classList.add("removeFilters");
+    contentFilters.classList.add("remove");
+  }
+};
