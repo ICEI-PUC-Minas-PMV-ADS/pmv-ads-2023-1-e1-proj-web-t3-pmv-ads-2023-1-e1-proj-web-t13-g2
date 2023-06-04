@@ -17,7 +17,7 @@ form.addEventListener('submit', (event) => {
     petDescriptionValidation()
 
     if(listError.length === 0){
-        form.submit()
+        //form.submit()
     }
 })
 
@@ -36,7 +36,10 @@ function petNameValidation(){
 
 function petPhotoValidation(){
     if(petPhoto.value === ""){
-        petPhoto.showErrorMessage("Envie a foto do Pet")
+        petPhoto.showErrorMessage("Preencha o link da foto do Pet")
+    }
+    else if (!/^https:\/\/.+\.com\/.+$/.test(petPhoto.value)) {
+        petPhoto.showErrorMessage("Formato de link inválido");
     }
     else{
         petPhoto.clearErrorMessage()
@@ -63,7 +66,7 @@ function petSexValidation(){
     let sexF = petSex.querySelector("#petSexF")
     
     if(sexM.checked !== true && sexF.checked !== true){
-        petSex.showErrorMessage("Preencha o sexo do Pet")
+        petSex.showErrorMessage("Selecione o sexo do Pet")
     }
     else{
         petSex.clearErrorMessage()

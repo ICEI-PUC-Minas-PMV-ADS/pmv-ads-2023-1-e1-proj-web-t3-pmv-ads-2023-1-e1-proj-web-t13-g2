@@ -56,15 +56,27 @@
     resize: none;
 }
 
-.input-control label{
+div > .input-control > div{
+    display: flex;
     height: 3vh;
     width: 100%;
-    border: none;
-    text-indent: 1vmin;
+    border: 1px solid gray;
+    border-radius: 1vmin;
     font-size: 2vmin;
-    outline: none;
     padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
+
+.input-control > div > label{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    justify-content: center;
+} 
 
 #form > button{
     height: 7vh;
@@ -94,40 +106,30 @@
     width: 45%;
 }
 
-#petSex {
-    height: fit-content;
-    display: flex;
-    border: 1px solid gray;
-    border-radius: 1vmin;
-    overflow: hidden;
-}
-
 input[type="radio"] {
     display: none;
 }
 
-#petSex label {
-    text-align: center;
-    color: gray;
-    cursor: pointer;
-}
-
-#petSex > input[type="radio"]:checked + label {
+.input-control div.invalid > input[type="radio"]:checked + label,
+input[type="radio"]:checked + label {
     background-color: #3A70D1;
     color: white;
 }
 
 /* Validation error */
 
-.input-control .invalid{
+.input-control > .invalid{
     border-color: red;
 }
 
+.input-control div.invalid > label,
 .input-control .invalid::placeholder{
     color: red;
 }
 
 .input-control > .error{
+    padding: 0;
+    margin: 0;
     height: 1.4vmin;
     font-size: 1.4vmin;
     color: red;
