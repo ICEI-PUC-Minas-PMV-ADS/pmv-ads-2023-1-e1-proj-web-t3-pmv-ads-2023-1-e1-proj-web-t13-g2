@@ -55,65 +55,21 @@
     cursor: pointer;
     transition: 0.2s 0.1s ease-in;
 }
-#footerPrincipal {
-    background-color: #59535F;
-    color: white;
-    font-weight: bold;
+
+.links{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-    overflow: hidden;
-}
-
-#logoFooter>a img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
-
-#footerPrincipal>* {
-    margin: auto;
-    margin-right: 4vh;
-    margin-left: 4vh;
-    box-sizing: border-box;
-}
-
-#socialFooter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 1vh;
-}
-
-#socialFooter>a img {
-    width: 25px;
-    height: 25px;
-}
-
-.mobileIcon{
-    display: none;
-}
-
-.mobileIcon > img{
-    width: 50px;
-    margin: auto;
-}
-
-.hiddenMenu{
-    display: none;
-}
-
-.visibleMenu{
-    display: block;
-    position: fixed;
-    z-index: 2000;
-    background-color: #17479E;
-    color: white;
-    height: 100vh;
+    flex-direction: column;
+    align-items: start;
     width: 100%;
-    top: 0px;
-    right: 0px;
+    height: 5vmin;
+    justify-content: space-between;
 }
 
+.link{
+    color: gray;
+}
 
+a{
+    text-decoration: none;
+    color: #17479E;
+}

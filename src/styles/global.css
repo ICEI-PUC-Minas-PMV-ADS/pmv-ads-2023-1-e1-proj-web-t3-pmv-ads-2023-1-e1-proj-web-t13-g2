@@ -92,6 +92,8 @@ main {
     border-radius: 5px;
 }
 
+
+
 /* Rodapé */
 
 #footerPrincipal {
@@ -130,6 +132,7 @@ main {
     height: 25px;
 }
 
+
 .mobileIcon{
     display: none;
 }
@@ -143,16 +146,67 @@ main {
     display: none;
 }
 
+#mobileMenu nav{
+    width: 100%;
+    padding: 0;
+    border-top: 2px solid #17479E;
+}
+
+#mobileMenu nav ul{
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+#mobileMenu nav ul li{
+    margin-top: 2vh;
+    font-size: 1.2em;
+}
+
+#mobileMenuButtons{
+    width: 100%;
+    text-align: center;
+    height: 30%;
+}
+
+#mobileMenuButtons p{
+    border: 2px solid #17479E;
+    padding: 1vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 2vh;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+#mobileMenuButtons p:first-child{
+    background-color: orange;
+    color: black;
+}
+
+#mobileMenuButtons p a{
+    text-align: center;
+}
+
 .visibleMenu{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
     position: fixed;
     z-index: 2000;
-    background-color: #17479E;
-    color: white;
+    background-color: #cfcfcf;
     height: 100vh;
     width: 100%;
     top: 0px;
     right: 0px;
+}
+
+.visibleMenu a{
+    text-decoration: none;
+    color: #17479E;
 }
 
 
@@ -167,4 +221,20 @@ main {
     .mobileIcon{
         display: block;
     }
+
+    #mobileMenu>div:nth-child(1) img{
+        width: 200px;
+    }
+
+    #closeIcon{
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    #footerPrincipal{
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
 }
