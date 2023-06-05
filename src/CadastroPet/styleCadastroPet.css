@@ -15,8 +15,20 @@
     border-radius: 1vmin;
 }
 
+@media (max-width: 1500px){
+    .content > *{
+        height: 65vmin;
+        width: 65vmin;
+        margin: 0;
+    }
+    
+    .content > img{
+        display: none;
+    }    
+}
+
 .content > #form{
-    padding: 2vh 2vw;
+    padding: 2vmin 2vmin;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,7 +46,7 @@
 }
 
 .input-control > input{
-    height: 3vh;
+    height: 3vmin;
     width: 100%;
     border: none;
     border-bottom: 1px solid gray;
@@ -58,7 +70,7 @@
 
 div > .input-control > div{
     display: flex;
-    height: 3vh;
+    height: 3vmin;
     width: 100%;
     border: 1px solid gray;
     border-radius: 1vmin;
@@ -79,7 +91,7 @@ div > .input-control > div{
 } 
 
 #form > button{
-    height: 7vh;
+    height: 7vmin;
     width: 100%;
     color: white;
     background-color: #3A70D1;
