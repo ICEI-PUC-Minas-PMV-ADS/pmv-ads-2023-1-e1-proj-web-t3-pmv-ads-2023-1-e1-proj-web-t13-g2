@@ -39,25 +39,30 @@
                 <h1>Cadastre seu pet para adoção</h1>
                 <div class="input-control">
                     <input id="petName" name="petName" type="text" placeholder="Nome do Pet"></input>
-                    <div class="error"></div>
+                    <p class="error"></p>
                 </div>
                 <div class="input-control">
-                    <input id="petPhoto" name="petPhoto" type="file" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
-                    <div class="error"></div>
+                    <input id="petPhoto" name="petPhoto" type="text" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
+                    <p class="error"></p>
                 </div>
                 <div id="ageSex">
                     <div class="input-control">
                         <input id="petAge" name="petAge" type="number" placeholder="Idade do Pet"></input>
-                        <div class="error"></div>
+                        <p class="error"></p>
                     </div>
                     <div class="input-control">
-                        <input id="petSex" name="petSex" type="text" placeholder="Sexo do Pet"></input>
-                        <div class="error"></div>
+                        <div id="petSex">
+                            <input id="petSexM" name="petSex" type="radio" value="M" />
+                            <label for="petSexM">Masculino</label>
+                            <input id="petSexF" name="petSex" type="radio" value="F" />
+                            <label for="petSexF">Feminino</label>
+                        </div>
+                        <p class="error"></p>
                     </div>
                 </div>
                 <div class="input-control">
                     <textarea id="petDescription" name="petDescription" rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
-                    <div class="error"></div>
+                    <p class="error"></p>
                 </div>
                 <button id="register" type="submit">CADASTRAR PET</button>
             </form>
@@ -66,18 +71,17 @@
 
         <footer id="footerPrincipal">
             <div id="logoFooter">
-
-            <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-        </div>
-        <div id="infoFooter">
-            <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
-        </div>
-        <div id="socialFooter">
-            <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
-            <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
-            <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
-        </div>
-    </footer>
-</body>
+                <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+            </div>
+            <div id="infoFooter">
+                <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
+            </div>
+            <div id="socialFooter">
+                <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
+                <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
+                <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
+            </div>
+        </footer>
+    </body>
 
 </html>

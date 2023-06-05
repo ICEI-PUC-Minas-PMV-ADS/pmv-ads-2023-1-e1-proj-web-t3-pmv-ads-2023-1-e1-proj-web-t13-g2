@@ -36,7 +36,10 @@ function petNameValidation(){
 
 function petPhotoValidation(){
     if(petPhoto.value === ""){
-        petPhoto.showErrorMessage("Envie a foto do Pet")
+        petPhoto.showErrorMessage("Preencha o link da foto do Pet")
+    }
+    else if (!/^https:\/\/.+\.com\/.+$/.test(petPhoto.value)) {
+        petPhoto.showErrorMessage("Formato de link inválido");
     }
     else{
         petPhoto.clearErrorMessage()
@@ -59,11 +62,11 @@ function petAgeValidation(){
 }
 
 function petSexValidation(){
-    if(petSex.value === ""){
-        petSex.showErrorMessage("Preencha o sexo do Pet")
-    }
-    else if(petSex.value !== "Masculino" && petSex.value !== "Feminino"){
-        petSex.showErrorMessage("Preencha com um sexo valido")
+    let sexM = petSex.querySelector("#petSexM")
+    let sexF = petSex.querySelector("#petSexF")
+    
+    if(sexM.checked !== true && sexF.checked !== true){
+        petSex.showErrorMessage("Selecione o sexo do Pet")
     }
     else{
         petSex.clearErrorMessage()
