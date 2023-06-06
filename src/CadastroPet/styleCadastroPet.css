@@ -45,22 +45,24 @@
     width: 100%;
 }
 
+.input-control > select,
+.input-control > div,
+.input-control > textarea,
 .input-control > input{
-    height: 3vmin;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    text-indent: 1vmin;
     font-size: 2vmin;
     outline: none;
+    border: 1px solid gray;
+}
+
+.input-control > input{
+    height: 3vmin;
+    border-width: 0 0 1px 0;
+    text-indent: 1vmin;
     padding: 0;
 }
 
 .input-control > textarea{
-    width: 100%;
-    border: 1px solid gray;
-    font-size: 2vmin;
-    outline: none;
     border-radius: 1vmin;
     padding: 1vmin;
     font-family: sans-serif;
@@ -68,16 +70,20 @@
     resize: none;
 }
 
-div > .input-control > div{
+.input-control > div{
     display: flex;
     height: 3vmin;
-    width: 100%;
-    border: 1px solid gray;
     border-radius: 1vmin;
-    font-size: 2vmin;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.input-control > select{
+    height: 3vmin;
+    border-radius: 1vmin;
+    color: gray;
+    text-indent: 1vmin;
 }
 
 .input-control > div > label{
@@ -88,7 +94,7 @@ div > .input-control > div{
     cursor: pointer;
     color: gray;
     justify-content: center;
-} 
+}
 
 #form > button{
     height: 7vmin;
@@ -107,14 +113,15 @@ div > .input-control > div{
     transition: 0.2s 0.1s ease-in;
 }
 
+#nameType,
 #ageSex{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#ageSex > div,
-#ageSex > input{
+#nameType > div,
+#ageSex > div{
     width: 45%;
 }
 
