@@ -141,6 +141,7 @@ input[type="radio"]:checked + label {
     border-color: red;
 }
 
+.input-control select.invalid,
 .input-control div.invalid > label,
 .input-control .invalid::placeholder{
     color: red;
