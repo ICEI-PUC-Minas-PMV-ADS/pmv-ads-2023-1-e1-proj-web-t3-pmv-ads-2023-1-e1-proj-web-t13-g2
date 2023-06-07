@@ -36,7 +36,7 @@ function petNameValidation(){
 }
 
 function petTypeValidation(){
-    if(petType.value == ""){
+    if(petType.value === ""){
         petType.showErrorMessage("Selecione o tipo do Pet")
     }
     else{
