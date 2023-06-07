@@ -21,19 +21,14 @@
             <ul>
                 <li><a href="/src/home/home.html">Inicio</a></li>
             </ul>
-           
         </nav>
         <div id="botoesMenu">
-
             <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
-
         </div>
         <div class="mobileIcon" onclick="showMobileMenu()">
             <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
         </div>
-        
     </div>
-    
     <div id="mobileMenu" class="hiddenMenu">
         <p>Teste</p>
         <div class="mobileIcon" onclick="showMobileMenu()">
@@ -43,18 +38,20 @@
             style="width: 30px"
           />
         </div>
-      </div>
+    </div>
+   
     <main class="content">
-        <div>
+        <form id="form">
             <h1>Faça o login</h1>
-
-            <input type="email" id="email" placeholder="E-mail">
-            <div id="erroEmail"></div>
-            <input type="password" id="senha" placeholder="Senha">
-            <div id="erroSenha"></div>
-
-            <button onclick="validarFormulario()">Login</button>
-
+            <div class="input-control">
+                <input type="text" id="email" placeholder="E-mail">
+                <p class="error"></p>
+            </div>
+            <div class="input-control">
+                <input type="password" id="senha" placeholder="Senha">
+                <p class="error"></p>
+            </div>
+            <button id="register" type="submit">Login</button>
             <div class="links">
                 <div class="link">
                    <li>Esqueceu sua <a href="/src/NovaSenha/novasenha.html">senha?</a></li>
@@ -63,7 +60,7 @@
                    <li>Não tem conta? <a href="/src/CadastroCliente/cadastrocliente.html">Criar</a></li>
                 </div>
             </div>
-        </div>
+        </form>
        
         <img src="./img/cat_and_dog_love.png" alt="Foto Demonstrativa">
     </main>
