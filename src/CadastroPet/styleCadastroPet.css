@@ -113,15 +113,13 @@
     transition: 0.2s 0.1s ease-in;
 }
 
-#nameType,
-#ageSex{
+#row-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#nameType > div,
-#ageSex > div{
+#row-container > div{
     width: 45%;
 }
 
