@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="./login.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <script src="loginscript.js" defer></script>
 </head>
 <body>
-    <header id="menuPrincipal">
+    <div id="menuPrincipal">
         <nav id="navegacaoMenu">
             <div id="logoMenu">
                 <a href="/src/home/home.html"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
@@ -20,25 +21,37 @@
             <ul>
                 <li><a href="/src/home/home.html">Inicio</a></li>
             </ul>
-           
         </nav>
         <div id="botoesMenu">
-
             <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
-
         </div>
-        
-    </header>
-
+        <div class="mobileIcon" onclick="showMobileMenu()">
+            <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+        </div>
+    </div>
+    <div id="mobileMenu" class="hiddenMenu">
+        <p>Teste</p>
+        <div class="mobileIcon" onclick="showMobileMenu()">
+          <img
+            src="../images/closeicon.png"
+            alt="Mobile Icon"
+            style="width: 30px"
+          />
+        </div>
+    </div>
+   
     <main class="content">
-        <div>
+        <form id="form">
             <h1>Faça o login</h1>
-
-            <input type="email" placeholder="E-mail"></input>
-            <input type="password" placeholder="Senha"></input>
-
-            <button>Login</button>
-
+            <div class="input-control">
+                <input type="text" id="email" placeholder="E-mail">
+                <p class="error"></p>
+            </div>
+            <div class="input-control">
+                <input type="password" id="senha" placeholder="Senha">
+                <p class="error"></p>
+            </div>
+            <button id="register" type="submit">Login</button>
             <div class="links">
                 <div class="link">
                    <li>Esqueceu sua <a href="/src/NovaSenha/novasenha.html">senha?</a></li>
@@ -47,7 +60,7 @@
                    <li>Não tem conta? <a href="/src/CadastroCliente/cadastrocliente.html">Criar</a></li>
                 </div>
             </div>
-        </div>
+        </form>
        
         <img src="./img/cat_and_dog_love.png" alt="Foto Demonstrativa">
     </main>

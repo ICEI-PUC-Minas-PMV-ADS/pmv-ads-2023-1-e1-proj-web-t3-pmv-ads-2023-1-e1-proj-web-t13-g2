@@ -1,254 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdoptionLove</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./adotar.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AdoptionLove</title>
-  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-  <meta name="description" content="">
-  <link rel="stylesheet" href="../styles/global.css">
-  <link rel="stylesheet" href="./adotar.css">
-</head>
-
-<body>
-  <div id="menuPrincipal">
-    <nav id="navegacaoMenu">
-      <div id="logoMenu">
-        <a href="/src/home/home.html"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
+  <body>
+    <div id="menuPrincipal">
+      <nav id="navegacaoMenu">
+        <div id="logoMenu">
+          <a href="/src/home/home.html"
+            ><img src="../images/logo.png" alt="Logo AdoptionLove"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="/src/home/home.html">Inicio</a></li>
+          <li><a href="/src/CadastroPet/cadastropet.html">Quero Doar</a></li>
+        </ul>
+      </nav>
+      <div id="botoesMenu">
+        <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
+        <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
       </div>
-      <ul>
-        <li><a href="/src/home/home.html">Inicio</a></li>
-        <li><a href="/src/CadastroPet/cadastropet.html">Quero Doar</a></li>
-      </ul>
-    </nav>
-    <div id="botoesMenu">
-      <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
-      <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
     </div>
-  </div>
 
+    <main class="mainAdotar">
+      <h1 class="titleMain">Adote seu petzinho agora mesmo!</h1>
 
+      <section class="petsToAdoption">
+        <div class="filters">
+          <h2>Filtros <input type="checkbox" name="filters" id="filters" onchange="showFilters()"></h2>
+          <div class="contentFilters">
+            <div>
+              <h3>Animais</h3>
+              <div class="option">
+                  <input type="checkbox" onchange="filterBirds()" />
+                </label>
+                <p>Passáros</p>
+              </div>
 
-  <main class="mainAdotar">
+              <div class="option">
+                  <input type="checkbox" onchange="filterDogs()" />
+                </label>
+                <p>Cães</p>
+              </div>
 
-
-    <h1 class="titleMain">Adote seu petzinho agora mesmo!</h1>
-    <!-- <p>fazer uma breve description do process</p> -->
-    <!-- <div class="imgPrincipal"></div> -->
-
-    <section class="petsToAdoption">
-      <div class="filters">
-        <div class="contentFilters">
-          <div>
-            <h2>Filtros</h2>
-            <h3>Animais</h3>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Caprinos</p>
+              <div class="option">
+                  <input type="checkbox" onchange="filterCats()" />
+                </label>
+                <p>Gatos</p>
+              </div>
+            </div>
+            <div>
+              <h3>Sexo</h3>
+              <div class="option">
+                  <input type="checkbox" onchange="filterFemale()" />
+                </label>
+                <p>Fêmea</p>
+              </div>
+              <div class="option">
+                  <input type="checkbox" onchange="filterMale()" />
+                </label>
+                <p>Macho</p>
+              </div>
             </div>
 
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Cavalos</p>
+            <div>
+              <h3>Idade</h3>
+              <div class="option">
+                  <input type="checkbox" onchange="filterMore5Years()" />
+                </label>
+                <p>mais de 5 anos</p>
+              </div>
+              <div class="option">
+                  <input id="checkbox" type="checkbox" onchange="filterMinus5Years()" />
+                </label>
+                <p>Até 5 anos</p>
+              </div>
+              <div class="option">
+                  <input type="checkbox" onchange="filterMinus2Years()" />
+                </label>
+                <p>até 2 anos</p>
+              </div>
             </div>
-
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Cães</p>
-            </div>
-
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Gatos</p>
-            </div>
-
-
-          </div>
-          <div>
-            <h3>Sexo</h3>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Fêmea</p>
-            </div>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Macho</p>
-            </div>
-
-          </div>
-          <div>
-            <h3>Porte</h3>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>G (mais de 25kg)</p>
-            </div>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>M (até 25kg)</p>
-            </div>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>P (até 10kg)</p>
-            </div>
-
-          </div>
-          <div>
-            <h3>Idade</h3>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Até 10 anos</p>
-            </div>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>Até 5 anos</p>
-            </div>
-            <div class="option">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p>até 2 anos</p>
-            </div>
-
           </div>
         </div>
-
-      </div>
-      <div class="pets">
-
-        <div class="pet">
-          <img src="./img/petGilmar.png" alt="Foto do Pet">
-          <div class="details">
-            <h2 class="namePet">Adote o Gilmar</h2>
-            <p>3 anos</p>
+        <div class="pets">
+          <div class="pet" id="01">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('01')" class="moreDetails">
+              Mais detalhes
+            </button>
           </div>
-          <button onclick="irParaPet('./img/petGilmar.png','Gilmar',9)" class="moreDetails">
-            Mais detalhes
-          </button>
-        </div>
 
-        <div class="pet">
-          <img src="./img/petLucas.png" alt="Foto do Pet">
-          <div class="details">
-            <h2 class="namePet">Adote o Lucas</h2>
-            <p>4 anos</p>
+          <div class="pet" id="02">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('02')" class="moreDetails">
+              Mais detalhes
+            </button>
           </div>
-          <button onclick="irParaPet('./img/petLucas.png','Lucas',4)" class="moreDetails">
-            Mais detalhes
-          </button>
-        </div>
 
-        <div class="pet">
-          <img src="./img/petMari.png" alt="Foto do Pet">
-          <div class="details">
-            <h2 class="namePet">Adote a Mari</h2>
-            <p>1 ano</p>
+          <div class="pet" id="03">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('03')" class="moreDetails">
+              Mais detalhes
+            </button>
           </div>
-          <button onclick="irParaPet('./img/petMari.png','Mari',7)" class="moreDetails">
-            Mais detalhes
-          </button>
-        </div>
 
-        <div class="pet">
-          <img src="./img/petMari.png" alt="Foto do Pet">
-          <div class="details">
-            <h2 class="namePet">Adote a Mari</h2>
-            <p>1 ano</p>
+          <div class="pet" id="04">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('04')" class="moreDetails">
+              Mais detalhes
+            </button>
           </div>
-          <button onclick="irParaPet('./img/petMari.png','Mari',3)" class="moreDetails">
-            Mais detalhes
-          </button>
-        </div>
 
-        <div class="pet">
-          <img src="./img/petJack.png" alt="Foto do Pet">
-          <div class="details">
-            <h2 class="namePet">Adote o Jack</h2>
-            <p>2 anos</p>
+          <div class="pet" id="05">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('05')" class="moreDetails">
+              Mais detalhes
+            </button>
           </div>
-          <button onclick="irParaPet('./img/petJack.png','Jack',11)" class="moreDetails">
-            Mais detalhes
-          </button>
-        </div>
 
-        <div class="pet">
-          <img src="./img/petGilmar.png" alt="Foto do Pet">
-          <div class="details">
-            <h2 class="namePet">Adote o Gilmar</h2>
-            <p>3 anos</p>
+          <div class="pet" id="06">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('06')" class="moreDetails">
+              Mais detalhes
+            </button>
           </div>
-          <button onclick="irParaPet('./img/petLucas.png','Gilmar',9)" class="moreDetails">
-            Mais detalhes
-          </button>
+
+          <div class="pet" id="07">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('07')" class="moreDetails">
+              Mais detalhes
+            </button>
+          </div>
+
+          <div class="pet" id="08">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('08')" class="moreDetails">
+              Mais detalhes
+            </button>
+          </div>
+
+          <div class="pet" id="09">
+            <img src="" alt="Foto do Pet" />
+            <div class="details">
+              <h2 class="namePet"></h2>
+              <p></p>
+            </div>
+            <button onclick="irParaPet('09')" class="moreDetails">
+              Mais detalhes
+            </button>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-    <footer id="footerPrincipal" class="footer">
-      <div id="logoFooter">
-        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-      </div>
-      <div id="infoFooter">
-        <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
-      </div>
-      <div id="socialFooter">
-        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
-        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
-        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
-      </div>
-    </footer>
-  </main>
+      <footer id="footerPrincipal" class="footer">
+        <div id="logoFooter">
+          <a href="#"
+            ><img src="../images/logo.png" alt="Logo AdoptionLove"
+          /></a>
+        </div>
+        <div id="infoFooter">
+          <p>
+            Desenvolvido por
+            <span style="color: #17479e">AdoptionLove</span> &copy; 2023
+          </p>
+        </div>
+        <div id="socialFooter">
+          <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
+          <a href="#"
+            ><img src="../images/igicon.png" alt="Logo Instagram"
+          /></a>
+          <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
+        </div>
+      </footer>
+    </main>
 
-
-  <!-- <footer id="footerPrincipal" class="footer">
-    <div id="logoFooter">
-      <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-    </div>
-    <div id="infoFooter">
-      <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
-    </div>
-    <div id="socialFooter">
-      <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
-      <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
-      <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
-    </div>
-  </footer> -->
-  <script src="adotar.js"></script>
-</body>
-
+    <script src="../../src/data/data.js"></script>
+    <script src="adotar.js"></script>
+  </body>
 </html>

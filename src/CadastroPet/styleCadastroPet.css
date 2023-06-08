@@ -15,8 +15,20 @@
     border-radius: 1vmin;
 }
 
+@media (max-width: 1500px){
+    .content > *{
+        height: 65vmin;
+        width: 65vmin;
+        margin: 0;
+    }
+    
+    .content > img{
+        display: none;
+    }    
+}
+
 .content > #form{
-    padding: 2vh 2vw;
+    padding: 2vmin 2vmin;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,22 +45,24 @@
     width: 100%;
 }
 
+.input-control > select,
+.input-control > div,
+.input-control > textarea,
 .input-control > input{
-    height: 3vh;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    text-indent: 1vmin;
     font-size: 2vmin;
     outline: none;
+    border: 1px solid gray;
+}
+
+.input-control > input{
+    height: 3vmin;
+    border-width: 0 0 1px 0;
+    text-indent: 1vmin;
     padding: 0;
 }
 
 .input-control > textarea{
-    width: 100%;
-    border: 1px solid gray;
-    font-size: 2vmin;
-    outline: none;
     border-radius: 1vmin;
     padding: 1vmin;
     font-family: sans-serif;
@@ -56,8 +70,34 @@
     resize: none;
 }
 
+.input-control > div{
+    display: flex;
+    height: 3vmin;
+    border-radius: 1vmin;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.input-control > select{
+    height: 3vmin;
+    border-radius: 1vmin;
+    color: gray;
+    text-indent: 1vmin;
+}
+
+.input-control > div > label{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    justify-content: center;
+}
+
 #form > button{
-    height: 7vh;
+    height: 7vmin;
     width: 100%;
     color: white;
     background-color: #3A70D1;
@@ -73,14 +113,26 @@
     transition: 0.2s 0.1s ease-in;
 }
 
+#nameType,
 #ageSex{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#ageSex > input{
+#nameType > div,
+#ageSex > div{
     width: 45%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.input-control div.invalid > input[type="radio"]:checked + label,
+input[type="radio"]:checked + label {
+    background-color: #3A70D1;
+    color: white;
 }
 
 /* Validation error */
@@ -89,11 +141,15 @@
     border-color: red;
 }
 
-.input-control > .invalid::placeholder{
+.input-control select.invalid,
+.input-control div.invalid > label,
+.input-control .invalid::placeholder{
     color: red;
 }
 
 .input-control > .error{
+    padding: 0;
+    margin: 0;
     height: 1.4vmin;
     font-size: 1.4vmin;
     color: red;

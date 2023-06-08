@@ -1,23 +1,24 @@
 const form = document.getElementById("form")
 const petName = document.getElementById("petName")
+const petType = document.getElementById("petType")
 const petPhoto = document.getElementById("petPhoto")
 const petAge = document.getElementById("petAge")
 const petSex = document.getElementById("petSex")
 const petDescription = document.getElementById("petDescription")
-const register = document.getElementById("register")
 
 form.addEventListener('submit', (event) => {
-    let listError = []
     event.preventDefault()
-    
+
     petNameValidation()
+    petTypeValidation()
     petPhotoValidation()
     petAgeValidation()
     petSexValidation()
     petDescriptionValidation()
 
-    if(listError.length === 0){
-        //form.submit()
+    if(document.getElementsByClassName("invalid").length == 0){
+        savePetData()
+        window.location.href = "../adotar/adotar.html";
     }
 })
 
@@ -34,9 +35,21 @@ function petNameValidation(){
     }
 }
 
+function petTypeValidation(){
+    if(petType.value == ""){
+        petType.showErrorMessage("Selecione o tipo do Pet")
+    }
+    else{
+        petType.clearErrorMessage()
+    }
+}
+
 function petPhotoValidation(){
     if(petPhoto.value === ""){
-        petPhoto.showErrorMessage("Envie a foto do Pet")
+        petPhoto.showErrorMessage("Preencha o link da foto do Pet")
+    }
+    else if (!/^https:\/\/.+\.com\/.+$/.test(petPhoto.value)) {
+        petPhoto.showErrorMessage("Formato de link inválido");
     }
     else{
         petPhoto.clearErrorMessage()
@@ -59,11 +72,11 @@ function petAgeValidation(){
 }
 
 function petSexValidation(){
-    if(petSex.value === ""){
-        petSex.showErrorMessage("Preencha o sexo do Pet")
-    }
-    else if(petSex.value !== "Masculino" && petSex.value !== "Feminino"){
-        petSex.showErrorMessage("Preencha com um sexo valido")
+    let sexM = petSex.querySelector("#petSexM")
+    let sexF = petSex.querySelector("#petSexF")
+    
+    if(sexM.checked !== true && sexF.checked !== true){
+        petSex.showErrorMessage("Selecione o sexo do Pet")
     }
     else{
         petSex.clearErrorMessage()
@@ -74,8 +87,8 @@ function petDescriptionValidation(){
     if(petDescription.value === ""){
         petDescription.showErrorMessage("Preencha a descrição do Pet")
     }
-    else if(petDescription.value.length > 150){
-        petDescription.showErrorMessage("A descrição do Pet não pode ter mais de 150 caracteres")
+    else if(petDescription.value.length > 120){
+        petDescription.showErrorMessage("A descrição do Pet não pode ter mais de 120 caracteres")
     }
     else{
         petDescription.clearErrorMessage()
@@ -92,4 +105,31 @@ HTMLElement.prototype.clearErrorMessage = function () {
     this.classList.remove("invalid");
     let error = this.parentElement.querySelector(".error")
     error.innerText = ""
+}
+
+function savePetData(){
+    let localStoragePets = localStorage.getItem('pets')
+
+    let pets = []
+    if (localStoragePets) {
+        pets = JSON.parse(localStoragePets);
+    }
+
+    pets.push(builPet())
+    localStoragePets = JSON.stringify(pets)
+    localStorage.setItem('pets', localStoragePets)
+}
+
+function builPet(){
+    let selectedSex = petSex.querySelector("#petSexM").checked ? petSex.querySelector("#petSexM").value : petSex.querySelector("#petSexF").value
+
+    return {
+        name: petName.value,
+        img: petPhoto.value,
+        description: petDescription.value,
+        idade: petAge.value,
+        adotado: false,
+        sexo: selectedSex,
+        tipo: petType.value
+    }
 }

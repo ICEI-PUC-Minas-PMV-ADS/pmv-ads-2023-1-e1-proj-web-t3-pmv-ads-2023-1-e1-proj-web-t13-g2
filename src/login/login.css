@@ -15,8 +15,20 @@
     border-radius: 1vmin;
 }
 
-.content > div{
-    padding: 2vh 2vw;
+@media (max-width: 1500px){
+    .content > *{
+        height: 65vmin;
+        width: 65vmin;
+        margin: 0;
+    }
+    
+    .content > img{
+        display: none;
+    }    
+}
+
+.content > #form{
+    padding: 2vmin 2vmin;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,23 +36,29 @@
     box-sizing: border-box;
 }
 
-.content h1{
+#form > h1{
     font-size: 5vmin;
     font-family: 'Nunito', sans-serif;
 }
 
-.content input{
-    height: 3vh;
+#form > .input-control{
     width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    text-indent: 1vmin;
-    font-size: 2vmin;
-    outline: none;
 }
 
-.content button{
-    height: 7vh;
+.input-control > input{
+    height: 3vmin;
+    border-width: 0 0 1px 0;
+    text-indent: 1vmin;
+    padding: 0;
+    width: 100%;
+    font-size: 2vmin;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+#form > button{
+    height: 7vmin;
     width: 100%;
     color: white;
     background-color: #3A70D1;
@@ -50,10 +68,28 @@
     text-decoration: none;
 }
 
-.content button:hover{
+#form > button:hover{
     background-color: orange;
     cursor: pointer;
     transition: 0.2s 0.1s ease-in;
+}
+
+/* Validation error */
+
+.input-control > .invalid{
+    border-color: red;
+}
+
+.input-control .invalid::placeholder{
+    color: red;
+}
+
+.input-control > .error{
+    padding: 0;
+    margin: 0;
+    height: 1.4vmin;
+    font-size: 1.4vmin;
+    color: red;
 }
 
 .links{
@@ -71,4 +107,5 @@
 
 a{
     text-decoration: none;
+    color: #17479E;
 }
