@@ -11,34 +11,59 @@
     <link rel="stylesheet" href="./login.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <script src="loginscript.js" defer></script>
+    <script>
+        function showMobileMenu() {
+          mobileMenu = document.getElementById("mobileMenu");
+          if (mobileMenu.classList.contains("hiddenMenu")) {
+            mobileMenu.classList.remove("hiddenMenu");
+            mobileMenu.classList.add("visibleMenu");
+          } else {
+            mobileMenu.classList.remove("visibleMenu");
+            mobileMenu.classList.add("hiddenMenu");
+          }
+        }
+    </script>    
 </head>
+
 <body>
     <div id="menuPrincipal">
         <nav id="navegacaoMenu">
-            <div id="logoMenu">
-                <a href="/src/home/home.html"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-            </div>
-            <ul>
-                <li><a href="/src/home/home.html">Inicio</a></li>
-            </ul>
+          <div id="logoMenu">
+            <a href="#"
+              ><img src="../images/logo.png" alt="Logo AdoptionLove"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="../home/home.html">Inicio</a></li>
+          </ul>
         </nav>
         <div id="botoesMenu">
-            <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
+          <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
         </div>
         <div class="mobileIcon" onclick="showMobileMenu()">
-            <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+          <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
         </div>
-    </div>
-    <div id="mobileMenu" class="hiddenMenu">
-        <p>Teste</p>
-        <div class="mobileIcon" onclick="showMobileMenu()">
+      </div>
+      <div id="mobileMenu" class="hiddenMenu">
+        <div>
+          <a href=""><img src="../images/logo.png" alt="logo adoption pet"></a>
+          <nav>
+            <ul>
+              <li><a href="/src/home/home.html">Inicio</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
           <img
             src="../images/closeicon.png"
             alt="Mobile Icon"
             style="width: 30px"
           />
         </div>
-    </div>
+        <div id="mobileMenuButtons">
+          <p><a href="/src/login/login.html">Entrar</a></p>
+        </div>
+      </div>
    
     <main class="content">
         <form id="form">
