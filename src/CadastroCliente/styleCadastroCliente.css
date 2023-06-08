@@ -63,7 +63,7 @@
   }
   
   .content button {
-    height: 2rem;
+    height: 1rem;
     width: 50%;
     color: white;
     background-color: #3A70D1;
@@ -88,14 +88,10 @@
     .header h1 {
       font-size: 1.5rem;
     }
-    
-    .footer {
-      padding: 0.5rem;
+    .content > img {
+      display: none;
     }
-    
-    .footer p {
-      font-size: 0.6rem;
-    }
+  
   
     .content {
       padding: 1rem;
@@ -120,8 +116,9 @@
   
     .content button {
       height: 3rem;
-      font-size: 1rem;
-      width: 50%;
+      font-size: 0.5rem;
+      width: 30%;
+      margin-top: 1rem;
     }
   }
   
@@ -134,13 +131,10 @@
       font-size: 1.5rem;
     }
     
-    .footer {
-      padding: 0.5rem;
-    }
-    
-    .footer p {
-      font-size: 0.6rem;
-    }
+      .content > img {
+        display: none;
+      }
+  
   
     .content {
       padding: 1rem;
@@ -165,12 +159,13 @@
   
     .content button {
       height: 3rem;
-      font-size: 1rem;
-      width: 50%;
+      font-size: 0.6rem;
+      width: 30%;
+      margin-top: 1rem;
     }
   }
   
-  @media (min-width: 601px) and (max-width: 780px) {
+  @media (min-width: 601px) and (max-width: 700px) {
     .header {
       padding: 0.5rem;
     }
@@ -178,14 +173,11 @@
     .header h1 {
       font-size: 1.5rem;
     }
-    
-    .footer {
-      padding: 0.5rem;
+    .content > img {
+      display: none;
     }
     
-    .footer p {
-      font-size: 0.6rem;
-    }
+  
   
     .content {
       padding: 1rem;
@@ -210,12 +202,13 @@
   
     .content button {
       height: 3rem;
-      font-size: 1.2rem;
-      width: 50%;
+      font-size: 0.7rem;
+      width: 30%;
+      margin-top: 1rem;
     }
   }
   
-  @media (min-width: 781px) and (max-width: 880px) {
+  @media (min-width: 701px) and (max-width: 800px) {
     .header {
       padding: 0.5rem;
     }
@@ -223,13 +216,8 @@
     .header h1 {
       font-size: 1.5rem;
     }
-    
-    .footer {
-      padding: 0.5rem;
-    }
-    
-    .footer p {
-      font-size: 0.6rem;
+    .content > img {
+      display: none;
     }
   
     .content {
@@ -255,12 +243,13 @@
   
     .content button {
       height: 3rem;
-      font-size: 1.2rem;
-      width: 50%;
+      font-size: 0.8rem;
+      width: 30%;
+      margin-top: 1rem;
     }
   }
-  
-  @media (min-width: 881px) and (max-width: 1024px) {
+
+  @media (min-width: 801px) and (max-width: 900px) {
     .header {
       padding: 0.5rem;
     }
@@ -268,48 +257,118 @@
     .header h1 {
       font-size: 1.5rem;
     }
-    
-    .footer {
-      padding: 0.5rem;
+    .content > img {
+      display: none;
     }
-    
-    .footer p {
-      font-size: 0.6rem;
-    }
-    .content {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
+  
     .content {
       padding: 1rem;
     }
     
     .content > div {
-        max-width: 80%;
+      max-width: 50%;
     }
-    
+  
     .content > img {
-      max-width: 40%;
+      max-width: 30%;
     }
   
     .content h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   
     .content input {
-      height: 3rem;
-      font-size: 1rem;
+      height: 2rem;
+      font-size: 0.8rem;
     }
   
     .content button {
-      height: 4rem;
+      height: 3rem;
+      font-size: 0.8rem;
+      width: 30%;
+      margin-top: 1rem;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+    .header {
+      padding: 0.5rem;
+    }
+    
+    .header h1 {
       font-size: 1.5rem;
-      width: 50%;
+    }
+    .content > img {
+      display: none;
+    }
+  
+    .content {
+      padding: 1rem;
+    }
+    
+    .content > div {
+      max-width: 50%;
+    }
+  
+    .content > img {
+      max-width: 30%;
+    }
+  
+    .content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .content input {
+      height: 2rem;
+      font-size: 0.8rem;
+    }
+  
+    .content button {
+      height: 3rem;
+      font-size: 0.8rem;
+      width: 30%;
+      margin-top: 1rem;
+    }
+  }
+  @media (min-width: 1001px) and (max-width: 1100px) {
+    .header {
+      padding: 0.5rem;
+    }
+    
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+  
+    .content {
+      padding: 1rem;
+    }
+    
+    .content > div {
+      max-width: 50%;
+    }
+  
+    .content > img {
+      max-width: 30%;
+    }
+  
+    .content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .content input {
+      height: 2rem;
+      font-size: 0.8rem;
+    }
+  
+    .content button {
+      height: 3rem;
+      font-size: 0.8rem;
+      width: 30%;
+      margin-top: 1rem;
     }
   }
   
-  @media (min-width: 1025px) and (max-width: 1280px) {
+  @media (min-width: 1001px) and (max-width: 1200px) {
     .header {
       padding: 1rem;
     }
@@ -318,14 +377,7 @@
       font-size: 2rem;
     }
     
-    .footer {
-      padding: 1rem;
-    }
-    
-    .footer p {
-      font-size: 0.8rem;
-    }
-  
+   
     .content {
       flex-direction: row;
       align-items: center;
@@ -354,14 +406,14 @@
     }
   
     .content button {
-      height: 4rem;
-      font-size: 1.5rem;
-      width: 50%;
+      height: 3rem;
+      font-size: 1rem;
+      width: 30%;
       margin-top: 1rem;
     }
   }
   
-  @media (min-width: 1281px) {
+  @media (min-width: 1201px) and (max-width: 1700px) {
     .header {
       padding: 1rem;
     }
@@ -370,13 +422,6 @@
       font-size: 2.5rem;
     }
     
-    .footer {
-      padding: 1rem;
-    }
-    
-    .footer p {
-      font-size: 1rem;
-    }
   
     .content {
       flex-direction: row;
@@ -406,9 +451,53 @@
     }
   
     .content button {
-      height: 5rem;
-      font-size: 1.8rem;
-      width: 50%;
+      height: 3rem;
+      font-size: 1rem;
+      width: 30%;
+      margin-top: 1rem;
+    }
+  }
+  @media (min-width: 1800px) {
+    .header {
+      padding: 1rem;
+    }
+    
+    .header h1 {
+      font-size: 2.5rem;
+    }
+    
+  
+    .content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .content > * {
+      margin: 1rem;
+    }
+  
+    .content > img {
+      max-width: 40%;
+    }
+  
+    .content > div {
+      max-width: 50%;
+    }
+  
+    .content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .content input {
+      height: 4rem;
+      font-size: 1.2rem;
+    }
+  
+    .content button {
+      height: 3rem;
+      font-size: 1rem;
+      width: 30%;
       margin-top: 1rem;
     }
   }

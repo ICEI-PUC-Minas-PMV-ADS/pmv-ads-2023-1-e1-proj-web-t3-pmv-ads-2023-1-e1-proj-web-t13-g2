@@ -30,15 +30,47 @@
                 <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
             </div>
         </header>
+        <div id="mobileMenu" class="hiddenMenu">
+            <div>
+              <a href=""><img src="../images/logo.png" alt="logo adoption pet"></a>
+              <nav>
+                <ul>
+                  <li><a href="">Inicio</a></li>
+                  <li><a href="">Quero Doar</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
+              <img
+                src="../images/closeicon.png"
+                alt="Mobile Icon"
+                style="width: 30px"
+              />
+            </div>
+            <div id="mobileMenuButtons">
+              <p><a href="">Quero Adotar</a></p>
+              <p><a href="">Entrar</a></p>
+            </div>
+        </div>
 
         <main class="content">
             <form id="form">
                 <h1>Cadastre seu pet para adoção</h1>
-                <div id="nameType">
+                <div id="row-container">
                     <div class="input-control">
                         <input id="petName" name="petName" type="text" placeholder="Nome do Pet"></input>
                         <p class="error"></p>
                     </div>
+                    <div class="input-control">
+                        <input id="petAge" name="petAge" type="number" placeholder="Idade do Pet"></input>
+                        <p class="error"></p>
+                    </div>
+                </div>
+                <div class="input-control">
+                    <input id="petPhoto" name="petPhoto" type="text" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
+                    <p class="error"></p>
+                </div>
+                <div id="row-container">
                     <div class="input-control">
                         <select id="petType">
                             <option value="" selected disabled>Selecione o tipo do Pet</option>
@@ -48,21 +80,11 @@
                         </select>
                         <p class="error"></p>
                     </div>
-                </div>
-                <div class="input-control">
-                    <input id="petPhoto" name="petPhoto" type="text" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
-                    <p class="error"></p>
-                </div>
-                <div id="ageSex">
-                    <div class="input-control">
-                        <input id="petAge" name="petAge" type="number" placeholder="Idade do Pet"></input>
-                        <p class="error"></p>
-                    </div>
                     <div class="input-control">
                         <div id="petSex">
-                            <input id="petSexM" name="petSex" type="radio" value="M" />
+                            <input id="petSexM" name="petSex" type="radio" value="Male" />
                             <label for="petSexM">Masculino</label>
-                            <input id="petSexF" name="petSex" type="radio" value="F" />
+                            <input id="petSexF" name="petSex" type="radio" value="Female" />
                             <label for="petSexF">Feminino</label>
                         </div>
                         <p class="error"></p>
@@ -93,6 +115,17 @@
 
         <!-- Script -->
         <script src="./scriptCadastroPet.js" defer></script>
+        <script>
+            function showMobileMenu() {
+              mobileMenu = document.getElementById("mobileMenu");
+              if (mobileMenu.classList.contains("hiddenMenu")) {
+                mobileMenu.classList.remove("hiddenMenu");
+                mobileMenu.classList.add("visibleMenu");
+              } else {
+                mobileMenu.classList.remove("visibleMenu");
+                mobileMenu.classList.add("hiddenMenu");
+              }
+            }
+        </script>
     </body>
-
 </html>
