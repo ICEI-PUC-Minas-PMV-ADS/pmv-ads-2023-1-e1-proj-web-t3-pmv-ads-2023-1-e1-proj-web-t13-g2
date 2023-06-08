@@ -104,6 +104,19 @@
             <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
         </div>
     </footer>
+    <script>
+        function showMobileMenu() {
+          mobileMenu = document.getElementById("mobileMenu");
+          if (mobileMenu.classList.contains("hiddenMenu")) {
+            mobileMenu.classList.remove("hiddenMenu");
+            mobileMenu.classList.add("visibleMenu");
+          } else {
+            mobileMenu.classList.remove("visibleMenu");
+            mobileMenu.classList.add("hiddenMenu");
+          }
+        }
+  
+      </script>
     <script src="script.js"></script>
 </body>
 </html>
