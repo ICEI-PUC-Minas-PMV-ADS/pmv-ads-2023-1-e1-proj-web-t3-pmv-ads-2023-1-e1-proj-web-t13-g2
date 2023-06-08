@@ -1,15 +1,44 @@
-{
-  pets.map((pet) => {
-    let petElement = document.getElementById(pet.id);
-    console.log(petElement);
-    let imgPet = petElement.children[0];
-    imgPet.src = pet.img;
-    let namePet = petElement.children[1].children[0];
-    namePet.textContent = "Adote o(a) " + pet.name;
-    let agePet = petElement.children[1].children[1];
-    agePet.textContent = pet.idade + " anos";
-  });
+let localStoragePets = localStorage.getItem("pets");
+console.log(localStoragePets);
+if (!!localStoragePets) {
+  let pets = [];
+  pets = [...JSON.parse(localStoragePets)];
+  console.log(pets);
+
+  // <div class="pet" id="01">
+  //   <img src="" alt="Foto do Pet" />
+  //   <div class="details">
+  //     <h2 class="namePet"></h2>
+  //     <p></p>
+  //   </div>
+  //   <button onclick="irParaPet('01')" class="moreDetails">
+  //     Mais detalhes
+  //   </button>
+  // </div>;
+
+  {
+    pets.map((pet) => {
+      const parentElement = document.getElementById("petsContainer1");
+      console.log(parentElement);
+      console.log(pet);
+
+      parentElement.innerHTML += `<div class="pet" id="${pet.id}"><img src="${pet.img}" alt="Foto do Pet" /><div class="details"><h2 class="namePet">${pet.name}</h2><p>${pet.idade}</p></div><button onclick="irParaPet('${pet.id}')" class="moreDetails">Mais detalhes</button></div>`;
+    });
+  }
 }
+
+// {
+//   pets.map((pet) => {
+//     let petElement = document.getElementById(pet.id);
+//     console.log(petElement);
+//     let imgPet = petElement.children[0];
+//     imgPet.src = pet.img;
+//     let namePet = petElement.children[1].children[0];
+//     namePet.textContent = "Adote o(a) " + pet.name;
+//     let agePet = petElement.children[1].children[1];
+//     agePet.textContent = pet.idade + " anos";
+//   });
+// }
 
 function irParaPet(id) {
   if (typeof id === "string") {

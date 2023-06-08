@@ -101,3 +101,6 @@ let pets = [
     tipo: "bird",
   },
 ];
+
+let petsIntoLocalStorage = JSON.stringify(pets);
+localStorage.setItem("pets", petsIntoLocalStorage);
