@@ -47,29 +47,29 @@
 .texto2 {
   width: 80%;
   margin: 3rem auto;
-  font-size: 2rem;
-  margin-top: 1rem;
+  font-size: 1.2rem;
+    margin-top: 1.1rem;
 }
+
 
 /* Estilos responsivos */
-
-@media only screen and (max-width: 1700px) {
+@media  (max-width: 2000px) {
   .texto-principal {
     width: 70%;
     font-size: 1.2rem;
-    top: 25%;
+    top: 30%;
     text-align: justify;
   }
 
   .botao-imagem {
     margin-top: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.2rem 1.7rem;
     font-size: 1.6rem;
     text-align: center;
-    top: 200%;
+    top: 160%;
   }
   .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
     margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
@@ -78,28 +78,28 @@
   .texto2 {
     width: 90%;
     font-size: 1.2rem;
-    margin-top: 0.5rem;
+    margin-top: 1.1rem;
     text-align: justify;
   }
 }
-@media only screen and (max-width: 1600px) {
-  /* Para dispositivos com largura máxima de 1200px */
+
+@media (min-width: 1701px) and (max-width: 1800px) {
   .texto-principal {
     width: 70%;
-    font-size: 1.1rem;
-    top: 25%;
+    font-size: 1.2rem;
+    top: 30%;
     text-align: justify;
   }
 
   .botao-imagem {
     margin-top: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.2rem 1.7rem;
     font-size: 1.6rem;
     text-align: center;
-    top: 190%;
+    top: 160%;
   }
   .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
     margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
@@ -107,12 +107,72 @@
   }
   .texto2 {
     width: 90%;
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
+    text-align: justify;
+  }
+}
+@media (min-width: 1601px) and (max-width: 1700px) {
+
+  .texto-principal {
+    width: 70%;
+    font-size: 1.2rem;
+    top: 30%;
+    text-align: justify;
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    padding: 0.2rem 1.6rem;
+    font-size: 1.6rem;
+    text-align: center;
+    top: 160%;
+  }
+  .box-home {
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+  .texto2 {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
   }
 }
 
-@media only screen and (max-width: 1500px) {
+@media (min-width: 1501px) and (max-width: 1600px) {
+
+  .texto-principal {
+    width: 70%;
+    font-size: 1.2rem;
+    top: 30%;
+    text-align: justify;
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    padding: 0.2rem 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    top: 160%;
+  }
+  .box-home {
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+  .texto2 {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1500px) {
   /* Para dispositivos com largura máxima de 1200px */
   .texto-principal {
     width: 70%;
@@ -123,40 +183,10 @@
 
   .botao-imagem {
     margin-top: 1rem;
-    padding: 0.8rem 2rem;
-    font-size: 1.6rem;
-    text-align: center;
-    top: 180%;
-  }
-  .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
-  }
-  h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
-    text-align: center;
-  }
-  .texto2 {
-    width: 90%;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  /* Para dispositivos com largura máxima de 1200px */
-  .texto-principal {
-    width: 70%;
-    font-size: 1.2rem;
-    top: 30%;
-    text-align: justify;
-  }
-
-  .botao-imagem {
-    margin-top: 1rem;
-    padding: 0.7rem 2rem;
+    padding: 0.2rem 1.4rem;
     font-size: 1.5rem;
     text-align: center;
-    top: 180%;
+    top: 160%;
   }
   .box-home {
     margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
@@ -167,28 +197,28 @@
   }
   .texto2 {
     width: 90%;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media (min-width: 1301px) and (max-width: 1400px) {
   /* Para dispositivos com largura máxima de 1200px */
   .texto-principal {
-    width: 65%;
+    width: 70%;
     font-size: 1.1rem;
-    top: 30%;
+    top: 31%;
     text-align: justify;
   }
 
   .botao-imagem {
     margin-top: 1rem;
-    padding: 0.7rem 2rem;
+    padding: 0.2rem 1.3rem;
     font-size: 1.4rem;
     text-align: center;
-    top: 170%;
+    top: 160%;
   }
   .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
     margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
@@ -196,21 +226,51 @@
   }
   .texto2 {
     width: 90%;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media (min-width: 1201px) and (max-width: 1300px) {
+  /* Para dispositivos com largura máxima de 1200px */
+  .texto-principal {
+    width: 70%;
+    font-size: 1rem;
+    top: 30%;
+    text-align: justify;
+  
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    padding: 0.2rem 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    top: 160%;
+  }
+  .box-home {
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+  .texto2 {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
   /* Para dispositivos com largura máxima de 1200px */
   .texto-principal {
     width: 65%;
-    font-size: 1.1rem;
+    font-size:0.9rem;
     top: 35%;
     text-align: justify;
   }
   .botao-imagem {
     margin-top: 1rem;
-    padding: 0.8rem 2rem;
+    padding: 0.2rem 1.1rem;
     font-size: 1.3rem;
     top: 160%;
   }
@@ -223,220 +283,191 @@
   }
   .texto2 {
     width: 90%;
-    font-size: 0, 9rem;
-    margin-top: 0.5rem;
-  }
-}
-@media only screen and (max-width: 1150px) {
-  /* Para dispositivos com largura máxima de 1200px */
-  .texto-principal {
-    width: 65%;
-    font-size: 1rem;
-    top: 35%;
-    text-align: justify;
-  }
-  .botao-imagem {
-    margin-top: 2rem;
-    padding: 0.8rem 2rem;
-    font-size: 1.3rem;
-    top: 160%;
-  }
-  .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
-  }
-  h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
-    text-align: center;
-  }
-  .texto2 {
-    width: 90%;
-    font-size: 0, 9rem;
-    margin-top: 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  /* Para dispositivos com largura máxima de 1200px */
-  .texto-principal {
-    width: 65%;
-    font-size: 0.9rem;
-    top: 35%;
-    text-align: justify;
-  }
-
-  .botao-imagem {
-    margin-top: 0.7rem;
-    padding: 0.8rem 2rem;
     font-size: 1.2rem;
-    text-align: center;
-    top: 150%;
-  }
-  .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
-  }
-  h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
-    text-align: center;
-  }
-  .texto2 {
-    width: 90%;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1.1rem;
   }
 }
-@media only screen and (max-width: 1050px) {
+@media (min-width: 1001px) and (max-width: 1100px) {
   /* Para dispositivos com largura máxima de 1200px */
   .texto-principal {
     width: 65%;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     top: 35%;
     text-align: justify;
   }
-
   .botao-imagem {
-    margin-top: 0.7rem;
-    padding: 0.7rem 2rem;
-    font-size: 1.2rem;
-    text-align: center;
-    top: 150%;
-  }
-  .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
-  }
-  h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
-    text-align: center;
-  }
-  .texto2 {
-    width: 90%;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  /* Para dispositivos com largura máxima de 900px */
-  .texto-principal {
-    width: 65%;
-    font-size: 0.8rem;
-    margin-top: 0.4rem;
-    padding: 0.1rem 1rem;
-    top: 40%; /* Ajuste o valor para mover verticalmente o texto */
-    text-align: justify;
-  }
-  .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
-  }
-  h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
-    text-align: center;
-  }
-  .botao-imagem {
-    margin-top: 0.8rem;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    margin-top: 1rem;
     padding: 0.2rem 1rem;
-    top: 140%;
+    font-size: 1.3rem;
+    top: 160%;
   }
-
+  .box-home {
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
   .texto2 {
     width: 90%;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
   }
 }
-@media only screen and (max-width: 800px) {
-  /* Para dispositivos com largura máxima de 900px */
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  /* Para dispositivos com largura máxima de 1200px */
   .texto-principal {
     width: 65%;
     font-size: 0.7rem;
-    margin-top: 0.5rem;
+    top: 35%;
+    text-align: justify;
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    padding: 0.2rem 0.9rem;
+    font-size: 1.2rem;
+    text-align: center;
+    top: 160%;
+  }
+  .box-home {
+    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -2rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+  .texto2 {
+    width: 90%;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px) {
+  /* Para dispositivos com largura máxima de 1200px */
+  .texto-principal {
+    width: 65%;
+    font-size: 0.8rem;
+    top: 40%;
+    text-align: justify;
+  }
+
+
+  .box-home {
+    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -2rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+    top: 160%;
+  }
+  .texto2 {
+    width: 90%;
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  .texto-principal {
+    width: 65%;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
     padding: 0.1rem 1rem;
     top: 40%; /* Ajuste o valor para mover verticalmente o texto */
     text-align: justify;
   }
   .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: -2rem; /* Ajuste a margem inferior conforme necessário */
     text-align: center;
   }
+
   .botao-imagem {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
-    top: 130%;
+    padding: 0.2rem 0.6rem;
+    top: 160%;
   }
 
   .texto2 {
     width: 90%;
-    font-size: 0.7rem;
-    margin-top: 0.5rem;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .texto-principal {
-    width: 67%;
-    font-size: 0.5rem;
-    margin-top: 0.4rem;
-    padding: 0.1rem 1rem;
-    top: 38%; /* Ajuste o valor para mover verticalmente o texto */
-    text-align: justify;
-  }
-  .box-home {
-    margin-bottom: 3rem; /* Ajuste a margem inferior conforme necessário */
-  }
-  h2 {
-    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
-    text-align: center;
-  }
-  .botao-imagem {
-    margin-top: 0.7rem;
     font-size: 0.9rem;
-    padding: 0.4rem 1rem;
-    top: 130%;
-  }
-
-  .texto2 {
-    width: 90%;
-    font-size: 0.6rem;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  /* Para dispositivos com largura máxima de 600px */
+@media (min-width: 601px) and (max-width: 700px) {
+  /* Para dispositivos com largura máxima de 900px */
   .texto-principal {
     width: 65%;
     font-size: 0.5rem;
     margin-top: 0.3rem;
     padding: 0.1rem 1rem;
-    top: 45%; /* Ajuste o valor para mover verticalmente o texto */
+    top: 40%; /* Ajuste o valor para mover verticalmente o texto */
     text-align: justify;
   }
-
-  .botao-imagem {
-    margin-top: 0.7rem;
-    font-size: 0.8rem;
-    padding: 0.4rem 1rem;
-    top: 120%;
-  }
   .box-home {
-    margin-bottom: 1rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
     margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
     text-align: center;
   }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+    top: 160%;
+  }
+
   .texto2 {
     width: 90%;
-    font-size: 0.5rem;
-    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
   }
 }
-@media only screen and (max-width: 550px) {
-  /* Para dispositivos com largura máxima de 600px */
+@media (min-width: 501px) and (max-width: 600px) {
+  .texto-principal {
+    width: 65%;
+    font-size: 0.4rem;
+    margin-top: 0.3rem;
+    padding: 0.1rem 1rem;
+    top: 45%; /* Ajuste o valor para mover verticalmente o texto */
+    text-align: justify;
+  }
+  .box-home {
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    top: 160%;
+  }
+
+  .texto2 {
+    width: 90%;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 500px) {
   .texto-principal {
     width: 60%;
     font-size: 0.4rem;
@@ -445,39 +476,38 @@
     top: 45%; /* Ajuste o valor para mover verticalmente o texto */
     text-align: justify;
   }
-
-  .botao-imagem {
-    margin-top: 0.7rem;
-    font-size: 0.7rem;
-    padding: 0.3rem 1rem;
-    top: 160%;
-  }
   .box-home {
-    margin-bottom: 1rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
     margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
     text-align: center;
   }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    padding: 0.2rem 0.4rem;
+    top: 160%;
+  }
+
   .texto2 {
     width: 90%;
-    font-size: 0.5rem;
-    margin-top: 0.4rem;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
   }
 }
-
-@media only screen and (max-width: 480px) {
-  /* Para dispositivos com largura máxima de 480px */
+@media (min-width: 401px) and (max-width: 500px) {
   .texto-principal {
-    width: 60%;
+    width: 65%;
     font-size: 0.3rem;
     margin-top: 0.3rem;
     padding: 0.1rem 1rem;
-    top: 46%; /* Ajuste o valor para mover verticalmente o texto */
+    top: 45%; /* Ajuste o valor para mover verticalmente o texto */
     text-align: justify;
   }
   .box-home {
-    margin-bottom: 1rem; /* Ajuste a margem inferior conforme necessário */
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
   }
   h2 {
     margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
@@ -485,9 +515,9 @@
   }
 
   .botao-imagem {
-    margin-top: 0.7rem;
+    margin-top: 1rem;
     font-size: 0.5rem;
-    padding: 0.3rem 1rem;
+    padding: 0.2rem 0.4rem;
     top: 160%;
   }
 
@@ -497,3 +527,6 @@
     margin-top: 0.4rem;
   }
 }
+
+
+

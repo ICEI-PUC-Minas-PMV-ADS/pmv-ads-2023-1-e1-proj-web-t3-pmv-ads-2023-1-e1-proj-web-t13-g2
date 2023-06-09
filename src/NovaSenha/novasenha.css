@@ -15,6 +15,18 @@
     border-radius: 1vmin;
 }
 
+@media (max-width: 1500px){
+    .content > *{
+        height: 65vmin;
+        width: 65vmin;
+        margin: 0;
+    }
+    
+    .content > img{
+        display: none;
+    }    
+}
+
 .content > div{
     padding: 8vh 2vw;
     display: flex;
