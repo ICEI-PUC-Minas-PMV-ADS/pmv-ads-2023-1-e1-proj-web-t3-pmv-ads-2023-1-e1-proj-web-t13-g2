@@ -106,18 +106,18 @@ function savePetData() {
     pets = JSON.parse(localStoragePets);
   }
 
-  pets.push(builPet(pets));
+  pets.push(builPet(pets.length));
   localStoragePets = JSON.stringify(pets);
   localStorage.setItem("pets", localStoragePets);
 }
 
-function builPet(petsArray) {
+function builPet(petsQtde) {
   let selectedSex = petSex.querySelector("#petSexM").checked
     ? petSex.querySelector("#petSexM").value
     : petSex.querySelector("#petSexF").value;
 
   return {
-    id: petsArray.length + 1,
+    id: petsQtde + 1,
     name: petName.value,
     img: petPhoto.value,
     description: petDescription.value,
