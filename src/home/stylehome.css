@@ -51,9 +51,39 @@
     margin-top: 1.1rem;
 }
 
-/* Estilos responsivos */
 
-@media (min-width: 1800px) {
+/* Estilos responsivos */
+@media  (max-width: 2000px) {
+  .texto-principal {
+    width: 70%;
+    font-size: 1.2rem;
+    top: 30%;
+    text-align: justify;
+  }
+
+  .botao-imagem {
+    margin-top: 1rem;
+    padding: 0.2rem 1.7rem;
+    font-size: 1.6rem;
+    text-align: center;
+    top: 160%;
+  }
+  .box-home {
+    margin-bottom: 2rem; /* Ajuste a margem inferior conforme necessário */
+  }
+  h2 {
+    margin-bottom: -1rem; /* Ajuste a margem inferior conforme necessário */
+    text-align: center;
+  }
+  .texto2 {
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1701px) and (max-width: 1800px) {
   .texto-principal {
     width: 70%;
     font-size: 1.2rem;
