@@ -43,7 +43,6 @@ let pets = [
     sexo: "female",
     tipo: "dog",
   },
-
   {
     id: 5,
     name: "Duke",
@@ -55,7 +54,6 @@ let pets = [
     sexo: "male",
     tipo: "cat",
   },
-
   {
     id: 6,
     name: "Jack",
