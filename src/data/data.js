@@ -2,7 +2,7 @@ let pets = [
   {
     id: 1,
     name: "Gilmar",
-    img: "/src/adotar/img/petGilmar.png",
+    img: "../adotar/img/petGilmar.png",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 4,
@@ -13,7 +13,7 @@ let pets = [
   {
     id: 2,
     name: "Lucas",
-    img: "/src/adotar/img/petLucas.png",
+    img: "../adotar/img/petLucas.png",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 6,
@@ -24,7 +24,7 @@ let pets = [
   {
     id: 3,
     name: "Mari",
-    img: "/src/adotar/img/petMari.png",
+    img: "../adotar/img/petMari.png",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 1,
@@ -57,7 +57,7 @@ let pets = [
   {
     id: 6,
     name: "Jack",
-    img: "/src/adotar/img/petJack.png",
+    img: "../adotar/img/petJack.png",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 2,
@@ -68,7 +68,7 @@ let pets = [
   {
     id: 7,
     name: "Beti",
-    img: "/src/adotar/img/petBeti.jpg",
+    img: "../adotar/img/petBeti.jpg",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 3,
@@ -79,7 +79,7 @@ let pets = [
   {
     id: 4,
     name: "Tico",
-    img: "/src/adotar/img/petTico.jpg",
+    img: "../adotar/img/petTico.jpg",
     description:
       "Esse pet é uma doçura de fofo, além de ser muito educado e prestativo quando o assunto é deixar o seu dia mais feliz, não tenho dúvida disso. Por isso é com pesar que disponibilizo ele para adoção!",
     idade: 4,
