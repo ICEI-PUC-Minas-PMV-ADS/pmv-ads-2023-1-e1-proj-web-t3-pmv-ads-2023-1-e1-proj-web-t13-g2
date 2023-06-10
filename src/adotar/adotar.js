@@ -6,13 +6,16 @@ pets = [...JSON.parse(localStoragePets)];
 pets.map((pet) => {
   const parentElement = document.getElementById("petsContainer1");
 
-  parentElement.innerHTML += `<div class="pet" id="${pet.id}"><img src="${
-    pet.img
-  }" alt="Foto do Pet" /><div class="details"><h2 class="namePet">Adote ${
-    pet.sexo === "male" ? "o " + pet.name : "a " + pet.name
-  }</h2><p>${pet.idade} anos</p></div><button onclick="irParaPet(${
-    pet.id
-  })" class="moreDetails">Mais detalhes</button></div>`;
+  parentElement.innerHTML += `
+  <div class="pet" id="${pet.id}">
+    <img src="${pet.img}" alt="Foto do Pet" />
+    <div class="details">
+      <h2 class="namePet">Adote ${pet.sexo === "male" ? "o " + pet.name : "a " + pet.name}</h2>
+      <p>${pet.idade} anos</p>
+    </div>
+    <button onclick="irParaPet(${pet.id})" class="moreDetails">Mais detalhes</button>
+  </div>
+  `;
 });
 
 // Ir para página do pet específico
