@@ -116,9 +116,11 @@ function filterMinus2Years() {
   chekboxIdade("idade", "menorOuIgual", 2);
 }
 
+// Ocultar o btn filters
 const showFilters = () => {
   let filters = document.getElementsByClassName("filters")[0];
   let contentFilters = document.getElementsByClassName("contentFilters")[0];
+  let btnFilter = document.getElementsByClassName("filterPets");
 
   let classOfFilters = [...filters.classList];
 
