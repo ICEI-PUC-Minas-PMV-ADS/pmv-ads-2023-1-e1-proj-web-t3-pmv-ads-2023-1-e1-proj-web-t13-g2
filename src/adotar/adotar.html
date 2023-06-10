@@ -19,18 +19,45 @@
     <div id="menuPrincipal">
       <nav id="navegacaoMenu">
         <div id="logoMenu">
-          <a href="/src/home/home.html"
+          <a href="#"
             ><img src="../images/logo.png" alt="Logo AdoptionLove"
           /></a>
         </div>
         <ul>
-          <li><a href="/src/home/home.html">Inicio</a></li>
+          <li><a href="../home/home.html">Inicio</a></li>
           <li><a href="/src/CadastroPet/cadastropet.html">Quero Doar</a></li>
         </ul>
       </nav>
       <div id="botoesMenu">
-        <p id="botaoAdotar"><a href="#">Quero adotar</a></p>
+        <p id="botaoAdotar">
+          <a href="/src/adotar/adotar.html">Quero adotar</a>
+        </p>
         <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
+      </div>
+      <div class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+      </div>
+    </div>
+    <div id="mobileMenu" class="hiddenMenu">
+      <div>
+        <a href=""><img src="../images/logo.png" alt="logo adoption pet" /></a>
+        <nav>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Quero Doar</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
+        <img
+          src="../images/closeicon.png"
+          alt="Mobile Icon"
+          style="width: 30px"
+        />
+      </div>
+      <div id="mobileMenuButtons">
+        <p><a href="">Quero Adotar</a></p>
+        <p><a href="">Entrar</a></p>
       </div>
     </div>
 
@@ -39,7 +66,14 @@
 
       <section class="petsToAdoption">
         <div class="filters">
-          <h2>Filtros <input type="checkbox" name="filters" id="filters" onchange="showFilters()"></h2>
+          <h2 id="showFilters" onclick="showFilters() ">Filtros 
+            
+           
+            <img id="imgShowFilters" src="img/caret-down.svg" alt="">
+          </h2>
+
+          <hr>
+
           <div class="contentFilters">
             <div>
               <h3>Animais</h3>
@@ -94,106 +128,10 @@
               </div>
             </div>
           </div>
+        
+          <button class="filtersPets" onclick="filtersPets()">Filtrar</button>
         </div>
-        <div class="pets">
-          <div class="pet" id="01">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('01')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="02">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('02')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="03">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('03')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="04">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('04')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="05">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('05')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="06">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('06')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="07">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('07')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="08">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('08')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
-
-          <div class="pet" id="09">
-            <img src="" alt="Foto do Pet" />
-            <div class="details">
-              <h2 class="namePet"></h2>
-              <p></p>
-            </div>
-            <button onclick="irParaPet('09')" class="moreDetails">
-              Mais detalhes
-            </button>
-          </div>
+        <div id="petsContainer1" class="pets">
         </div>
       </section>
 
@@ -219,7 +157,6 @@
       </footer>
     </main>
 
-    <script src="../../src/data/data.js"></script>
     <script src="adotar.js"></script>
   </body>
 </html>

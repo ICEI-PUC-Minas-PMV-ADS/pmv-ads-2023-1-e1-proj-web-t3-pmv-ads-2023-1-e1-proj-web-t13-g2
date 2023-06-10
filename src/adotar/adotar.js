@@ -1,21 +1,29 @@
-{
-  pets.map((pet) => {
-    let petElement = document.getElementById(pet.id);
-    console.log(petElement);
-    let imgPet = petElement.children[0];
-    imgPet.src = pet.img;
-    let namePet = petElement.children[1].children[0];
-    namePet.textContent = "Adote o(a) " + pet.name;
-    let agePet = petElement.children[1].children[1];
-    agePet.textContent = pet.idade + " anos";
-  });
-}
+// Pegando os dados do pet e jogando na página de adotar
+let pets = [];
+let localStoragePets = localStorage.getItem("pets");
+pets = [...JSON.parse(localStoragePets)];
 
+pets.map((pet) => {
+  const parentElement = document.getElementById("petsContainer1");
+
+  parentElement.innerHTML += `
+  <div class="pet" id="${pet.id}">
+    <img src="${pet.img}" alt="Foto do Pet" />
+    <div class="details">
+      <h2 class="namePet">Adote ${pet.sexo === "male" ? "o " + pet.name : "a " + pet.name}</h2>
+      <p>${pet.idade} anos</p>
+    </div>
+    <button onclick="irParaPet(${pet.id})" class="moreDetails">Mais detalhes</button>
+  </div>
+  `;
+});
+
+// Ir para página do pet específico
 function irParaPet(id) {
-  if (typeof id === "string") {
+  console.log(pets);
+  if (!!id) {
     console.log(id);
     const pet = pets.filter((pet) => pet.id === id);
-    console.log(pet[0]);
 
     localStorage.setItem("pet", JSON.stringify(pet[0]));
   }
@@ -28,9 +36,7 @@ function toogle(propiedade, contentPropiedade) {
 
   let p = [];
   for (pet of petsFiltered) {
-    if (typeof pet.id === "string") {
-      p.push(document.getElementById(pet.id));
-    }
+    p.push(document.getElementById(pet.id));
   }
   console.log(p);
   let pClassesCss = [];
@@ -64,9 +70,7 @@ function chekboxIdade(propiedade, logicaIdade, idade) {
 
   let p = [];
   for (pet of petsFiltered) {
-    if (typeof pet.id === "string") {
-      p.push(document.getElementById(pet.id));
-    }
+    p.push(document.getElementById(pet.id));
   }
   console.log(p);
   let pClassesCss = [];
@@ -108,18 +112,18 @@ function filterMore5Years() {
 }
 
 function filterMinus5Years() {
-  chekboxIdade("idade", "menorOuIgual", 3);
+  chekboxIdade("idade", "menorOuIgual", 5);
 }
 
 function filterMinus2Years() {
   chekboxIdade("idade", "menorOuIgual", 2);
 }
 
+// Ocultar o btn filters
 const showFilters = () => {
   let filters = document.getElementsByClassName("filters")[0];
   let contentFilters = document.getElementsByClassName("contentFilters")[0];
-
-  console.log(filters);
+  let btnFilter = document.getElementsByClassName("filterPets");
 
   let classOfFilters = [...filters.classList];
 
@@ -130,4 +134,37 @@ const showFilters = () => {
     filters.classList.add("removeFilters");
     contentFilters.classList.add("remove");
   }
+  changeSvg();
 };
+
+const changeSvg = () => {
+  let img = document.getElementById("imgShowFilters");
+
+  img.src =
+    img.src === "img/caret-down.svg" || img.src.includes("img/caret-down.svg")
+      ? "img/caret-right.svg"
+      : "img/caret-down.svg";
+};
+
+function showMobileMenu() {
+  mobileMenu = document.getElementById("mobileMenu");
+  if (mobileMenu.classList.contains("hiddenMenu")) {
+    mobileMenu.classList.remove("hiddenMenu");
+    mobileMenu.classList.add("visibleMenu");
+  } else {
+    mobileMenu.classList.remove("visibleMenu");
+    mobileMenu.classList.add("hiddenMenu");
+  }
+}
+
+function teste(){
+  let arrayDeArray = [] //Aqui vamos salvar os arrays dos objetos que forma filtrados, lembrando que é o array que vai entrar não os valores dele
+
+  let resultado = arrayDeArray.filter
+}
+
+function filtro(){
+  //Primeiro passo: Vamos fazer o filtro separado de cada coisa
+  //Segundo passo: Salvar o resultado de cada filtro dentro de um array, ou seja, vamos ter um array de arrays
+  //Terceiro passo: Filtrar qual id está aparecendo em todos os arrays, assim teremos o filtro de acordo com oq foi selecionado
+}
