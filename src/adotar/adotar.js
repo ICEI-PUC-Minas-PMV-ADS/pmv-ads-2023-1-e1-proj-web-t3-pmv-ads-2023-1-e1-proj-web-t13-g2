@@ -153,3 +153,15 @@ function showMobileMenu() {
     mobileMenu.classList.add("hiddenMenu");
   }
 }
+
+function teste(){
+  let arrayDeArray = [] //Aqui vamos salvar os arrays dos objetos que forma filtrados, lembrando que é o array que vai entrar não os valores dele
+
+  let resultado = arrayDeArray.filter
+}
+
+function filtro(){
+  //Primeiro passo: Vamos fazer o filtro separado de cada coisa
+  //Segundo passo: Salvar o resultado de cada filtro dentro de um array, ou seja, vamos ter um array de arrays
+  //Terceiro passo: Filtrar qual id está aparecendo em todos os arrays, assim teremos o filtro de acordo com oq foi selecionado
+}
