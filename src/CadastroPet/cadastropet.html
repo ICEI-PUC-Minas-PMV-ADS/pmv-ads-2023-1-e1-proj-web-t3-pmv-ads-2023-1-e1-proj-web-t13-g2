@@ -53,49 +53,49 @@
     </div>
 
     <main class="content">
-        <form id="form">
-            <h1>Cadastre seu pet para adoção</h1>
-            <div id="row-container">
-                <div class="input-control">
-                    <input id="petName" name="petName" type="text" placeholder="Nome do Pet"></input>
-                    <p class="error"></p>
-                </div>
-                <div class="input-control">
-                    <input id="petAge" name="petAge" type="number" placeholder="Idade do Pet"></input>
-                    <p class="error"></p>
-                </div>
+      <form id="form">
+        <h1>Cadastre seu pet para adoção</h1>
+        <div id="row-container">
+          <div class="input-control">
+            <input id="petName" name="petName" type="text" placeholder="Nome do Pet"></input>
+            <p class="error"></p>
+          </div>
+          <div class="input-control">
+            <input id="petAge" name="petAge" type="number" placeholder="Idade do Pet"></input>
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="input-control">
+          <input id="petPhoto" name="petPhoto" type="text" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
+          <p class="error"></p>
+        </div>
+        <div id="row-container">
+          <div class="input-control">
+            <select id="petType">
+              <option value="" selected disabled>Selecione o tipo do Pet</option>
+              <option value="dog">Cachorro</option>
+              <option value="cat">Gato</option>
+              <option value="bird">Pássaro</option>
+            </select>
+            <p class="error"></p>
+          </div>
+          <div class="input-control">
+            <div id="petSex">
+              <input id="petSexM" name="petSex" type="radio" value="male" />
+              <label for="petSexM">Masculino</label>
+              <input id="petSexF" name="petSex" type="radio" value="female" />
+              <label for="petSexF">Feminino</label>
             </div>
-            <div class="input-control">
-                <input id="petPhoto" name="petPhoto" type="text" placeholder="Link da foto do Pet" accept=".jpg,.png"></input>
-                <p class="error"></p>
-            </div>
-            <div id="row-container">
-                <div class="input-control">
-                    <select id="petType">
-                        <option value="" selected disabled>Selecione o tipo do Pet</option>
-                        <option value="dog">Cachorro</option>
-                        <option value="cat">Gato</option>
-                        <option value="bird">Pássaro</option>
-                    </select>
-                    <p class="error"></p>
-                </div>
-                <div class="input-control">
-                    <div id="petSex">
-                        <input id="petSexM" name="petSex" type="radio" value="male" />
-                        <label for="petSexM">Masculino</label>
-                        <input id="petSexF" name="petSex" type="radio" value="female" />
-                        <label for="petSexF">Feminino</label>
-                    </div>
-                    <p class="error"></p>
-                </div>
-            </div>
-            <div class="input-control">
-                <textarea id="petDescription" name="petDescription" rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
-                <p class="error"></p>
-            </div>
-            <button id="register" type="submit">CADASTRAR PET</button>
-        </form>
-        <img src="./img/dog_and_cat.png" alt="Foto Demonstrativa">
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="input-control">
+          <textarea id="petDescription" name="petDescription" rows="3" placeholder="Faça uma breve descrição do Pet"></textarea>
+          <p class="error"></p>
+        </div>
+        <button id="register" type="submit">CADASTRAR PET</button>
+      </form>
+      <img src="./img/dog_and_cat.png" alt="Foto Demonstrativa">
     </main>
 
     <footer id="footerPrincipal">
