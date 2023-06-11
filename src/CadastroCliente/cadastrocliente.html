@@ -14,51 +14,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap" />
   </head>
   <body>
-    <header id="menuPrincipal">
-        <div id="menuPrincipal">
-            <nav id="navegacaoMenu">
-              <div id="logoMenu">
-                <a href="#"
-                  ><img src="../images/logo.png" alt="Logo AdoptionLove"
-                /></a>
-              </div>
-              <ul>
-                <li><a href="../home/home.html">Inicio</a></li>
-                <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
-              </ul>
-            </nav>
-            <div id="botoesMenu">
-              <p id="botaoAdotar">
-                <a href="../adotar/adotar.html">Quero adotar</a>
-              </p>
-              <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
-            </div>
-            <div class="mobileIcon" onclick="showMobileMenu()">
-              <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
-            </div>
-          </div>
-          <!-- Fechar a div #menuPrincipal -->
-          <div id="mobileMenu" class="hiddenMenu">
-            <div>
-              <a href=""><img src="../images/logo.png" alt="logo adoption pet"></a>
-              <nav>
-                <ul>
-                  <li><a href="">Inicio</a></li>
-                  <li><a href="">Quero Doar</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
-              <img
-                src="../images/closeicon.png"
-                alt="Mobile Icon"
-                style="width: 30px"
-              />
-            </div>
-            <div id="mobileMenuButtons">
-              <p><a href="">Quero Adotar</a></p>
-              <p><a href="">Entrar</a></p>
-    </header>
+    <div id="menuPrincipal">
+      <nav id="navegacaoMenu">
+        <div id="logoMenu">
+          <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+        </div>
+        <ul>
+          <li><a href="../home/home.html">Inicio</a></li>
+          <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
+        </ul>
+      </nav>
+      <div id="botoesMenu">
+        <p id="botaoAdotar"><a href="../adotar/adotar.html">Quero adotar</a></p>
+        <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
+      </div>
+      <div class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+      </div>
+    </div>
+    <div id="mobileMenu" class="hiddenMenu">
+      <div>
+        <a href="#"><img src="../images/logo.png" alt="logo adoption pet" /></a>
+        <nav>
+          <ul>
+            <li><a href="../home/home.html">Inicio</a></li>
+            <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
+      </div>
+      <div id="mobileMenuButtons">
+        <p><a href="../adotar/adotar.html">Quero Adotar</a></p>
+        <p><a href="../login/login.html">Entrar</a></p>
+      </div>
+    </div>
 
     <main class="content">
         <div>
@@ -77,17 +68,20 @@
     </main>
     
     <footer id="footerPrincipal">
-        <div id="logoFooter">
-            <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-        </div>
-        <div id="infoFooter">
-            <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
-        </div>
-        <div id="socialFooter">
-            <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
-            <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
-            <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
-        </div>
+      <div id="logoFooter">
+        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+      </div>
+      <div id="infoFooter">
+        <p>
+          Desenvolvido por
+          <span style="color: #17479e">AdoptionLove</span> &copy; 2023
+        </p>
+      </div>
+      <div id="socialFooter">
+        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
+        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
+        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
+      </div>
     </footer>
 
     <!-- Script -->

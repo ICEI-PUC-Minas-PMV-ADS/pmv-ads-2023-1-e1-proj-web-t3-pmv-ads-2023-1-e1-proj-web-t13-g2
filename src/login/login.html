@@ -15,81 +15,78 @@
   </head>
   <body>
     <div id="menuPrincipal">
-        <nav id="navegacaoMenu">
-          <div id="logoMenu">
-            <a href="#"
-              ><img src="../images/logo.png" alt="Logo AdoptionLove"
-            /></a>
-          </div>
+      <nav id="navegacaoMenu">
+        <div id="logoMenu">
+          <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+        </div>
+        <ul>
+          <li><a href="../home/home.html">Inicio</a></li>
+        </ul>
+      </nav>
+      <div id="botoesMenu">
+        <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
+      </div>
+      <div class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+      </div>
+    </div>
+    <div id="mobileMenu" class="hiddenMenu">
+      <div>
+        <a href="#"><img src="../images/logo.png" alt="logo adoption pet" /></a>
+        <nav>
           <ul>
             <li><a href="../home/home.html">Inicio</a></li>
           </ul>
         </nav>
-        <div id="botoesMenu">
-          <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
-        </div>
-        <div class="mobileIcon" onclick="showMobileMenu()">
-          <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
-        </div>
       </div>
-      <div id="mobileMenu" class="hiddenMenu">
-        <div>
-          <a href=""><img src="../images/logo.png" alt="logo adoption pet"></a>
-          <nav>
-            <ul>
-              <li><a href="/src/home/home.html">Inicio</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
-          <img
-            src="../images/closeicon.png"
-            alt="Mobile Icon"
-            style="width: 30px"
-          />
-        </div>
-        <div id="mobileMenuButtons">
-          <p><a href="/src/login/login.html">Entrar</a></p>
-        </div>
+      <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
+      </div>
+      <div id="mobileMenuButtons">
+        <p><a href="../login/login.html">Entrar</a></p>
       </div>
     </div>
+
     <main class="content">
-        <form id="form">
-            <h1>Faça o login</h1>
-            <div class="input-control">
-                <input type="text" id="email" placeholder="E-mail">
-                <p class="error"></p>
-            </div>
-            <div class="input-control">
-                <input type="password" id="senha" placeholder="Senha">
-                <p class="error"></p>
-            </div>
-            <button id="register" type="submit">Login</button>
-            <div class="links">
-                <div class="link">
-                  <li>Esqueceu sua <a href="/src/NovaSenha/novasenha.html">senha?</a></li>
-                </div>
-                <div class="link">
-                  <li>Não tem conta? <a href="/src/CadastroCliente/cadastrocliente.html">Criar</a></li>
-                </div>
-            </div>
-        </form>
-      
-        <img src="./img/cat_and_dog_love.png" alt="Foto Demonstrativa">
+      <form id="form">
+        <h1>Faça o login</h1>
+        <div class="input-control">
+          <input type="text" id="email" placeholder="E-mail">
+          <p class="error"></p>
+        </div>
+        <div class="input-control">
+          <input type="password" id="senha" placeholder="Senha">
+          <p class="error"></p>
+        </div>
+        <button id="register" type="submit">Login</button>
+        <div class="links">
+          <div class="link">
+            <li>Esqueceu sua <a href="../NovaSenha/novasenha.html">senha?</a></li>
+          </div>
+          <div class="link">
+            <li>Não tem conta? <a href="../CadastroCliente/cadastrocliente.html">Criar</a></li>
+          </div>
+        </div>
+      </form>
+    
+      <img src="./img/cat_and_dog_love.png" alt="Foto Demonstrativa">
     </main>
 
     <footer id="footerPrincipal">
-        <div id="logoFooter">
-            <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-        </div>
-        <div id="infoFooter">
-          <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
-        </div>
-        <div id="socialFooter">
-            <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
-            <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
-            <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
-        </div>
+      <div id="logoFooter">
+        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+      </div>
+      <div id="infoFooter">
+        <p>
+          Desenvolvido por
+          <span style="color: #17479e">AdoptionLove</span> &copy; 2023
+        </p>
+      </div>
+      <div id="socialFooter">
+        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
+        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
+        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
+      </div>
     </footer>
 
     <!-- Script -->
