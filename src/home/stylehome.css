@@ -37,6 +37,7 @@
   border-radius: 10px;
   font-size: 2rem;
   transition: 1ms;
+  text-decoration: none;
 }
 
 .botao-imagem:hover {

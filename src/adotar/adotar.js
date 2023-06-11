@@ -35,8 +35,6 @@ function getPets() {
 }
 getPets()
 
-
-
 // Ir para página do pet específico
 function irParaPet(id) {
   console.log(pets);
@@ -79,17 +77,6 @@ const changeSvg = () => {
       ? "img/caret-right.svg"
       : "img/caret-down.svg";
 };
-
-function showMobileMenu() {
-  mobileMenu = document.getElementById("mobileMenu");
-  if (mobileMenu.classList.contains("hiddenMenu")) {
-    mobileMenu.classList.remove("hiddenMenu");
-    mobileMenu.classList.add("visibleMenu");
-  } else {
-    mobileMenu.classList.remove("visibleMenu");
-    mobileMenu.classList.add("hiddenMenu");
-  }
-}
 
 function filtersPets() {
   let inputs = [...document.getElementsByTagName("input")]

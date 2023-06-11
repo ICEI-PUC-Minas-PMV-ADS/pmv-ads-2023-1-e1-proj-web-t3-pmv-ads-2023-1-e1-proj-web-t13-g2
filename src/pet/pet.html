@@ -1,152 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdoptionLove</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AdoptionLove</title>
-  <meta name="description" content="" />
-  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-  <!--Fonte Roboto-->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-
-  <!--#-->
-
-  <link rel="stylesheet" href="../styles/global.css" />
-  <link rel="stylesheet" href="./pet.css" />
-
-  <script>
-    function showMobileMenu() {
-      mobileMenu = document.getElementById("mobileMenu");
-      if (mobileMenu.classList.contains("hiddenMenu")) {
-        mobileMenu.classList.remove("hiddenMenu");
-        mobileMenu.classList.add("visibleMenu");
-      } else {
-        mobileMenu.classList.remove("visibleMenu");
-        mobileMenu.classList.add("hiddenMenu");
-      }
-    }
-
-    function voceAdotou() {
-      window.confirm("Parabéns você adotou o pet!");
-    }
-  </script>
-</head>
-
-<body>
-  <div id="menuPrincipal">
-    <nav id="navegacaoMenu">
-      <div id="logoMenu">
-        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
-      </div>
-      <ul>
-        <li><a href="../home/home.html">Inicio</a></li>
-        <li><a href="/src/CadastroPet/cadastropet.html">Quero Doar</a></li>
-      </ul>
-    </nav>
-    <div id="botoesMenu">
-      <p id="botaoAdotar">
-        <a href="/src/adotar/adotar.html">Quero adotar</a>
-      </p>
-      <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
-    </div>
-    <div class="mobileIcon" onclick="showMobileMenu()">
-      <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
-    </div>
-  </div>
-  <!-- Fechar a div #menuPrincipal -->
-  <div id="mobileMenu" class="hiddenMenu">
-    <div>
-      <a href="../home/home.html"><img src="../images/logo.png" alt="logo adoption pet" /></a>
-      <nav>
+    <!--Fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./pet.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+  </head>
+  <body>
+    <div id="menuPrincipal">
+      <nav id="navegacaoMenu">
+        <div id="logoMenu">
+          <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+        </div>
         <ul>
           <li><a href="../home/home.html">Inicio</a></li>
           <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
         </ul>
       </nav>
-    </div>
-    <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
-      <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
-    </div>
-    <div id="mobileMenuButtons">
-      <p><a href="../adotar/adotar.html">Quero Adotar</a></p>
-      <p><a href="../login/login.html">Entrar</a></p>
-    </div>
-  </div>
-  <div id="petPageContainer">
-    <div id="petCard">
-      <div id="fotoPet">
-        <img id="imgPet" src="" alt="Foto do Pet" />
+      <div id="botoesMenu">
+        <p id="botaoAdotar"><a href="../adotar/adotar.html">Quero adotar</a></p>
+        <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
       </div>
-      <div id="infoPet">
-        <div>
-          <h1 id="name"></h1>
-          <h4 id="idade"></h4>
-        </div>
-        <div>
-          <p id="description">
-          </p>
-          <p id="sexo"></p>
-        </div>
-        <div id="adotarPet">
-          <a href="" onclick="voceAdotou()">
-            <p>Quero Adotar</p>
-          </a>
-        </div>
+      <div class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
       </div>
     </div>
-  </div>
-  <footer id="footerPrincipal">
-    <div id="logoFooter">
-      <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+    <div id="mobileMenu" class="hiddenMenu">
+      <div>
+        <a href="#"><img src="../images/logo.png" alt="logo adoption pet" /></a>
+        <nav>
+          <ul>
+            <li><a href="../home/home.html">Inicio</a></li>
+            <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
+      </div>
+      <div id="mobileMenuButtons">
+        <p><a href="../adotar/adotar.html">Quero Adotar</a></p>
+        <p><a href="../login/login.html">Entrar</a></p>
+      </div>
     </div>
-    <div id="infoFooter">
-      <p>
-        Desenvolvido por
-        <span style="color: #17479e">AdoptionLove</span> &copy; 2023
-      </p>
-    </div>
-    <div id="socialFooter">
-      <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
-      <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
-      <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
-    </div>
-  </footer>
 
-  <script>
-    function showMobileMenu() {
-      mobileMenu = document.getElementById("mobileMenu");
-      if (mobileMenu.classList.contains("hiddenMenu")) {
-        mobileMenu.classList.remove("hiddenMenu");
-        mobileMenu.classList.add("visibleMenu");
-      } else {
-        mobileMenu.classList.remove("visibleMenu");
-        mobileMenu.classList.add("hiddenMenu");
+    <div id="petPageContainer">
+      <div id="petCard">
+        <div id="fotoPet">
+          <img id="imgPet" src="" alt="Foto do Pet" />
+        </div>
+        <div id="infoPet">
+          <div>
+            <h1 id="name"></h1>
+            <h4 id="idade"></h4>
+          </div>
+          <div>
+            <p id="description"></p>
+            <p id="sexo"></p>
+          </div>
+          <div id="adotarPet">
+            <a href="" onclick="voceAdotou()">
+              <p>Quero Adotar</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footerPrincipal">
+      <div id="logoFooter">
+        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+      </div>
+      <div id="infoFooter">
+        <p>
+          Desenvolvido por
+          <span style="color: #17479e">AdoptionLove</span> &copy; 2023
+        </p>
+      </div>
+      <div id="socialFooter">
+        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
+        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
+        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="../script/global.js"></script>
+    <script src="./pet.js"></script>
+    <script>
+      function voceAdotou() {
+        window.confirm("Parabéns você adotou o pet!");
       }
-    }
-
-    // const img = localStorage.getItem("imagem");
-    // const nome = localStorage.getItem("nome");
-    // const idade = localStorage.getItem("idade");
-
-    // const petImg = document.getElementsByClassName("petImg");
-    // petImg[0].src = img;
-
-    // const nomePet = document.getElementById("nomePet");
-    // nomePet.textContent = nome;
-
-    // const idadePet = document.getElementById("idadePet");
-    // idadePet.textContent = idade;
-
-    function voceAdotou() {
-      window.confirm("Parabéns você adotou o pet!");
-    }
-  </script>
-  <script src="./pet.js"></script>
-</body>
-
+    </script>
+  </body>
 </html>

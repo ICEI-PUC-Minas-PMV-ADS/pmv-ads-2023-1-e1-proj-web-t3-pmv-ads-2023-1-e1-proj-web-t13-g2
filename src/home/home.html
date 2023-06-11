@@ -5,39 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdoptionLove</title>
-    <link
-      rel="shortcut icon"
-      href="../images/favicon.ico"
-      type="image/x-icon"
-    />
     <meta name="description" content="" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+
+    <!-- Style -->
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="stylehome.css" />
-    <script>
-      function showMobileMenu() {
-        mobileMenu = document.getElementById("mobileMenu");
-        if (mobileMenu.classList.contains("hiddenMenu")) {
-          mobileMenu.classList.remove("hiddenMenu");
-          mobileMenu.classList.add("visibleMenu");
-        } else {
-          mobileMenu.classList.remove("visibleMenu");
-          mobileMenu.classList.add("hiddenMenu");
-        }
-      }
-
-      function voceAdotou() {
-        window.confirm("Parabéns você adotou o pet!");
-      }
-    </script>
+    <link rel="stylesheet" href="./stylehome.css" />
   </head>
-
   <body>
     <div id="menuPrincipal">
       <nav id="navegacaoMenu">
         <div id="logoMenu">
-          <a href="#"
-            ><img src="../images/logo.png" alt="Logo AdoptionLove"
-          /></a>
+          <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
         </div>
         <ul>
           <li><a href="../home/home.html">Inicio</a></li>
@@ -45,38 +24,32 @@
         </ul>
       </nav>
       <div id="botoesMenu">
-        <p id="botaoAdotar">
-          <a href="../adotar/adotar.html">Quero adotar</a>
-        </p>
+        <p id="botaoAdotar"><a href="../adotar/adotar.html">Quero adotar</a></p>
         <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
       </div>
       <div class="mobileIcon" onclick="showMobileMenu()">
         <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
       </div>
     </div>
-    <!-- Fechar a div #menuPrincipal -->
     <div id="mobileMenu" class="hiddenMenu">
       <div>
-        <a href=""><img src="../images/logo.png" alt="logo adoption pet" /></a>
+        <a href="#"><img src="../images/logo.png" alt="logo adoption pet" /></a>
         <nav>
           <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Quero Doar</a></li>
+            <li><a href="../home/home.html">Inicio</a></li>
+            <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
           </ul>
         </nav>
       </div>
       <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
-        <img
-          src="../images/closeicon.png"
-          alt="Mobile Icon"
-          style="width: 30px"
-        />
+        <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
       </div>
       <div id="mobileMenuButtons">
-        <p><a href="">Quero Adotar</a></p>
-        <p><a href="">Entrar</a></p>
+        <p><a href="../adotar/adotar.html">Quero Adotar</a></p>
+        <p><a href="../login/login.html">Entrar</a></p>
       </div>
     </div>
+
     <main class="content" style="padding-top: 20px">
       <div class="box-home">
         <div class="texto-principal">
@@ -95,22 +68,9 @@
             possa ter certeza de que está fazendo a escolha certa para sua
             família e seu novo amigo.
           </p>
-        </p>
-        <a href="../adotar/adotar.html" class="botao-imagem">Conheça nossos Pets</a>
-      </div>
-      <style>
-        .botao-imagem {
-          text-decoration: none; /* Remove o sublinhado */
-        }
-      </style>
+          <a href="../adotar/adotar.html" class="botao-imagem">Conheça nossos Pets</a>
         </div>
-        <!-- <img
-          class="imagem-principal"
-          src="images/imagemprincipal.jpg"
-          alt="Imagem Principal"
-        /> -->
       </div>
-      <!-- Fechar a div .box-home -->
 
       <div class="texto2">
         <p>
@@ -124,9 +84,7 @@
 
       <footer id="footerPrincipal">
         <div id="logoFooter">
-          <a href="#"
-            ><img src="../images/logo.png" alt="Logo AdoptionLove"
-          /></a>
+          <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
         </div>
         <div id="infoFooter">
           <p>
@@ -136,30 +94,14 @@
         </div>
         <div id="socialFooter">
           <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
-          <a href="#"
-            ><img src="../images/igicon.png" alt="Logo Instagram"
-          /></a>
+          <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
           <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
         </div>
       </footer>
-
-      <script>
-        function showMobileMenu() {
-          mobileMenu = document.getElementById("mobileMenu");
-          if (mobileMenu.classList.contains("hiddenMenu")) {
-            mobileMenu.classList.remove("hiddenMenu");
-            mobileMenu.classList.add("visibleMenu");
-          } else {
-            mobileMenu.classList.remove("visibleMenu");
-            mobileMenu.classList.add("hiddenMenu");
-          }
-        }
-        const redirect = () => {
-          window.location.href = "http://localhost:5500/src/adotar/adotar.html";
-        };
-      </script>
     </main>
 
+    <!-- Script -->
+    <script src="../script/global.js"></script>
     <script src="../data/data.js"></script>
   </body>
 </html>

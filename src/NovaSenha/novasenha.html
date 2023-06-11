@@ -1,67 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdoptionLove</title>
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="./novasenha.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <script>
-        function showMobileMenu() {
-          mobileMenu = document.getElementById("mobileMenu");
-          if (mobileMenu.classList.contains("hiddenMenu")) {
-            mobileMenu.classList.remove("hiddenMenu");
-            mobileMenu.classList.add("visibleMenu");
-          } else {
-            mobileMenu.classList.remove("visibleMenu");
-            mobileMenu.classList.add("hiddenMenu");
-          }
-        }
-    </script>    
-</head>
-<body>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./novasenha.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap" />
+  </head>
+  <body>
     <div id="menuPrincipal">
-        <nav id="navegacaoMenu">
-          <div id="logoMenu">
-            <a href="#"
-              ><img src="../images/logo.png" alt="Logo AdoptionLove"
-            /></a>
-          </div>
+      <nav id="navegacaoMenu">
+        <div id="logoMenu">
+          <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+        </div>
+        <ul>
+          <li><a href="../home/home.html">Inicio</a></li>
+        </ul>
+      </nav>
+      <div id="botoesMenu">
+        <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
+      </div>
+      <div class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+      </div>
+    </div>
+    <div id="mobileMenu" class="hiddenMenu">
+      <div>
+        <a href="#"><img src="../images/logo.png" alt="logo adoption pet" /></a>
+        <nav>
           <ul>
             <li><a href="../home/home.html">Inicio</a></li>
           </ul>
         </nav>
-        <div id="botoesMenu">
-          <p id="botaoLogin"><a href="/src/login/login.html">Entrar</a></p>
-        </div>
-        <div class="mobileIcon" onclick="showMobileMenu()">
-          <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
-        </div>
       </div>
-      <div id="mobileMenu" class="hiddenMenu">
-        <div>
-          <a href=""><img src="../images/logo.png" alt="logo adoption pet"></a>
-          <nav>
-            <ul>
-              <li><a href="/src/home/home.html">Inicio</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
-          <img
-            src="../images/closeicon.png"
-            alt="Mobile Icon"
-            style="width: 30px"
-          />
-        </div>
-        <div id="mobileMenuButtons">
-          <p><a href="/src/login/login.html">Entrar</a></p>
-        </div>
+      <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
+        <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
       </div>
+      <div id="mobileMenuButtons">
+        <p><a href="../login/login.html">Entrar</a></p>
+      </div>
+    </div>
 
     <main class="content">
         <div>
@@ -76,18 +60,23 @@
     </main>
 
     <footer id="footerPrincipal">
-        <div id="logoFooter">
-            <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove"></a>
-        </div>
-        <div id="infoFooter">
-           <p>Desenvolvido por <span style="color: #17479E;">AdoptionLove</span> &copy; 2023 </p>
-        </div>
-        <div id="socialFooter">
-            <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook"></a>
-            <a href="#"><img src="../images/igicon.png" alt="Logo Instagram"></a>
-            <a href="#"><img src="../images/yticon.png" alt="Logo Youtube"></a>
-        </div>
+      <div id="logoFooter">
+        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+      </div>
+      <div id="infoFooter">
+        <p>
+          Desenvolvido por
+          <span style="color: #17479e">AdoptionLove</span> &copy; 2023
+        </p>
+      </div>
+      <div id="socialFooter">
+        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
+        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
+        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
+      </div>
     </footer>
-</body>
 
+    <!-- Script -->
+    <script src="../script/global.js"></script>
+  </body>
 </html>
