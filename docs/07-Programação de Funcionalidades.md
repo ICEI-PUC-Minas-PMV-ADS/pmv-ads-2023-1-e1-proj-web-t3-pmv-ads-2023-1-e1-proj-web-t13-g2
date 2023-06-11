@@ -9,7 +9,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 
 A tela principal do sistema apresenta todas as opções em que o usuário tem acesso e explica como funciona o processo de adoção. (RNF-01- RNF-02 - RNF-03 requisitos não funcionais) 
 
-![home](img/etapa4/homeTeste.png)
+![home](./img/etapa4/home.png)
 
 #### Requisitos atendidos 
 

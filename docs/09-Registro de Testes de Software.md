@@ -17,12 +17,12 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 Nessa página podemos navegar e conhecer todo o site, os botões estão todos redirecionados para a navegação do site 
 
-![home](./img/etapa/home.png)
+![home](./img/home.png)
 
 Abaixo podemos visualizar no teste o que acontece ao clicar em cada botão:  
 
 Ao clicar no botão inicio o user permanece na mesma página:
-![home](./img/etapa/home.png)
+![home](./img/home.png)
 
 Ao clicar no botão Quero doar o site direciona para essa página de cadastro do Pet 
 
@@ -69,27 +69,27 @@ Quando a tela fica do tamanho de mobile o menu muda para melhor visualização :
 
 Para validar os dados do cadastro do cliente no primeiro campo é necessário que tenha nome e sobrenome. Caso não preencha nada aparece um erro. 
 
-![cadUserErro1](./img/etapa4/cadastroUserTestes/cadUserErro1.png)
+![cadUserErro1](./img/etapa4/cadastroUserTestes/cadUserError1.png)
 
 Caso preencha somente o primeiro nome ira aparecer um erro informando que deverá informar um sobrenome  
 
-![cadUserErro2](./img/etapa4/cadastroUserTestes/cadUserErro2.png)
+![cadUserErro2](./img/etapa4/cadastroUserTestes/cadUserError2.png)
 
 Apos ter preenchido nome e sobrenome é necessário informar um email, caso não preencha os dados e apresentando um erro, informando a obrigatoriedade de colocar o email.  
 
-![cadUserErro3](./img/etapa4/cadastroUserTestes/cadUserErro3.png)
+![cadUserErro3](./img/etapa4/cadastroUserTestes/cadUserError3.png)
 
 Ira aparece um erro caso o email não seja preenchido de forma correta. 
 
-![cadUserErro4](./img/etapa4/cadastroUserTestes/cadUserErro4.png)
+![cadUserErro4](./img/etapa4/cadastroUserTestes/cadUserError4.png)
 
 A senha deve conter no minino 8 dígitos caso não contenha ira aparece um erro.  
 
-![cadUserErro5](./img/etapa4/cadastroUserTestes/cadUserErro5.png)
+![cadUserErro5](./img/etapa4/cadastroUserTestes/cadUserError5.png)
 
 A senha deve ser igual, caso não seja aparece um erro, informando que a senha não coinside  
 
-![cadUserErro6](./img/etapa4/cadastroUserTestes/cadUserErro6.png)
+![cadUserErro6](./img/etapa4/cadastroUserTestes/cadUserError6.png)
 
 Caso todos os dados estejam corretos e demonstrado um pop-up informando que receberá um email para confirmação dos dados. 
 

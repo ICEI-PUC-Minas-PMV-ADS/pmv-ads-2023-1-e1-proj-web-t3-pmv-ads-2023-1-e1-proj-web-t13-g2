@@ -65,6 +65,7 @@ As imagens e textos devem ser apresentados de maneiras corretas em quaisquer dis
 
  
 
+<hr>
 
 ### Caso de Teste 
 
@@ -116,7 +117,8 @@ Teve conter nome e sobrenome
 
  
 
- 
+<hr>
+
 ### Caso de Teste 
 
 CT-03  - Adotar – Aonde pode-se visualizar os pets que estão disponíveis para adoção 
@@ -151,7 +153,8 @@ Os pets devem ser filtrados e a tela deve apresentar apenas os pets que se encai
 
  
 
- 
+ <hr>
+
 ### Caso de Teste 
 
 CT-04 – Login – Permite o usuário previamente cadastrado ter acesso a funcionalidades a página de adotar e doar 
@@ -195,6 +198,7 @@ Campo senha deve ser preenchido
 E-mail e senha tem que ser compatíveis e validos. 
 
 
+<hr>
 
 ### Caso de Teste 
 
@@ -229,6 +233,7 @@ Verificar se a página esta funcional e se apresenta algum retorno ao adotar o p
 Aparecer mensagem no navegador avisando que adotou um pet. 
 
 
+<hr>
 
 ### Caso de Teste 
 
@@ -259,6 +264,7 @@ Validar que, ao preencher corretamente o formulário de cadastro, o pet é adici
 Após o cadastro, ser redirecionado para a página de adoção de pets e visualizar o pet cadastrado na lista de adoção. 
 
  
+<hr>
 
 ### Caso de Teste 
 
@@ -289,6 +295,7 @@ Validar que o pet não foi cadastrado quando nenhum campo obrigatório é preenc
 A página deve exibir mensagens de erro destacando os campos obrigatórios não preenchidos. Os campos não preenchidos devem ser realçados visualmente (em vermelho) e as mensagens de erro correspondentes devem ser exibidas abaixo dos campos afetados. 
 
  
+<hr>
 
 ### Caso de Teste 
 
