@@ -2,8 +2,10 @@
 let pets = [];
 let localStoragePets = localStorage.getItem("pets");
 pets = [...JSON.parse(localStoragePets)];
+petsFiltered = []
+let petsElments = []
 
-pets.map((pet) => {
+function renderPets(pet) {
   const parentElement = document.getElementById("petsContainer1");
 
   parentElement.innerHTML += `
@@ -16,7 +18,24 @@ pets.map((pet) => {
     <button onclick="irParaPet(${pet.id})" class="moreDetails">Mais detalhes</button>
   </div>
   `;
-});
+}
+
+function getPets() {
+  petsElments = [...document.getElementsByClassName('pet')];
+  petsElments.map((pet) => pet.remove())
+
+  if (petsFiltered.length == 0) {
+    pets.map((pet) => renderPets(pet));
+    return
+  } else {
+    petsFiltered.map((pet) => renderPets(pet))
+    petsFiltered = []
+    return
+  }
+}
+getPets()
+
+
 
 // Ir para página do pet específico
 function irParaPet(id) {
@@ -31,108 +50,23 @@ function irParaPet(id) {
   window.location.href = "../pet/pet.html";
 }
 
-function toogle(propiedade, contentPropiedade) {
-  let petsFiltered = pets.filter((pet) => pet[propiedade] != contentPropiedade);
-
-  let p = [];
-  for (pet of petsFiltered) {
-    p.push(document.getElementById(pet.id));
-  }
-  console.log(p);
-  let pClassesCss = [];
-  p.map((pet) => {
-    if (!!pet) {
-      pClassesCss = [...pet.classList];
-      if (pClassesCss.includes("remove") && !!pet) {
-        pet.classList.remove("remove");
-        return;
-      }
-      pet.classList.add("remove");
-    }
-  });
-  petsFiltered = "";
-}
-
-function chekboxIdade(propiedade, logicaIdade, idade) {
-  let petsFiltered = "";
-  switch (logicaIdade) {
-    case "maior": {
-      petsFiltered = pets.filter((pet) => !(pet[propiedade] > idade));
-      break;
-    }
-    case "menorOuIgual": {
-      petsFiltered = pets.filter((pet) => !(pet[propiedade] <= idade));
-      break;
-    }
-    default:
-      return;
-  }
-
-  let p = [];
-  for (pet of petsFiltered) {
-    p.push(document.getElementById(pet.id));
-  }
-  console.log(p);
-  let pClassesCss = [];
-  p.map((pet) => {
-    if (!!pet) {
-      pClassesCss = [...pet.classList];
-      if (pClassesCss.includes("remove") && !!pet) {
-        pet.classList.remove("remove");
-        return;
-      }
-      pet.classList.add("remove");
-    }
-  });
-  petsFiltered = "";
-}
-
-function filterBirds() {
-  toogle("tipo", "bird");
-}
-
-function filterDogs() {
-  toogle("tipo", "dog");
-}
-
-function filterCats() {
-  toogle("tipo", "cat");
-}
-
-function filterFemale() {
-  toogle("sexo", "female");
-}
-
-function filterMale() {
-  toogle("sexo", "male");
-}
-
-function filterMore5Years() {
-  chekboxIdade("idade", "maior", 5);
-}
-
-function filterMinus5Years() {
-  chekboxIdade("idade", "menorOuIgual", 5);
-}
-
-function filterMinus2Years() {
-  chekboxIdade("idade", "menorOuIgual", 2);
-}
-
 // Ocultar o btn filters
 const showFilters = () => {
   let filters = document.getElementsByClassName("filters")[0];
   let contentFilters = document.getElementsByClassName("contentFilters")[0];
-  let btnFilter = document.getElementsByClassName("filterPets");
+  let btnFilter = document.getElementsByClassName("filtersPets")[0];
+
 
   let classOfFilters = [...filters.classList];
 
   if (!!classOfFilters.includes("removeFilters")) {
     filters.classList.remove("removeFilters");
     contentFilters.classList.remove("remove");
+    btnFilter.classList.remove("remove");
   } else {
     filters.classList.add("removeFilters");
     contentFilters.classList.add("remove");
+    btnFilter.classList.add("remove");
   }
   changeSvg();
 };
@@ -157,14 +91,41 @@ function showMobileMenu() {
   }
 }
 
-function teste(){
-  let arrayDeArray = [] //Aqui vamos salvar os arrays dos objetos que forma filtrados, lembrando que é o array que vai entrar não os valores dele
+function filtersPets() {
+  let inputs = [...document.getElementsByTagName("input")]
+  let inputsChecked = []
+  let arraysComPets = []
 
-  let resultado = arrayDeArray.filter
-}
+  for (input of inputs) {
+    inputsChecked.push(input.checked)
+    input.checked = false
+  }
 
-function filtro(){
-  //Primeiro passo: Vamos fazer o filtro separado de cada coisa
-  //Segundo passo: Salvar o resultado de cada filtro dentro de um array, ou seja, vamos ter um array de arrays
-  //Terceiro passo: Filtrar qual id está aparecendo em todos os arrays, assim teremos o filtro de acordo com oq foi selecionado
+  let filters = {
+    tipoBird: inputsChecked[0],
+    tipoDog: inputsChecked[1],
+    tipoCat: inputsChecked[2],
+    sexoFemale: inputsChecked[3],
+    sexoMale: inputsChecked[4]
+  }
+
+
+  arraysComPets.push(filters.tipoBird ? pets.filter((pet) => pet.tipo === 'bird') : [])
+  arraysComPets.push(filters.tipoDog ? pets.filter((pet) => pet.tipo === 'dog') : [])
+  arraysComPets.push(filters.tipoCat ? pets.filter((pet) => pet.tipo === 'cat') : [])
+
+  arraysComPets.push(filters.sexoFemale ? pets.filter((pet) => pet.sexo === 'female') : [])
+  arraysComPets.push(filters.sexoMale ? pets.filter((pet) => pet.sexo === 'male') : [])
+
+  let idPetsFiltered = petsFiltered.map((pets) => pets.id)
+
+  for (arrayPets of arraysComPets) {
+    arrayPets.map((array) => {
+      if (!idPetsFiltered.includes(array.id)) {
+        petsFiltered.push(array)
+      }
+    })
+  }
+  getPets()
+
 }
