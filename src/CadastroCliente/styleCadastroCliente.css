@@ -1,504 +1,93 @@
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .header h1 {
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f2f2f2;
-  }
-  
-  .footer p {
-    font-size: 0.8rem;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .content > * {
-    margin: 1rem;
-  }
-  
-  .content > img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 1rem;
-  }
-  
-  .content > div {
-    max-width: 20rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .content h1 {
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-  }
-  
-  .content input {
-    height: 3rem;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    padding: 0.5rem;
-    font-size: 1rem;
-    outline: none;
-  }
-  
-  .content button {
-    height: 1rem;
-    width: 50%;
-    color: white;
-    background-color: #3A70D1;
-    border: none;
-    border-radius: 1rem;
-    font-size: 0.5rem;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
-  
-  .content button:hover {
-    background-color: orange;
-    cursor: pointer;
-    transition: 0.2s 0.1s ease-in;
-  }
-  
-  @media (max-width: 480px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    .content > img {
-      display: none;
-    }
-  
-  
-    .content {
-      padding: 1rem;
-    }
-  
-    .content > div {
-      max-width: 80%;
-    }
-  
-    .content > img {
-      max-width: 30%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.5rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  
-  @media (min-width: 481px) and (max-width: 600px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    
-      .content > img {
-        display: none;
-      }
-  
-  
-    .content {
-      padding: 1rem;
-    }
-    
-    .content > img {
-      max-width: 35%;
-    }
-    
-    .content > div {
-      max-width: 80%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.6rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  
-  @media (min-width: 601px) and (max-width: 700px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    .content > img {
-      display: none;
-    }
-    
-  
-  
-    .content {
-      padding: 1rem;
-    }
-  
-    .content > div {
-      max-width: 80%;
-    }
-    
-    .content > img {
-      max-width: 30%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.7rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  
-  @media (min-width: 701px) and (max-width: 800px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    .content > img {
-      display: none;
-    }
-  
-    .content {
-      padding: 1rem;
-    }
-    
-    .content > div {
-      max-width: 50%;
-    }
-  
-    .content > img {
-      max-width: 30%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.8rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  @media (min-width: 801px) and (max-width: 900px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    .content > img {
+.content > *{
+  height: 65vh;
+  width: 65vh;
+  margin: 10vh;
+}
+
+.content > img{
+  border-radius: 1vh;
+}
+
+@media (max-width: 1500px){
+  .content > *{
+      margin: 0;
+  }
+  
+  .content > img{
       display: none;
-    }
-  
-    .content {
-      padding: 1rem;
-    }
-    
-    .content > div {
-      max-width: 50%;
-    }
-  
-    .content > img {
-      max-width: 30%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.8rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  @media (min-width: 901px) and (max-width: 1000px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-    .content > img {
-      display: none;
-    }
-  
-    .content {
-      padding: 1rem;
-    }
-    
-    .content > div {
-      max-width: 50%;
-    }
-  
-    .content > img {
-      max-width: 30%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.8rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  @media (min-width: 1001px) and (max-width: 1100px) {
-    .header {
-      padding: 0.5rem;
-    }
-    
-    .header h1 {
-      font-size: 1.5rem;
-    }
-  
-  
-    .content {
-      padding: 1rem;
-    }
-    
-    .content > div {
-      max-width: 50%;
-    }
-  
-    .content > img {
-      max-width: 30%;
-    }
-  
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    .content input {
-      height: 2rem;
-      font-size: 0.8rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 0.8rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  
-  @media (min-width: 1001px) and (max-width: 1200px) {
-    .header {
-      padding: 1rem;
-    }
-    
-    .header h1 {
-      font-size: 2rem;
-    }
-    
-   
-    .content {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .content > * {
-      margin: 1rem;
-    }
-  
-    .content > img {
-      max-width: 40%;
-    }
-  
-    .content > div {
-      max-width: 100%;
-    }
-  
-    .content h1 {
-      font-size: 2rem;
-    }
-  
-    .content input {
-      height: 3rem;
-      font-size: 1rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 1rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  
-  @media (min-width: 1201px) and (max-width: 1700px) {
-    .header {
-      padding: 1rem;
-    }
-    
-    .header h1 {
-      font-size: 2.5rem;
-    }
-    
-  
-    .content {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .content > * {
-      margin: 1rem;
-    }
-  
-    .content > img {
-      max-width: 40%;
-    }
-  
-    .content > div {
-      max-width: 50%;
-    }
-  
-    .content h1 {
-      font-size: 2.5rem;
-    }
-  
-    .content input {
-      height: 4rem;
-      font-size: 1.2rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 1rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  @media (min-width: 1800px) {
-    .header {
-      padding: 1rem;
-    }
-    
-    .header h1 {
-      font-size: 2.5rem;
-    }
-    
-  
-    .content {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .content > * {
-      margin: 1rem;
-    }
-  
-    .content > img {
-      max-width: 40%;
-    }
-  
-    .content > div {
-      max-width: 50%;
-    }
-  
-    .content h1 {
-      font-size: 2.5rem;
-    }
-  
-    .content input {
-      height: 4rem;
-      font-size: 1.2rem;
-    }
-  
-    .content button {
-      height: 3rem;
-      font-size: 1rem;
-      width: 30%;
-      margin-top: 1rem;
-    }
-  }
-  
+  }    
+}
+
+.content > #form{
+  padding: 2vh 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#form > h1{
+  font-size: 5vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+#form > .input-control{
+  width: 100%;
+}
+
+.input-control > input{
+  width: 100%;
+  font-size: 2vh;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.input-control > input{
+  height: 3vh;
+  border-width: 0 0 1px 0;
+  text-indent: 1vh;
+  padding: 0;
+}
+
+#form > button{
+  height: 7vh;
+  width: 100%;
+  color: white;
+  background-color: #3A70D1;
+  border: none;
+  border-radius: 1vh;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+#form > button:hover{
+  background-color: orange;
+  cursor: pointer;
+  transition: 0.2s 0.1s ease-in;
+}
+
+/* Validation error */
+
+.input-control > .invalid{
+  border-color: red;
+}
+
+.input-control .invalid::placeholder{
+  color: red;
+}
+
+.input-control > .error{
+  padding: 0;
+  margin: 0;
+  height: 1.4vh;
+  font-size: 1.4vh;
+  color: red;
+}

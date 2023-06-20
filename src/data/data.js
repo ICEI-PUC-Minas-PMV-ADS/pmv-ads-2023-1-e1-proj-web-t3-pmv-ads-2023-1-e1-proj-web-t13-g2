@@ -1,4 +1,17 @@
-let pets = [
+const clients = [
+  {
+    "nome": "Adim Teste",
+    "email": "teste@gmail.com",
+    "senha": "Senha123"
+  },
+  {
+    "nome": "Ercules Mauricio",
+    "email": "ercules@hotmail.com",
+    "senha": "Ercules123"
+  }
+];
+
+const pets = [
   {
     id: 1,
     name: "Gilmar",
@@ -33,7 +46,7 @@ let pets = [
     tipo: "cat",
   },
   {
-    id: 8,
+    id: 4,
     name: "Nix",
     img: "https://www.worten.pt/i/f28495f34f6e4c25abfc83a54aa79d03117e0ade",
     description:
@@ -77,7 +90,7 @@ let pets = [
     tipo: "dog",
   },
   {
-    id: 4,
+    id: 8,
     name: "Tico",
     img: "../adotar/img/petTico.jpg",
     description:
@@ -100,5 +113,21 @@ let pets = [
   },
 ];
 
-let petsIntoLocalStorage = JSON.stringify(pets);
-localStorage.setItem("pets", petsIntoLocalStorage);
+document.addEventListener("DOMContentLoaded", () => {
+  loadClientsData();
+  loadPetsData();
+})
+
+function loadClientsData() {
+  let localStorageClients = localStorage.getItem("clients");
+  
+  if (!localStorageClients)
+    localStorage.setItem("clients", JSON.stringify(clients));
+}
+
+function loadPetsData() {
+  let localStoragePets = localStorage.getItem("pets");
+  
+  if (!localStoragePets)
+    localStorage.setItem("pets", JSON.stringify(pets));
+}
