@@ -100,11 +100,11 @@ function resolveClientData() {
 }
 
 function saveClientData() {
-  clients.push(builClient());
+  clients.push(buildClient());
   localStorage.setItem("clients", JSON.stringify(clients));
 }
 
-function builClient() {
+function buildClient() {
   return {
     nome: clientName.value,
     email: clientEmail.value,
