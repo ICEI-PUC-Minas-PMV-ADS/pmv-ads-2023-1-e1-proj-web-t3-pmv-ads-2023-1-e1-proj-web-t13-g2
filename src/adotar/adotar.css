@@ -124,6 +124,11 @@
   color: white;
   height: 50px;
   font-size: 24px;
+  transition: .3ms;
+}
+
+.moreDetails:hover {
+  background-color: #fa8f42;
 }
 
 input {
