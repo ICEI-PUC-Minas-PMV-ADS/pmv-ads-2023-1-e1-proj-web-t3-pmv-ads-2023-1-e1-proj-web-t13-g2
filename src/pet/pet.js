@@ -26,3 +26,6 @@ function resolvePetData() {
   return JSON.parse(localStoragePet);
 }
 
+function voceAdotou() {
+  window.confirm("Parabéns você adotou o pet!");
+}
