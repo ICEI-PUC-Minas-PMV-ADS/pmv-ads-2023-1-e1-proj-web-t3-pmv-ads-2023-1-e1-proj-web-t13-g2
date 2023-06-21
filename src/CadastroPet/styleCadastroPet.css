@@ -6,19 +6,17 @@
 }
 
 .content > *{
-    height: 65vmin;
-    width: 65vmin;
-    margin: 10vmin;
+    height: 65vh;
+    width: 65vh;
+    margin: 10vh;
 }
 
 .content > img{
-    border-radius: 1vmin;
+    border-radius: 1vh;
 }
 
 @media (max-width: 1500px){
     .content > *{
-        height: 65vmin;
-        width: 65vmin;
         margin: 0;
     }
     
@@ -28,7 +26,7 @@
 }
 
 .content > #form{
-    padding: 2vmin 2vmin;
+    padding: 2vh 2vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,7 +35,7 @@
 }
 
 #form > h1{
-    font-size: 5vmin;
+    font-size: 5vh;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -50,21 +48,21 @@
 .input-control > textarea,
 .input-control > input{
     width: 100%;
-    font-size: 2vmin;
+    font-size: 2vh;
     outline: none;
     border: 1px solid gray;
 }
 
 .input-control > input{
-    height: 3vmin;
+    height: 3vh;
     border-width: 0 0 1px 0;
-    text-indent: 1vmin;
+    text-indent: 1vh;
     padding: 0;
 }
 
 .input-control > textarea{
-    border-radius: 1vmin;
-    padding: 1vmin;
+    border-radius: 1vh;
+    padding: 1vh;
     font-family: sans-serif;
     box-sizing: border-box;
     resize: none;
@@ -72,18 +70,18 @@
 
 .input-control > div{
     display: flex;
-    height: 3vmin;
-    border-radius: 1vmin;
+    height: 3vh;
+    border-radius: 1vh;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .input-control > select{
-    height: 3vmin;
-    border-radius: 1vmin;
+    height: 3vh;
+    border-radius: 1vh;
     color: gray;
-    text-indent: 1vmin;
+    text-indent: 1vh;
 }
 
 .input-control > div > label{
@@ -97,13 +95,13 @@
 }
 
 #form > button{
-    height: 7vmin;
+    height: 7vh;
     width: 100%;
     color: white;
     background-color: #3A70D1;
     border: none;
-    border-radius: 1vmin;
-    font-size: 3vmin;
+    border-radius: 1vh;
+    font-size: 3vh;
     text-decoration: none;
 }
 
@@ -148,7 +146,7 @@ input[type="radio"]:checked + label {
 .input-control > .error{
     padding: 0;
     margin: 0;
-    height: 1.4vmin;
-    font-size: 1.4vmin;
+    height: 1.4vh;
+    font-size: 1.4vh;
     color: red;
 }

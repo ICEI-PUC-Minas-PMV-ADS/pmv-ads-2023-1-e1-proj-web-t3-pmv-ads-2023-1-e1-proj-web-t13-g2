@@ -5,6 +5,7 @@ const petPhoto = document.getElementById("petPhoto");
 const petAge = document.getElementById("petAge");
 const petSex = document.getElementById("petSex");
 const petDescription = document.getElementById("petDescription");
+let pets = resolvePetData();
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -78,9 +79,7 @@ function petDescriptionValidation() {
   if (petDescription.value === "") {
     petDescription.showErrorMessage("Preencha a descrição do Pet");
   } else if (petDescription.value.length > 120) {
-    petDescription.showErrorMessage(
-      "A descrição do Pet não pode ter mais de 120 caracteres"
-    );
+    petDescription.showErrorMessage("A descrição do Pet não pode ter mais de 120 caracteres");
   } else {
     petDescription.clearErrorMessage();
   }
@@ -98,7 +97,7 @@ HTMLElement.prototype.clearErrorMessage = function () {
   error.innerText = "";
 };
 
-function savePetData() {
+function resolvePetData() {
   let localStoragePets = localStorage.getItem("pets");
 
   let pets = [];
@@ -106,9 +105,12 @@ function savePetData() {
     pets = JSON.parse(localStoragePets);
   }
 
+  return pets;
+}
+
+function savePetData() {
   pets.push(builPet(pets.length));
-  localStoragePets = JSON.stringify(pets);
-  localStorage.setItem("pets", localStoragePets);
+  localStorage.setItem("pets", JSON.stringify(pets));
 }
 
 function builPet(petsQtde) {

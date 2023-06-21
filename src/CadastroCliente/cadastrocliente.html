@@ -52,18 +52,26 @@
     </div>
 
     <main class="content">
-      <div>
+      <form id="form">
         <h1>Faça seu cadastro</h1>
-        <input type="text" id="nome" placeholder="Nome">
-        <div id="erroNome"></div>
-        <input type="email" id="email" placeholder="E-mail">
-        <div id="erroEmail"></div>
-        <input type="password" id="senha" placeholder="Senha">
-        <div id="erroSenha"></div>
-        <input type="password" id="confirmarSenha" placeholder="Confirme a senha">
-        <div id="erroConfirmarSenha"></div>
-        <button onclick="validarFormulario()">CADASTRO</button>
-      </div>
+        <div class="input-control">
+          <input id="clientName" name="clientName" type="text" placeholder="Nome completo"></input>
+          <p class="error"></p>
+        </div>
+        <div class="input-control">
+          <input id="clientEmail" name="email" type="text" placeholder="E-mail"></input>
+          <p class="error"></p>
+        </div>
+        <div class="input-control">
+          <input id="clientPassword" name="password" type="password" placeholder="Senha"></input>
+          <p class="error"></p>
+        </div>
+        <div class="input-control">
+          <input id="confirmClientPassword" name="confirmPassword" type="password" placeholder="Confirme a senha"></input>
+          <p class="error"></p>
+        </div>
+        <button id="register" type="submit">CADASTRO</button>
+      </form>
       <img src="./img/love-bestfriends.jpg" alt="Foto Demonstrativa">
     </main>
     
@@ -86,6 +94,6 @@
 
     <!-- Script -->
     <script src="../script/global.js"></script>
-    <script src="./script.js"></script>
+    <script src="./scriptCadastroCliente.js"></script>
   </body>
 </html>
