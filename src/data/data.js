@@ -15,7 +15,7 @@ const pets = [
       "Um charmoso felino com olhos hipnotizantes e personalidade tranquila.",
     idade: 4,
     adotado: false,
-    sexo: "male",
+    sexo: "Masculino",
     tipo: "cat",
   },
   {
@@ -26,7 +26,7 @@ const pets = [
       "Um leal companheiro de quatro patas, brincalhão e cheio de energia.",
     idade: 6,
     adotado: false,
-    sexo: "male",
+    sexo: "Masculino",
     tipo: "dog",
   },
   {
@@ -37,7 +37,7 @@ const pets = [
       "Uma gatinha jovem e curiosa, sempre pronta para explorar e receber carinhos.",
     idade: 1,
     adotado: false,
-    sexo: "female",
+    sexo: "Feminino",
     tipo: "cat",
   },
   {
@@ -48,7 +48,7 @@ const pets = [
       "Uma adorável filhote canina, cheia de energia e pronta para aprender e brincar.",
     idade: 1,
     adotado: false,
-    sexo: "female",
+    sexo: "Feminino",
     tipo: "dog",
   },
   {
@@ -59,7 +59,7 @@ const pets = [
       "Um felino aventureiro e amoroso, que adora explorar e se aninhar nos colos.",
     idade: 1,
     adotado: false,
-    sexo: "male",
+    sexo: "Masculino",
     tipo: "cat",
   },
   {
@@ -70,7 +70,7 @@ const pets = [
       "Um cão inteligente e brincalhão, sempre disposto a acompanhar seu tutor em aventuras.",
     idade: 2,
     adotado: false,
-    sexo: "male",
+    sexo: "Masculino",
     tipo: "dog",
   },
   {
@@ -81,7 +81,7 @@ const pets = [
       "Uma cadelinha doce e carinhosa, pronta para ser o melhor amigo de alguém para sempre.",
     idade: 3,
     adotado: false,
-    sexo: "female",
+    sexo: "Feminino",
     tipo: "dog",
   },
   {
@@ -92,7 +92,7 @@ const pets = [
       "Um pássaro encantador, que alegra qualquer ambiente com seu canto melodioso.",
     idade: 4,
     adotado: false,
-    sexo: "male",
+    sexo: "Masculino",
     tipo: "bird",
   },
   {
@@ -103,7 +103,7 @@ const pets = [
       "Uma bela ave com penas vibrantes, que traz vida e alegria para qualquer espaço com seu canto harmonioso.",
     idade: 3,
     adotado: false,
-    sexo: "female",
+    sexo: "Feminino",
     tipo: "bird",
   },
 ];

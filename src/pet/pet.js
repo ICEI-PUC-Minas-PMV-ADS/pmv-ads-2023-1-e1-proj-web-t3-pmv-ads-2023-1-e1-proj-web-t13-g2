@@ -11,14 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function renderPetCard() {
   petPhoto.src = pet.img;
-  petName.innerText =
-  pet.sexo === "male"
-    ? "Adote o " + pet.name
-    : " Adote a " + pet.name;
-  petAge.innerText =
-  pet.idade > 1 ? pet.idade + " anos" : pet.idade + " ano";
+  petName.innerText += ` ${pet.name}`;
+  petAge.innerText += ` ${pet.idade} ${pet.idade > 1 ? "anos" : "ano"}`;
   petDescription.innerText = pet.description;
-  petSex.innerText = pet.sexo === "male" ? "Sexo : macho" : "Sexo: fêmea";
+  petSex.innerText += ` ${pet.sexo}`;
 }
 
 function resolvePetData() {

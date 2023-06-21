@@ -12,8 +12,8 @@ function renderPets(pet) {
   <div class="pet" id="${pet.id}">
     <img src="${pet.img}" alt="Foto do Pet" />
     <div class="details">
-      <h2 class="namePet">Adote ${pet.sexo === "male" ? "o " + pet.name : "a " + pet.name}</h2>
-      <p>${pet.idade} anos</p>
+      <h2 class="namePet">Adote ${pet.sexo === "Masculino" ? "o " + pet.name : "a " + pet.name}</h2>
+      <p>${pet.idade} ${pet.idade > 1 ? "anos" : "ano"}</p>
     </div>
     <button onclick="irParaPet(${pet.id})" class="moreDetails">Mais detalhes</button>
   </div>
@@ -101,8 +101,8 @@ function filtersPets() {
   arraysComPets.push(filters.tipoDog ? pets.filter((pet) => pet.tipo === 'dog') : [])
   arraysComPets.push(filters.tipoCat ? pets.filter((pet) => pet.tipo === 'cat') : [])
 
-  arraysComPets.push(filters.sexoFemale ? pets.filter((pet) => pet.sexo === 'female') : [])
-  arraysComPets.push(filters.sexoMale ? pets.filter((pet) => pet.sexo === 'male') : [])
+  arraysComPets.push(filters.sexoFemale ? pets.filter((pet) => pet.sexo === 'Feminino') : [])
+  arraysComPets.push(filters.sexoMale ? pets.filter((pet) => pet.sexo === 'Masculino') : [])
 
   let idPetsFiltered = petsFiltered.map((pets) => pets.id)
 
