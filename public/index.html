@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AdoptionLove</title>
   <meta name="description" content="" />
-  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
   <!-- Style -->
-  <link rel="stylesheet" href="../styles/global.css" />
-  <link rel="stylesheet" href="./stylehome.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./home/stylehome.css" />
 
 
   <link
@@ -25,37 +25,37 @@
   <div id="menuPrincipal">
     <nav id="navegacaoMenu">
       <div id="logoMenu">
-        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+        <a href="#"><img src="./images/logo.png" alt="Logo AdoptionLove" /></a>
       </div>
       <ul>
-        <li><a href="../home/home.html">Inicio</a></li>
-        <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./CadastroPet/cadastropet.html">Quero Doar</a></li>
       </ul>
     </nav>
     <div id="botoesMenu">
-      <p id="botaoAdotar"><a href="../adotar/adotar.html">Quero adotar</a></p>
-      <p id="botaoLogin"><a href="../login/login.html">Entrar</a></p>
+      <p id="botaoAdotar"><a href="./adotar/adotar.html">Quero adotar</a></p>
+      <p id="botaoLogin"><a href="./login/login.html">Entrar</a></p>
     </div>
     <div class="mobileIcon" onclick="showMobileMenu()">
-      <img src="../images/mobile-icon.jpg" alt="Mobile Icon" />
+      <img src="./images/mobile-icon.jpg" alt="Mobile Icon" />
     </div>
   </div>
   <div id="mobileMenu" class="hiddenMenu">
     <div>
-      <a href="#"><img src="../images/logo.png" alt="logo adoption pet" /></a>
+      <a href="#"><img src="./images/logo.png" alt="logo adoption pet" /></a>
       <nav>
         <ul>
-          <li><a href="../home/home.html">Inicio</a></li>
-          <li><a href="../CadastroPet/cadastropet.html">Quero Doar</a></li>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./CadastroPet/cadastropet.html">Quero Doar</a></li>
         </ul>
       </nav>
     </div>
     <div id="closeIcon" class="mobileIcon" onclick="showMobileMenu()">
-      <img src="../images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
+      <img src="./images/closeicon.png" alt="Mobile Icon" style="width: 30px" />
     </div>
     <div id="mobileMenuButtons">
-      <p><a href="../adotar/adotar.html">Quero Adotar</a></p>
-      <p><a href="../login/login.html">Entrar</a></p>
+      <p><a href="./adotar/adotar.html">Quero Adotar</a></p>
+      <p><a href="./login/login.html">Entrar</a></p>
     </div>
   </div>
 
@@ -74,7 +74,7 @@
       </p>
 
     </div>
-    <button onclick="window.location.href = '../adotar/adotar.html'" class="btnQueroAdotar">Quero
+    <button onclick="window.location.href = './adotar/adotar.html'" class="btnQueroAdotar">Quero
       Adotar!</button>
     <div class="textoSecundario">
       <ul>
@@ -101,7 +101,7 @@
 
     <footer id="footerPrincipal">
       <div id="logoFooter">
-        <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
+        <a href="#"><img src="./images/logo.png" alt="Logo AdoptionLove" /></a>
       </div>
       <div id="infoFooter">
         <p>
@@ -110,9 +110,9 @@
         </p>
       </div>
       <div id="socialFooter">
-        <a href="#"><img src="../images/fbicon.png" alt="Logo Facebook" /></a>
-        <a href="#"><img src="../images/igicon.png" alt="Logo Instagram" /></a>
-        <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
+        <a href="#"><img src="./images/fbicon.png" alt="Logo Facebook" /></a>
+        <a href="#"><img src="./images/igicon.png" alt="Logo Instagram" /></a>
+        <a href="#"><img src="./images/yticon.png" alt="Logo Youtube" /></a>
       </div>
     </footer>
   </main>
@@ -126,9 +126,9 @@
       // Define o caminho da imagem com base na resolução
       var img = document.getElementsByClassName('imgHome')[0];
       if (screenWidth > 500) {
-        img.src = "./images/imgPrincipal.svg"
+        img.src = "./home/images/imgPrincipal.svg"
       } else {
-        img.src = "./images/imgPrincipalMobile.svg"
+        img.src = "./home/images/imgPrincipalMobile.svg"
       }
     }
 
@@ -138,8 +138,8 @@
     // Verifica a resolução quando a janela é redimensionada
     window.addEventListener('resize', checkResolution);
   </script>
-  <script src="../script/global.js"></script>
-  <script src="../data/data.js"></script>
+  <script src="./script/global.js"></script>
+  <script src="./data/data.js"></script>
 </body>
 
 </html>
