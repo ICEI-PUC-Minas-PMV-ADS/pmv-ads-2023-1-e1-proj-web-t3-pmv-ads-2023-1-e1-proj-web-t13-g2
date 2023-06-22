@@ -61,13 +61,13 @@
           </div>
           <div id="petDescription"></div>
           <div class="row-container">
-            <button id="register" type="submit" onclick=voceAdotou()>Quero adotar</button>
+            <button id="register" onclick="displayMessage()">Quero adotar</button>
             <div id="petSex">Sexo: </div>
           </div>
         </div>
       </div>
     </main>
-
+    
     <footer id="footerPrincipal">
       <div id="logoFooter">
         <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
@@ -84,6 +84,19 @@
         <a href="#"><img src="../images/yticon.png" alt="Logo Youtube" /></a>
       </div>
     </footer>
+
+    <div id="overlay">
+      <div class="message">
+        <h2>Parabéns pela sua escolha de adoção!</h2>
+        <p>
+          Você está prestes a mudar a vida de um animalzinho.
+          Nossa equipe entrará em contato para ajudá-lo(a) no processo de adoção e 
+          garantir que você e seu novo companheiro tenham uma jornada cheia de amor e felicidade.
+          Juntos, vamos construir histórias incríveis de amizade e compaixão!
+        </p>
+        <button onclick="closeMessage()">Fechar</button>
+      </div>
+    </div>
 
     <!-- Script -->
     <script src="../script/global.js"></script>

@@ -3,11 +3,12 @@ const petName = document.getElementById("petName");
 const petAge = document.getElementById("petAge");
 const petDescription = document.getElementById("petDescription");
 const petSex = document.getElementById("petSex");
+const overlay = document.getElementById('overlay');
 let pet = resolvePetData();
 
 document.addEventListener("DOMContentLoaded", () => {
   renderPetCard();
-})
+});
 
 function renderPetCard() {
   petPhoto.src = pet.img;
@@ -22,6 +23,23 @@ function resolvePetData() {
   return JSON.parse(localStoragePet);
 }
 
-function voceAdotou() {
-  window.confirm("Parabéns você adotou o pet!");
+function displayMessage() {
+  overlay.style.display = 'flex';
+  overlay.innerHTML = `
+  <div class="message">
+    <h2>Parabéns pela sua escolha de adoção!</h2>
+    <p>
+      Você está prestes a mudar a vida de um animalzinho.
+      Nossa equipe entrará em contato para ajudá-lo(a) no processo de adoção e 
+      garantir que você e seu novo companheiro tenham uma jornada cheia de amor e felicidade.
+      Juntos, vamos construir histórias incríveis de amizade e compaixão!
+    </p>
+    <button onclick="closeMessage()">Fechar</button>
+  </div>
+  `;
+}
+
+function closeMessage() {
+  overlay.style.display = 'none';
+  //window.location.href = "../adotar/adotar.html";
 }
