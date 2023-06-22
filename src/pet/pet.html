@@ -7,15 +7,11 @@
     <title>AdoptionLove</title>
     <meta name="description" content="" />
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-
-    <!--Fonte Roboto-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     <!-- Style -->
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="./pet.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap" />
   </head>
   <body>
     <div id="menuPrincipal">
@@ -55,29 +51,23 @@
       </div>
     </div>
 
-    <div id="petPageContainer">
-      <div id="petCard">
-        <div id="fotoPet">
-          <img id="imgPet" src="" alt="Foto do Pet" />
-        </div>
-        <div id="infoPet">
-          <div>
-            <h1 id="name"></h1>
-            <h4 id="idade"></h4>
+    <main class="content">
+      <div class="petCard">
+        <img id="petPhoto" src="" alt="Foto do Pet" />
+        <div class="infoPet">
+          <div class="row-container">
+            <div id="petName">Nome: </div>
+            <div id="petAge">Idade: </div>
           </div>
-          <div>
-            <p id="description"></p>
-            <p id="sexo"></p>
-          </div>
-          <div id="adotarPet">
-            <a href="" onclick="voceAdotou()">
-              <p>Quero Adotar</p>
-            </a>
+          <div id="petDescription"></div>
+          <div class="row-container">
+            <button id="register" onclick="displayMessage()">Quero adotar</button>
+            <div id="petSex">Sexo: </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </main>
+    
     <footer id="footerPrincipal">
       <div id="logoFooter">
         <a href="#"><img src="../images/logo.png" alt="Logo AdoptionLove" /></a>
@@ -95,13 +85,11 @@
       </div>
     </footer>
 
+    <div id="overlay">
+    </div>
+
     <!-- Script -->
     <script src="../script/global.js"></script>
     <script src="./pet.js"></script>
-    <script>
-      function voceAdotou() {
-        window.confirm("Parabéns você adotou o pet!");
-      }
-    </script>
   </body>
 </html>
