@@ -16,14 +16,15 @@
 
 .btnQueroAdotar {
   display: flex;
-  width: 30rem;
+  max-width: 30rem;
+  width: 80%;
   height: 5rem;
   align-items: center;
   justify-content: center;
   margin: 2rem auto;
   font-weight: bold;
   font-family: "Cantarell";
-  font-size: 3rem;
+  font-size: 2rem;
 
   background-color: #f9a870;
   outline: #f9a870;
@@ -45,7 +46,6 @@
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 3rem;
-
 }
 
 .textoSecundario ul {
@@ -54,7 +54,7 @@
   list-style: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 500px) {
   html {
     font-size: 12px;
   }
