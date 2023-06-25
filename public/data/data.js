@@ -6,6 +6,8 @@ const clients = [
   }
 ];
 
+const isLoggedIn = false;
+
 const pets = [
   {
     id: 1,
@@ -110,6 +112,7 @@ const pets = [
 
 document.addEventListener("DOMContentLoaded", () => {
   loadClientsData();
+  loadLoginStatus();
   loadPetsData();
 });
 
@@ -118,6 +121,13 @@ function loadClientsData() {
 
   if (!localStorageClients)
     localStorage.setItem("clients", JSON.stringify(clients));
+}
+
+function loadLoginStatus(){
+  let sessionStorageLoginStatus = sessionStorage.getItem("isLoggedIn");
+
+  if (!sessionStorageLoginStatus)
+    sessionStorage.setItem("isLoggedIn", isLoggedIn);
 }
 
 function loadPetsData() {
