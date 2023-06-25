@@ -37,10 +37,11 @@ function userValidation() {
 
   if (client === undefined) {
     email.showErrorMessage("Usuário não cadastrado");
-  } else if (email.value === client.email && senha.value === client.senha) {
+  } else if (email.value === client.email && senha.value === client.senha) {    
     email.clearErrorMessage();
     senha.clearErrorMessage();
     window.location.href = "../adotar/adotar.html";
+    sessionStorage.setItem("isLoggedIn", true);
   } else {
     email.showErrorMessage("A combinação de e-mail e senha está incorreta");
     senha.showErrorMessage("A combinação de e-mail e senha está incorreta");
