@@ -1,0 +1,30 @@
+
+message: Please cite this software using these metadata.
+title:
+authors:
+  - family-names: Rafael Santos Silva
+    given-names: Diego
+  - family-names: Mauricio de Siqueira Filho
+    given-names: Ercules
+  - family-names: Ribeiro
+    given-names: Geovanne do Monte
+  - family-names: Nunes Guimarães
+    given-names: Matheus
+  - family-names: Gabriella vitoriana machado Rodriguez
+    given-names: Mayra
+ 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+  - name-suffix: Nathalia Assis Valentim
+    affiliation: PUC Minas
+    family-names: 
+    given-names: 
+keywords:
+ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t3-pmv-ads-2023-1-e1-proj-web-t13-g2
+repository-code: 
+version: 1.0.0
+date-released: 2023-01-01
+
+
